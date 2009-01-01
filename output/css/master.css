@@ -1,11 +1,10 @@
 body {
 	background: #E6F5FB url(/images/gradientBG.png) repeat-x top left;
-	font: normal normal normal 13px/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	font: normal normal normal 13.5px/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
 	color: #143347;
 }
 
-#page {
-}
+#page { }
 
 
 
@@ -23,6 +22,10 @@ body {
 }
 
 /* http://www.positioniseverything.net/easyclearing.html */
+.clearfix {
+	display: inline-block;
+	display: block;
+}
 
 .clearfix:after {
 	clear: both;
@@ -32,28 +35,18 @@ body {
 	height: 0;
 }
 
-.clearfix {
-	display: inline-block;
-}
-
 * html .clearfix {
 	height: 1%;
 }
 
-.clearfix {
-	display: block;
-}
-
 /*  Text
 ----------------------------------------------------------------------------------------------------*/
-
+a {	color:#143347; }
+a:link, a:visited {text-decoration: underline;}
+a:hover, a:active {text-decoration: none;}
 a:focus {
 	outline: 1px dotted invert;
 }
-
-a:link, a:visited {color:#143347; text-decoration: underline;}
-a:hover, a:active {color:#143347; text-decoration: none;}
-
 
 hr {
 	border: 0 #ccc solid;
@@ -64,22 +57,22 @@ hr {
 
 /* `Headings
 ----------------------------------------------------------------------------------------------------*/
-
+h1, h2, h3 {
+	padding: 0 0 0 20px;
+	color: #143347;
+}
 h1 {
-	font-size: 25px;
+	font-size: 28px; letter-spacing: -0.5px;
+	text-transform: uppercase; font-weight: normal; 
 }
 
 h2 {
-	font-size: 24px;
-	color: #143347;
+	font-size: 21px;
 	background: transparent url(/images/cloudH2.png) center left no-repeat;
-	padding: 0 0 0 20px;
 }
 
 h3 {
 	font-size: 18px;
-	color: #143347;
-	padding: 0 0 0 20px;
 }
 
 /* `Spacing
