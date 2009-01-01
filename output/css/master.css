@@ -1,0 +1,305 @@
+body {
+	background: #E6F5FB url(/images/gradientBG.png) repeat-x top left;
+	font: normal normal normal 13px/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	color: #143347;
+}
+
+#page {
+}
+
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://www.positioniseverything.net/easyclearing.html */
+
+.clearfix:after {
+	clear: both;
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/*  Text
+----------------------------------------------------------------------------------------------------*/
+
+a:focus {
+	outline: 1px dotted invert;
+}
+
+a:link, a:visited {color:#143347; text-decoration: underline;}
+a:hover, a:active {color:#143347; text-decoration: none;}
+
+
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+	font-size: 25px;
+}
+
+h2 {
+	font-size: 24px;
+	color: #143347;
+	background: transparent url(/images/cloudH2.png) center left no-repeat;
+	padding: 0 0 0 20px;
+}
+
+h3 {
+	font-size: 18px;
+	color: #143347;
+	padding: 0 0 0 20px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+p {margin-left: 24px;}
+
+ol {
+	list-style: decimal;
+	margin-left: 24px;
+}
+
+ul {
+	list-style: square;
+	margin-left: 24px;
+}
+
+li {
+	margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+	margin-bottom: 20px;
+}
+
+blockquote, q {
+	border-top: 3px #ffffff solid;
+	border-bottom: 3px #ffffff solid;
+	display: block;
+	padding: 10px;
+	margin: 0 0 20px 24px;
+	font-size: 18px;
+}
+
+/*  Images
+----------------------------------------------------------------------------------------------------*/
+
+.vthumb { /*for thumbs that are stacked vertically*/
+	background: #ffffff;
+	padding: 2px;
+	margin: 0 0 10px 0;
+}
+
+.thumb { /*for thumbs that are floated across horizontally and vetically*/
+	background: #ffffff;
+	padding: 2px;
+	margin: 0 0 10px 10px;
+	float: left;
+}
+
+.rthumb {
+	background: #ffffff;
+	padding: 3px;
+	margin: 0 0 0 0;
+}
+
+.thumb img, .vthumb img, .rthumb  {
+ 	border: none;
+}
+
+.thumb:hover, .vthumb:hover, .rthumb:hover, .thumb img:hover, .vthumb img:hover, .rthumb img:hover {
+	background: #0198D8;
+}
+
+#rotatingImages { /*made for images 934 x 234*/
+	margin: 0 0 20px 0;
+	/*background: #143345;
+		padding: 0px;*/
+	overflow: hidden;
+	width: 940px;
+	height: 240px;
+}
+
+/*  Nav
+----------------------------------------------------------------------------------------------------*/
+
+#mainNav {
+	margin: 60px 0 0 0;
+	padding: 0;
+	height: 24px;
+	font-size: 17px;
+	letter-spacing: -0.5px;
+	text-align: left;
+	float: right;
+	text-transform: uppercase;
+}
+
+#mainNav li {
+	display: inline;
+	list-style: none;
+	padding: 0 0 0 0;
+	margin: 0;
+	background: none;
+}
+
+#mainNav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#mainNav li a:link, #mainNav li a:visited { color: #143347; text-decoration: none; background: none; padding: 6px;}
+#mainNav li a:hover, #mainNav li a:active { color: #0198D8; text-decoration: none; background: #143347; padding: 6px;}
+
+#footerNav {
+	margin: 0 0 0 0;
+	padding: 0;
+	text-align: left;
+}
+
+#footerNav li {
+	display: inline;
+	list-style: none;
+	padding: 0 6px 0 0;
+	margin: 0;
+	background: none;
+}
+
+#footerNav ul {
+	margin: 0 0 10px 0;
+}
+
+#footerNav {
+	margin: 0;
+	padding: 0;
+}
+
+#footer a:link { color: #72451C; text-decoration: none; background: none;}
+#footer a:visited { color: #72451C; text-decoration: none; background: none;}
+#footer a:hover { color: #D67217; text-decoration: underline; background: none;}
+#footer a:active { color: #D67217; text-decoration: underline; background: none;}
+
+/*  Structure
+----------------------------------------------------------------------------------------------------*/
+
+.clouds {
+	background: transparent url(/images/headerAlpha.png) repeat-x top left;
+	height: 102px;
+}
+
+#header {
+	background: transparent url(/images/logo.png) top left no-repeat;
+	height: 137px;
+	margin: 0 0 20px 0;
+}
+
+#logo {
+	float:left;
+	margin:0 0 0 -4000px;
+	width:4250px;
+	padding: 0;	
+}
+
+#logo a {
+	display: block;
+	padding: 45px 0;
+}
+
+#current_rate {
+	background: #143347;
+	background: #ffff99;
+	color: #0198D8;
+	color: #000;
+	padding: 4px 11px 6px 11px;
+	float: right;
+	margin: 0;
+}
+
+.c1 { /*basic alternating containers*/
+	border-bottom: 3px solid #ffffff;
+	margin: 0 0 20px 24px;
+}
+#tagline {
+	font-size: 40px;
+	background: none;
+	margin: 0 0 36px 0;
+	padding: 0;
+	line-height: 42px;
+	text-transform: uppercase;
+}
+#tagline p {
+	margin: 0;
+	margin-left: 14px;
+}
+
+#footer {
+	background: #A65D1A url(/images/footer1b.png) top left repeat-x;
+	color: #72451C;
+	margin: 20px 0 0 0;
+	padding: 0 0 10px 0;
+}
+
+#footerContent {
+	padding: 80px 0 0 0;
+}
+
+.spitfireAndRunway {
+	background: transparent url(/images/spitfireAndRunway.png) top left no-repeat;
+	height: 255px;
+}
+
+/*  Corrections
+----------------------------------------------------------------------------------------------------*/
+
+.c1 p {
+	margin-left: 0;
+}
+
+
+

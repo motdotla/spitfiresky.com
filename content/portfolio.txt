@@ -1,0 +1,30 @@
+---
+title:      Recent Work
+created_at: 2008-12-31 20:44:31.093607 -08:00
+filter:
+  - erb
+---
+<div class="grid_11">
+	<h1><%= h(@page.title) %></h1>
+
+	<p>The following are websites we've built.</p>
+
+	<ul>
+		<li><a href="http://southernhotel.org">http://southernhotel.org</a></li>
+		<li><a href="http://miller-jones.com">http://miller-jones.com</a></li>
+		<li><a href="http://mcwanefamily.com">http://mcwanefamily.com</a></li>
+		<li><a href="http://hrassist.com">http://hrassist.com</a></li>
+		<li><a href="http://twinstang.com">http://twinstang.com</a></li>
+		<li><a href="http://hemetflightcenter.com">http://hemetflightcenter.com</a></li>
+		<li><a href="http://allprotools.com">http://allprotools.com</a></li>
+		<li><a href="http://jacobshousetemecula.org">http://jacobshousetemecula.org</a></li>
+		<li><a href="http://totalspectrumsga.com">http://totalspectrumsga.com</a></li>
+		<li><a href="http://workforcehomebuilders.com">http://workforcehomebuilders.com</a></li>
+		<li><a href="http://rschelling.com">http://rschelling.com</a></li>
+		<li><a href="http://doublebarrelenvironmental.com">http://doublebarrelenvironmental.com</a></li>
+		<li><a href="http://darylbusch.com">http://darylbusch.com</a></li>
+		<li><a href="http://annmotte.com">http://annmotte.com</a></li>
+		<li><a href="http://westsidenannies.com">http://westsidenannies.com</a></li>
+	</ul>
+</div>
+

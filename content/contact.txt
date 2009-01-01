@@ -1,0 +1,24 @@
+---
+title:      Contact Us
+created_at: 2008-12-31 20:46:39.625562 -08:00
+filter:
+  - erb
+---
+<div class="grid_11">
+	
+	<h1><%= h(@page.title) %></h1>
+
+	<p>Email us at <a href="mailto:scott@spitfiresky.com">scott@spitfiresky.com</a></p>
+
+</div><!-- /grid_11 -->
+
+<div id="sidebar" class="grid_5">
+	<h2>Contact Info</h2>
+	<p>
+		<strong>Spitfire Sky</strong><br />
+		445 S D St<br />
+		Perris, CA 92570<br />
+		951.522.7653<br />
+		<a href="mailto:scott@spitfiresky.com">scott@spitfiresky.com</a><br />
+	</p>
+</div><!-- /grid_5 & sidebar -->

@@ -1,0 +1,81 @@
+---
+extension: html
+filter:    erb
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title><%= @page.title %></title>
+   <meta name="author" content="<%= @page.author %>" />
+
+   <!--- CSS Framework -->
+	 <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
+	 <link rel="stylesheet" href="/css/text.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/ninesixty.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/master.css" type="text/css" media="screen, projection" />
+
+   <!-- CodeRay syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/coderay.css" type="text/css" />
+</head>
+<body>
+
+<div class="clouds">
+	<div id="page" class="container_16">
+		
+		<div id="header" class="grid_16">
+				<div id="current_rate">
+					Our current rate is <strong>$54 an hour</strong>
+				</div>
+				<div class="clear"></div>
+				<div id="mainNav">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/about.html">About</a></li>
+						<li><a href="/portfolio.html">Portfolio</a></li>	
+						<li><a href="/contact.html">Contact</a></li>						
+					</ul>
+				</div>
+				<div id="logo"><a href="/" title="Spitfire Sky Web Development">Spitfire Sky</a></div>
+				<div class="clear"></div>
+		</div>
+		
+		<div id="content">
+				<%= @content %>
+		</div><!-- /content -->
+
+		<div class="clear"></div>
+	</div><!-- /page -->
+	
+	<div id="footer">
+		<div class="container_16">
+			<div class="grid_10">
+				<div id="footerContent">
+					<div id="footerNav">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/about.html">About</a></li>
+							<li><a href="/portfolio.html">Portfolio</a></li>	
+							<li><a href="/contact.html">Contact</a></li>				
+						</ul>
+					</div>
+					<span>Copyright &#169; 2008 Spitfire Sky.</span><br />
+					<span>All rights Reserved. Valid XHTML and CSS.</span><br/>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="grid_6">
+				<div class="spitfireAndRunway"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div> <!-- /footer -->
+	<div class="clear"></div>
+	
+</div> <!-- /clouds -->
+
+
+</body>
+</html>
