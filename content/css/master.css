@@ -174,10 +174,12 @@ blockquote, q {
 #banner { /*made for images 934 x 234*/
 	margin-bottom: 20px;
 	height: 240px;
+	width: 940px;
 	overflow: hidden;
 }
 #banner img {
-	height: 240px;
+	height: 234px;
+	width: 934px;
 }
 
 /*  Nav
