@@ -10,7 +10,7 @@ filter:
 
 	<h1>A Web Software Company</h1>
 
-	<p><strong>Spitfire Sky designs and develops simple, intuitive applications and websites to help companies succeed. <em>We do so successfully using agile development methods.</em></strong> Our work ranges from basic one page websites built with plain HTML to large Merb applications utilizing the latest web services and hosted in the cloud.</p>
+	<p><strong>Spitfire Sky designs and develops simple, intuitive applications and websites to help companies succeed. <em>We do so successfully using agile development methods.</em></strong> Our work ranges from basic one page websites built with plain HTML to large Ruby on Rails applications utilizing the latest web services and hosted in the cloud.</p>
 
 	<h2>Our Development Method</h2>
 
