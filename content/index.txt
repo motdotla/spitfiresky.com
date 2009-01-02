@@ -20,7 +20,7 @@ filter:
 	<a href="/portfolio.html"><img src="/images/banners/hrassist.com.jpg" alt="HRAssist" class="rthumb" /></a>
 	<a href="/portfolio.html"><img src="/images/banners/southernhotel.org.jpg" alt="Southern Hotel - Museum by JEM Foundation" class="rthumb" /></a>
 	<a href="/portfolio.html"><img src="/images/banners/jacobshousetemecula.org.jpg" alt="Jacobs House Temcula" class="rthumb" /></a>
-	
+	<div class="clear">&nbsp;</div>
 </div>
 
 <div class="clear"></div>
