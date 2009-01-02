@@ -4,7 +4,7 @@ created_at: 2008-12-31 20:44:31.093607 -08:00
 filter:
   - erb
 ---
-<div class="grid_11">
+<div class="grid_8">
 	<h1>We do quality work</h1>
 
 	<p>The following are websites we've built.</p>

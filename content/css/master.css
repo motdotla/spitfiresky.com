@@ -39,22 +39,40 @@ body {
 
 /*  Text
 ----------------------------------------------------------------------------------------------------*/
-a {	color:#143347; }
+a {	 }
 a:link, a:visited {text-decoration: underline;}
+a:visited {color: blue;}
 a:hover, a:active {text-decoration: none;}
 a:focus {
 	outline: 1px dotted invert;
 }
 
 hr {
+	border: none;
+	clear: both;
+}
+hr.viewable {
 	border: 0 #ccc solid;
 	border-top-width: 1px;
 	clear: both;
 	height: 0;
 }
-
 .hidden {
 	display: none;
+}
+.prominent {
+	border: 4px #143347 solid;
+	background: #2b4866;
+	padding: 10px;
+	margin-left: 24px; margin-right: 24px;
+	font-size: 105%;
+	clear: both; color: #fdfdfd;
+}
+strong {
+	background: yellow; font-style: normal;
+}
+em {
+	font-weight: bold; font-style: normal;
 }
 /* `Headings
 ----------------------------------------------------------------------------------------------------*/
@@ -109,17 +127,18 @@ ul,
 pre,
 table,
 address,
-fieldset {
+fieldset,
+blockquote {
 	margin-bottom: 20px;
 }
 
 blockquote, q {
-	border-top: 3px #ffffff solid;
-	border-bottom: 3px #ffffff solid;
-	display: block;
+	border: 4px #143347 solid;
+	background: #2b4866;
 	padding: 10px;
-	margin: 0 0 20px 24px;
-	font-size: 18px;
+	margin-left: 24px; margin-right: 24px;
+	font-size: 105%;
+	clear: both; color: #fdfdfd;
 }
 
 /*  Images
@@ -252,6 +271,9 @@ blockquote, q {
 	float: right;
 	margin: 0;
 }
+#current_rate strong {
+	background: #ffff99;
+}
 
 .c1 { /*basic alternating containers*/
 	border-bottom: 3px solid #ffffff;
@@ -260,7 +282,7 @@ blockquote, q {
 #tagline {
 	font-size: 40px;
 	background: none;
-	margin-bottom: 36px;
+	margin-bottom: 20px;
 	padding: 0;
 	line-height: 42px;
 	text-transform: uppercase;
@@ -268,13 +290,6 @@ blockquote, q {
 #tagline p {
 	margin: 0;
 	margin-left: 14px;
-}
-#testimonials_home {
-	margin-top: 20px;
-}
-#testimonials_home .testimonial {
-	background: #ff9;
-	border: 2px solid yellow;
 }
 /*  Footer
 ----------------------------------------------------------------------------------------------------*/
@@ -298,23 +313,33 @@ blockquote, q {
 ----------------------------------------------------------------------------------------------------*/
 #sidebar {
 }
+#sidebar strong {
+	background: none;
+}
 #sidebar h2 {
 	font-weight: normal; 
 }
 #sidebar #testimonials {
 	font-size: 12px;
-}
+	}
+
 #sidebar #testimonials .testimonial {
 	padding-bottom: 15px;
 }
-.testimonial:hover {
+p.testimonial {
+	font-style: italic;
+}
+p.testimonial:hover {
 	color: #000;
 }
 /*  Corrections
 ----------------------------------------------------------------------------------------------------*/
 
-.c1 p {
+.no-margin-left {
 	margin-left: 0;
+}
+.no-margin {
+	margin: 0;
 }
 
 

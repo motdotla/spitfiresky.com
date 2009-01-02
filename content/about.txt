@@ -6,15 +6,15 @@ filter:
 ---
 
 
-<div class="grid_11">
+<div class="grid_8">
 
 	<h1>A Web Software Company</h1>
 
-	<p>Spitfire Sky designs and develops simple, intuitive applications and websites to help companies succeed. We do so successfully using agile development methods. Our work ranges from basic one page websites built with plain HTML to large Merb applications utilizing the latest web services and hosted in the cloud.</p>
+	<p><strong>Spitfire Sky designs and develops simple, intuitive applications and websites to help companies succeed. <em>We do so successfully using agile development methods.</em></strong> Our work ranges from basic one page websites built with plain HTML to large Merb applications utilizing the latest web services and hosted in the cloud.</p>
 
 	<h2>Our Development Method</h2>
 
-	<p>We subscribe to the agile method of software development. We work in small blocks of time (2 weeks or so) called iterations where we identify a set of features, implement them, get customer feedback, and release full versions to the user community as often as practical.</p>
+	<p><strong>We subscribe to the agile method of software development.</strong> We work in small blocks of time (2 weeks or so) called iterations where we identify a set of features, implement them, get customer feedback, and release full versions to the user community as often as practical.</p>
 
 	<p>Essentially, we try and deliver real results as quickly as possible one feature at a time. But why employ this agile method instead of a more structured planning method? In our experience, for two major reasons (and many smaller ones).</p>
 
@@ -22,44 +22,48 @@ filter:
 
 	<p>Second, what a customer originally wants and what a customer comes to want differ, significantly. It is important we build what they come to want. This will lead the customer to success.</p>
 
-	<p>In turn we have come to value:</p>
-	<ul>
-		<li>Individuals and interactions over processes and tools</li>
-		<li>Working software over comprehensive documentation</li>
-		<li>Customer collaboration over contract negotiation</li>
-		<li>Responding to change over following a plan</li>
-	</ul>
+	
+	<p><strong>In turn we have come to value:</strong></p>
+	<blockquote>
+		<ul class="no-margin-left">
+			<li>Individuals and interactions over processes and tools</li>
+			<li>Working software over comprehensive documentation</li>
+			<li>Customer collaboration over contract negotiation</li>
+			<li>Responding to change over following a plan</li>
+		</ul>
+		<p class="no-margin">That is, while there is value in the items on the right, we value the items on the left more.</p>
+	</blockquote>
+	
 
-	<p>That is, while there is value in the items on the right, we value the items on the left more.</p>
-
+	
 
 	<h2>Technologies We Employ</h2>
 
-	<p>Spitfire Sky utilizes the following technologies to build your website or web application.</p>
+	<h3>Spitfire Sky utilizes the following technologies to build your website or web application.</h3>
 
-	<p><strong>Static HTML &amp; CSS</strong> - We use old fashioned static HTML &amp; CSS for basic websites where the content will rarely change. DarylBusch.com is an example of a static HTML &amp; CSS site. Static HTML &amp; CSS is the most affordable way to jump start an online presence.</p>
+	<p><em>Static HTML &amp; CSS</em> - We use old fashioned static HTML &amp; CSS for basic websites where the content will rarely change. DarylBusch.com is an example of a static HTML &amp; CSS site. Static HTML &amp; CSS is the most affordable way to jump start an online presence.</p>
 
-	<p><strong>WordPress</strong> - We install WordPress on websites where the ability to manage the content is important to the customer. WordPress is a content management system that sets itself apart from the hundreds of others with its ease of use, full feature set, extensibility via plugins, and configurability. HemetFlightCenter.com is an example of a wordpress site. WordPress is a cost-effective and powerful way to manage your custom website.</p>
+	<p><em>WordPress</em> - We install WordPress on websites where the ability to manage the content is important to the customer. WordPress is a content management system that sets itself apart from the hundreds of others with its ease of use, full feature set, extensibility via plugins, and configurability. HemetFlightCenter.com is an example of a wordpress site. WordPress is a cost-effective and powerful way to manage your custom website.</p>
 
-	<p><strong>Ruby on Rails</strong> - We use Ruby on Rails to build quality, high performance websites and web applications. Ruby on Rails is a web framework optimized for programmer happiness, productivity, and sustainability. It allows us to build unique web applications with an express purpose. Twinstang is built with Ruby on Rails. If you have a need to build a web application then Ruby on Rails is a good way to go.</p>
+	<p><em>Ruby on Rails</em> - We use Ruby on Rails to build quality, high performance websites and web applications. Ruby on Rails is a web framework optimized for programmer happiness, productivity, and sustainability. It allows us to build unique web applications with an express purpose. Twinstang is built with Ruby on Rails. <strong>If you have a need to build a web application then Ruby on Rails is a good way to go.</strong></p>
 
-	<p><strong>Merb</strong> - We employ Merb increasingly more often. Merb is a web framework like Ruby on Rails. In fact, it borrows a great deal from Rails and improves on it. It is faster, thread safe from the ground up, agnostic where important, includes MVC for mailers and slices, has a powerful router, and focuses on gems instead of plugins. Currently, we use Merb for applications that require more customization, more speed, and/or need to be easier to maintain than Ruby on Rails can provide. As Merb grows up, it very well might replace our use of Ruby on Rails.</p>
-
-
-	<p>Spitfire Sky utilizes the following important technologies internally and throughout the development process.</p>
-
-	<p><strong>Git</strong> - We use Git to version our code. Git is a distributed version control system focused on speed, effectivity and real-world usability on large projects. It keeps a timeline of the history of changes to the code of your website or web application.</p>
-
-	<p><strong>RSpec</strong> - We use rspec to test our code. This helps us avoid bugs and squash bugs sooner when they do appear.</p>
-
-	<p><strong>Web Servers</strong> - We use Slicehost servers for our websites and customers' websites. The cost to the customer is generally $12 per month. We maintain the server and employ daily automated backups on the servers.</p>
-
-	<p><strong>Code Server</strong> - We own a server dedicated to storing the versioned code of our customers' websites and web applications.</p>
-
-	<p><strong>Design software</strong> - We make use of various design software. We are skilled in Photoshop, Illustrator, Fireworks, Omnigraffle, Pen, Pencil, and Paper.</p>
+	<p><em>Merb</em> - We employ Merb increasingly more often. Merb is a web framework like Ruby on Rails. In fact, it borrows a great deal from Rails and improves on it. It is faster, thread safe from the ground up, agnostic where important, includes MVC for mailers and slices, has a powerful router, and focuses on gems instead of plugins. Currently, we use Merb for applications that require more customization, more speed, and/or need to be easier to maintain than Ruby on Rails can provide. As Merb grows up, it very well might replace our use of Ruby on Rails.</p>
 
 
-	<p>Spitfire Sky are also skilled in the following behind-the-scenes technologies:</p>
+	<h3>Spitfire Sky utilizes the following important technologies internally and throughout the development process.</h3>
+
+	<p><em>Git</em> - We use Git to version our code. Git is a distributed version control system focused on speed, effectivity and real-world usability on large projects. It keeps a timeline of the history of changes to the code of your website or web application.</p>
+
+	<p><em>RSpec</em> - We use rspec to test our code. This helps us avoid bugs and squash bugs sooner when they do appear.</p>
+
+	<p><em>Web Servers</em> - We use Slicehost servers for customers' websites and our own websites. <strong>The cost to the customer is generally $12 per month. We maintain the server and employ daily automated backups on the servers.</strong></p>
+
+	<p><em>Code Server</em> - We own a server dedicated to storing the versioned code of our customers' websites and web applications.</p>
+
+	<p><em>Design software</em> - We make use of various design software. We are skilled in Photoshop, Illustrator, Fireworks, Omnigraffle, Pen, Pencil, and Paper.</p>
+
+
+	<h3>Spitfire Sky is also skilled in the following behind-the-scenes technologies:</h3>
 	<ul>
 		<li>Amazon S3 storage</li>
 		<li>jQuery</li>
@@ -78,20 +82,20 @@ filter:
 
 
 
-<div id="sidebar" class="grid_5">
+<div id="sidebar" class="grid_4">
 
 	<h2>Testimonials</h2>
 
 	<div id="testimonials">	
-		<p class="testimonial">"I have found Spitfire Sky to be the #1 web software company in the Inland Empire, continually providing our business with custom solutions to fit our needs." <strong>Ontario, CA</strong></p>
+		<p class="testimonial">"I have found Spitfire Sky to be the #1 web software company in the Inland Empire, continually providing our business with custom solutions to fit our needs." <em>Ontario, CA</em></p>
 
-		<p class="testimonial">"Spitfire Sky has the best web developers in town! They are experienced, educated, and passionate programmers, and and their agile approach to software development makes the development process truly enjoyable." - <strong>Riverside, CA</strong></p>
+		<p class="testimonial">"Spitfire Sky has the best web developers in town! They are experienced, educated, and passionate programmers, and and their agile approach to software development makes the development process truly enjoyable." - <em>Riverside, CA</em></p>
 				
-		<p class="testimonial">Spitfire Sky is great to work with. They deliver again and again. <strong>Redlands, CA</strong></p>
+		<p class="testimonial">Spitfire Sky is great to work with. They deliver again and again. <em>Redlands, CA</em></p>
 
-		<p class="testimonial">"As a small business owner, I appreciated that Spitfire Sky took the time to listen to my needs and worked to create the perfect software solution to help my business grow." – <strong>Hemet, CA</strong></p>
+		<p class="testimonial">"As a small business owner, I appreciated that Spitfire Sky took the time to listen to my needs and worked to create the perfect software solution to help my business grow." – <em>Hemet, CA</em></p>
 		
-		<p class="testimonial">"I have never been more pleased with a web company! Spitfire Sky provided us with our very own website at a great price." - <strong>Canyon Lake, CA</strong></p>
+		<p class="testimonial">"I have never been more pleased with a web company! Spitfire Sky provided us with our very own website at a great price." - <em>Canyon Lake, CA</em></p>
 		
 
 	</div><!-- /testimonies -->
