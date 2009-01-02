@@ -291,6 +291,26 @@ blockquote, q {
 	margin: 0;
 	margin-left: 14px;
 }
+#news {
+}
+#news h2 {
+	color: #333;
+	margin-bottom: 0;
+}
+#news ul {
+	padding: 0; margin-top: 0;
+}
+li.post {
+	margin: 0;
+	padding: 14px 8px 5px 8px;
+	list-style: none;
+	border-bottom: 1px solid #999;
+}
+li.post .date {
+	font-weight: bold; font-size: 120%;
+}
+
+
 /*  Footer
 ----------------------------------------------------------------------------------------------------*/
 #footer {
