@@ -307,7 +307,7 @@ li.post {
 	border-bottom: 1px solid #999;
 }
 li.post .date {
-	font-weight: bold; font-size: 120%;
+	font-weight: bold; font-size: 120%; margin-right: 10px;
 }
 
 
