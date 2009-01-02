@@ -16,7 +16,11 @@
 	<!-- Javascripts -->
 	<script type="text/javascript" src="javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="javascripts/jquery.cycle.all-2.32.js"></script>
-	
+	<script type="text/javascript">
+	$(function() {
+	    $('#banner').cycle();
+	});
+	</script>
 </head>
 <body>
 
@@ -48,14 +52,6 @@
 </div>
 
 <div class="clear"></div>
-
-
-
-<script type="text/javascript">
-$(function() {
-    $('#banner').cycle();
-});
-</script>
 
 <div id="banner" class="grid_12">
 	<a href="/portfolio.html"><img src="/images/banners/hemetflightcenter.com.jpg" alt="Hemet Flight Center" class="rthumb" /></a>

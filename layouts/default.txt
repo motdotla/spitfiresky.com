@@ -20,7 +20,11 @@ filter:    erb
 	<!-- Javascripts -->
 	<script type="text/javascript" src="javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="javascripts/jquery.cycle.all-2.32.js"></script>
-	
+	<script type="text/javascript">
+	$(function() {
+	    $('#banner').cycle();
+	});
+	</script>
 </head>
 <body>
 

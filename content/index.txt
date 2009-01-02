@@ -13,14 +13,6 @@ filter:
 
 <div class="clear"></div>
 
-
-
-<script type="text/javascript">
-$(function() {
-    $('#banner').cycle();
-});
-</script>
-
 <div id="banner" class="grid_12">
 	<a href="/portfolio.html"><img src="/images/banners/hemetflightcenter.com.jpg" alt="Hemet Flight Center" class="rthumb" /></a>
 	<a href="/portfolio.html"><img src="/images/banners/twinstang.com.jpg" alt="Twinstang - Digital Pilot Logbooking" class="rthumb" /></a>
