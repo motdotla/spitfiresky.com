@@ -294,7 +294,6 @@ blockquote, q {
 #news {
 }
 #news h2 {
-	color: #333;
 	margin-bottom: 0;
 }
 #news ul {
@@ -304,7 +303,7 @@ li.post {
 	margin: 0;
 	padding: 14px 8px 5px 8px;
 	list-style: none;
-	border-bottom: 1px solid #999;
+/*	border-bottom: 1px solid #999;*/
 }
 li.post .date {
 	font-weight: bold; font-size: 120%; margin-right: 10px;
