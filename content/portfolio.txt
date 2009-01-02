@@ -1,11 +1,71 @@
 ---
-title:      Portfolio from
+title:      Portfolio
 created_at: 2008-12-31 20:44:31.093607 -08:00
 filter:
   - erb
 ---
+<h1>Our Work</h1>
+
+<div class="grid_4 portfolio-item">
+	<h2>Miller Jones Mortuary</h2>
+	<img src="images/portfolios/miller-jones.com-thumb.gif" alt="Miller Jones Mortuary logo" class="portfolio-thumb">
+</div>
+
+<div class="grid_4 portfolio-item">
+	<h2>Twinstang</h2>
+	<img src="images/portfolios/twinstang.com-thumb.gif" alt="Twinstang logo" class="portfolio-thumb">
+</div>
+
+<div class="grid_4 portfolio-item">
+	<h2>HRAssist</h2>
+	<img src="images/portfolios/hrassist.com-thumb.gif" alt="HRAssist logo" class="portfolio-thumb">
+</div>
+
+<div class="clear"></div>
+
+
+<div class="grid_4 portfolio-item">
+	<h2>Southern Hotel Museum</h2>
+	<img src="images/portfolios/southernhotel.org-thumb.gif" alt="Southern Hotel logo" class="portfolio-thumb">
+</div>
+
+<div class="grid_4 portfolio-item">
+	<h2>Hemet Flight Center</h2>
+	<img src="images/portfolios/hemetflightcenter.com-thumb.gif" alt="Hemet Flight Center logo" class="portfolio-thumb">
+</div>
+
+<div class="grid_4 portfolio-item">
+	<h2>Jacobs House Temecula</h2>
+	<img src="images/portfolios/jacobshousetemecula.org-thumb.gif" alt="Jacobs House Temecula logo" class="portfolio-thumb">
+</div>
+
+<div class="clear"></div>
+
+
+<div class="grid_4 portfolio-item">
+	<h2>Total Spectrum</h2>
+	<img src="images/portfolios/totalspectrumsga.com-thumb.gif" alt="Total Spectrum logo" class="portfolio-thumb">
+</div>
+
+<div class="grid_4 portfolio-item">
+	<h2>Workforce Home Builders LLC</h2>
+	<img src="images/portfolios/workforcehomebuilders.com-thumb.gif" alt="Workforce Home Builders LLC logo" class="portfolio-thumb">
+</div>
+
+<div class="grid_4 portfolio-item">
+	<h2>Rob Schelling - Attorney</h2>
+	<img src="images/portfolios/rschelling.com-thumb.gif" alt="Workforce Home Builders LLC logo" class="portfolio-thumb">
+</div>
+
+
+
+<div class="clear"></div>
+
+
+
+
 <div class="grid_8">
-	<h1>We do quality work</h1>
+	
 
 	<p>The following are websites we've built.</p>
 

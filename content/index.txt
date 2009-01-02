@@ -1,11 +1,11 @@
 ---
-title:       Web Development by
+title:       Home
 created_at:  2008-08-02 14:06:40.000000 -06:00
 filter:
   - erb
 ---
 
-<h1 class="hidden">Web Development by Spitfire Sky</h1>
+<h1 class="hidden">Spitfire Sky</h1>
 
 <div id="tagline" class="grid_12">
 	We are a web software company. We build websites and web applications.
@@ -58,7 +58,7 @@ filter:
 
 	<ul>
 		<li class="post"><span class="date">Jan 01</span> Overall design of SpitfireSky.com completed. Portfolio and Contact page need attention now.</li>
-		<li class="post"><span class="date">Dec 15</span> We are redesigning our SpitfireSky.com.</li>
+		<li class="post"><span class="date">Dec 15</span> We are redesigning SpitfireSky.com.</li>
 	</ul>
 	
 </div><!-- /news -->

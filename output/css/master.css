@@ -143,7 +143,10 @@ blockquote, q {
 
 /*  Images
 ----------------------------------------------------------------------------------------------------*/
-
+.portfolio-thumb {
+	background: #fff;
+	padding: 4px; border: 1px solid #ccc;
+}
 .vthumb { /*for thumbs that are stacked vertically*/
 	background: #ffffff;
 	padding: 2px;
@@ -167,7 +170,7 @@ blockquote, q {
  	border: none;
 }
 
-.thumb:hover, .vthumb:hover, .rthumb:hover, .thumb img:hover, .vthumb img:hover, .rthumb img:hover {
+.thumb:hover, .vthumb:hover, .rthumb:hover, .thumb img:hover, .vthumb img:hover, .rthumb img:hover, .portfolio-thumb:hover, .portfolio-thumb img:hover {
 	background: #0198D8;
 }
 
@@ -310,6 +313,15 @@ li.post {
 }
 li.post .date {
 	font-weight: bold; font-size: 120%; margin-right: 10px;
+}
+.portfolio-item {
+	margin-bottom: 20px;
+}
+.portfolio-item h2 {
+	background: none;
+	margin: 0 0 3px 12px; padding: 0;
+	font-weight: normal; font-size: 14px;
+	letter-spacing: .5px; text-transform: uppercase;
 }
 
 
