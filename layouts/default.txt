@@ -22,8 +22,9 @@ filter:    erb
 	<script type="text/javascript" src="javascripts/jquery.cycle.all-2.32.js"></script>
 	<script type="text/javascript">
 	$(function() {
-	    $('#banner').cycle();
-	});
+	    $('#banner').cycle({
+				height: 240
+			});
 	</script>
 </head>
 <body>
