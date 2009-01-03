@@ -19,3 +19,5 @@ filter:
 	</div>
 	
 </div>
+
+<%= render(:partial => "/portfolio-sidebar") %>

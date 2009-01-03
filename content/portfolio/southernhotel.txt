@@ -19,3 +19,5 @@ filter:
 		<img src="/images/portfolios/southernhotel.org-3.jpg">
 	</div>
 </div>
+
+<%= render(:partial => "/portfolio-sidebar") %>
