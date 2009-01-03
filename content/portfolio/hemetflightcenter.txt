@@ -1,0 +1,23 @@
+---
+title:      Hemetflightcenter
+created_at: 2009-01-03 10:49:41.388191 -08:00
+filter:
+  - erb
+---
+<div class="grid_8">
+	
+	<h1><%= h(@page.title) %></h1>
+
+	<p>Hemet Flight Center is a mid-sized aviation school located in Hemet, CA. We created an updated design and programmed the content to be editable using <a href="http://wordpress.org">Wordpress</a>.</p>
+	
+	<p>The website includes a blog with subscription management so that subscribers can receive updates via email. The site also has a photo gallery pulled from a Flickr account.</p>
+	
+	<div class="screenshots">
+		<img src="/images/portfolios/hemetflightcenter.com-0.jpg">
+		<img src="/images/portfolios/hemetflightcenter.com-1.jpg">
+		<img src="/images/portfolios/hemetflightcenter.com-3.jpg">
+	</div>
+
+</div>
+
+<%= render(:partial => "/portfolio-sidebar") %>

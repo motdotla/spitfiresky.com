@@ -4,6 +4,9 @@ filter: erb
 <div id="sidebar" class="grid_4">
 	<h2>More projects</h2>
 	<ul>
+		<li><a href="/portfolio/hemetflightcenter.html">Hemet Flight Center</a></li>
+		<li><a href="/portfolio/jacobshouse.html">Jacobs House Temecula</a></li>
+		<li><a href="/portfolio/ueg.html">United Engineering Group</a></li>
 		<li><a href="/portfolio/totalspectrum.html">Total Spectrum</a></li>
 		<li><a href="/portfolio/southernhotel.html">Southern Hotel Museum</a></li>
 		<li><a href="/portfolio/robschelling.html">Rob Schelling</a></li>

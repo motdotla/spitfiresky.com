@@ -141,6 +141,12 @@ blockquote, q {
 	font-size: 105%;
 	clear: both; color: #fdfdfd;
 }
+blockquote a {
+	color: #fdfdfd;
+}
+small {
+	font-size: 80%;
+}
 
 /*  Banner
 ----------------------------------------------------------------------------------------------------*/

@@ -8,7 +8,7 @@ filter:
 	
 	<h1><%= h(@page.title) %></h1>
 
-	<p>Workforce Home Builders is a large-scale real estate developer of affordable housing for the workforce and seniors in Ontario, CA. Spitfire Sky created a <strong>custom design and configured Wordpress</strong> as the content management system.</p>
+	<p>Workforce Home Builders is a large-scale real estate developer of affordable housing for the workforce and seniors in Ontario, CA. Spitfire Sky created a <strong>custom design and configured <a href="http://wordpress.org">Wordpress</a></strong> as the content management system.</p>
 	
 	<div class="screenshots">
 		<img src="/images/portfolios/workforcehomebuilders.com-0.jpg">

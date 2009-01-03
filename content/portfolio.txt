@@ -15,7 +15,7 @@ filter:
 <div class="grid_4 portfolio-item">
 	<h2>Twinstang</h2>
 	<img src="/images/portfolios/twinstang.com-thumb.gif" alt="Twinstang logo">
-	<p>Twinstang is a web application for pilots to digitally log and track their flight hours. It is built with Ruby on Rails and also works on the iPhone.</p>
+	<p>Twinstang is a web application for pilots to digitally log and track their flight hours. It is built with <a href="http://rubyonrails.org/">Ruby on Rails</a> and also works on the iPhone.</p>
 </div>
 
 <div class="grid_4 portfolio-item">
@@ -27,20 +27,26 @@ filter:
 <div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
-	<h2>Hemet Flight Center</h2>
-	<img src="/images/portfolios/hemetflightcenter.com-thumb.gif" alt="Hemet Flight Center logo">
-	<p>Hemet Flight Center is a mid-sized aviation school located in Hemet, CA. We created an updated design and programmed the content to be editable using Wordpress.</p>
+	<a href="/portfolio/hemetflightcenter.html">
+		<h2>Hemet Flight Center</h2>
+		<img src="/images/portfolios/hemetflightcenter.com-thumb.gif" alt="Hemet Flight Center logo">
+	</a>
+	<p>Hemet Flight Center is a mid-sized aviation school located in Hemet, CA. We created an updated design and programmed the content to be editable using <a href="http://wordpress.org">Wordpress</a>.</p>
 </div>
 
 <div class="grid_4 portfolio-item">
-	<h2>Jacobs House Temecula</h2>
-	<img src="/images/portfolios/jacobshousetemecula.org-thumb.gif" alt="Jacobs House Temecula logo">
+	<a href="/portfolio/jacobshouse.html">
+		<h2>Jacobs House Temecula</h2>
+		<img src="/images/portfolios/jacobshousetemecula.org-thumb.gif" alt="Jacobs House Temecula logo">
+	</a>
 	<p>Jacobs House is a local charity that functions a lot like Ronald McDonald House Charities, and we were hired to create their online identity.</p>
 </div>
 
 <div class="grid_4 portfolio-item">
-	<h2>United Engineering Group</h2>
-	<img src="/images/portfolios/unitedeng.com-thumb.gif" alt="United Engineering Group logo">
+	<a href="/portfolio/ueg.html">
+		<h2>United Engineering Group</h2>
+		<img src="/images/portfolios/unitedeng.com-thumb.gif" alt="United Engineering Group logo">
+	</a>
 	<p>UEG engineers and develops large residential tracks throughout Southern California, and we developed custom business software to increase their efficiency and client relations.</p>
 </div>
 
@@ -88,7 +94,7 @@ filter:
 		<h2>Ann Motte</h2>
 		<img src="/images/portfolios/annmotte.com-thumb.gif" alt="Ann Motte logo">
 	</a>
-	<p>Ann Motte is a long-time elected trustee of Mount San Jacinto College and this is her blog using Wordpress.</p>
+	<p>Ann Motte is a long-time elected trustee of Mount San Jacinto College and this is her blog.</p>
 </div>
 
 <div class="grid_4 portfolio-item">

@@ -8,7 +8,7 @@ filter:
 	
 	<h1><%= h(@page.title) %></h1>
 	
-	<p>Ann Motte is a long-time elected trustee of Mount San Jacinto College and this is her blog using Wordpress. <strong>Ann manages the content of the blog herself using Wordpress</strong> - which we programmed into the site.</p>
+	<p>Ann Motte is a long-time elected trustee of Mount San Jacinto College and this is her blog. <strong>Ann manages the content of the blog herself using <a href="http://wordpress.org">Wordpress</a></strong> - which we programmed into the site.</p>
 	
 	<div class="screenshots">
 		<img src="/images/portfolios/annmotte.com-0.jpg">

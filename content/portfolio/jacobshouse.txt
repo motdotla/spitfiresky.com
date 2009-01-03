@@ -1,0 +1,23 @@
+---
+title:      Jacobs House Temecula
+created_at: 2009-01-03 10:01:37.325103 -08:00
+filter:
+  - erb
+---
+<div class="grid_8">
+	
+	<h1><%= h(@page.title) %></h1>
+
+	<p>Jacobs House is a local charity that functions a lot like Ronald McDonald House Charities, and we were hired to create their online identity.</p>
+	
+	<p>The site was custom designed as a theme on top of <a href="http://wordpress.org">Wordpress</a>. This allows the charity to easily keep the content up to date - even embedding video - as needed, when needed.</p>
+	
+	<div class="screenshots">
+		<img src="/images/portfolios/jacobshousetemecula.org-1.jpg">
+		<img src="/images/portfolios/jacobshousetemecula.org-0.jpg">
+		<img src="/images/portfolios/jacobshousetemecula.org-2.jpg">
+	</div>
+
+</div>
+
+<%= render(:partial => "/portfolio-sidebar") %>
