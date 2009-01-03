@@ -62,5 +62,5 @@ namespace :deploy do
 end
  
 after "deploy", "deploy:cleanup"
-after "deploy:cleanup", "deploy:restart_apache"
-after "deploy:restart_apache", "deploy:symlinkify"
+after "deploy:cleanup", "deploy:symlinkify"
+after "deploy:symlinkify", "deploy:restart_apache"
