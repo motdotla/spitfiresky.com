@@ -1,6 +1,6 @@
 body {
 	background: #E6F5FB url(/images/gradientBG.png) repeat-x top left;
-	font: normal normal normal 13.5px/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	font: normal normal normal 13px/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
 	color: #143347;
 }
 
@@ -237,10 +237,8 @@ blockquote, q {
 	padding: 0;
 }
 
-#footer a:link { color: #72451C; text-decoration: none; background: none;}
-#footer a:visited { color: #72451C; text-decoration: none; background: none;}
-#footer a:hover { color: #D67217; text-decoration: underline; background: none;}
-#footer a:active { color: #D67217; text-decoration: underline; background: none;}
+#footer a:link, #footer a:visited { color: #333; text-decoration: none; background: none;}
+#footer a:hover, #footer a:active { color: #72451C;; text-decoration: underline; background: none;}
 
 /*  Structure
 ----------------------------------------------------------------------------------------------------*/
@@ -323,19 +321,22 @@ li.post .date {
 	font-weight: normal; font-size: 14px;
 	letter-spacing: .5px; text-transform: uppercase;
 }
+.portfolio-item p {
+	margin-left: 8px;
+}
 
 
 /*  Footer
 ----------------------------------------------------------------------------------------------------*/
 #footer {
-	background: #A65D1A url(/images/footer1b.png) top left repeat-x;
-	color: #72451C;
+	background: #9B9246 url(/images/footer1b.png) top left repeat-x;
+	color: #333;
 	margin: 20px 0 0 0;
 	padding: 0 0 10px 0;
 }
 
 #footerContent {
-	padding: 80px 0 0 0;
+	padding: 110px 0 0 0;
 }
 
 .spitfireAndRunway {
