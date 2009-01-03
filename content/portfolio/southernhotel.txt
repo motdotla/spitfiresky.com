@@ -1,0 +1,21 @@
+---
+title:      Southern Hotel Museum
+created_at: 2009-01-02 23:34:33.851639 -08:00
+filter:
+  - erb
+---
+<div class="grid_8">
+	
+	<h1><%= h(@page.title) %></h1>
+
+	<p>The Southern Hotel is the JEM Foundation's first museum. It documents the history of the historic Perris Southern Hotel and the Bernasconi family that built it.</p>
+	
+	<p><strong>Spitfire Sky was tasked with creation of the website and the 30 foot timeline.</strong> The website is written in Ruby and was built using Merb. The timeline was created in Photoshop, printed on industrial-sized printers, and mounted on the wall.</p>
+
+	<div class="screenshots">
+		<img src="/images/portfolios/southernhotel.org-0.jpg">
+		<img src="/images/portfolios/southernhotel.org-1.jpg">
+		<img src="/images/portfolios/southernhotel.org-2.jpg">
+		<img src="/images/portfolios/southernhotel.org-3.jpg">
+	</div>
+</div>

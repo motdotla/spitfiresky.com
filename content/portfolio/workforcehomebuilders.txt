@@ -1,0 +1,18 @@
+---
+title:      Workforce Home Builders LLC
+created_at: 2009-01-02 23:15:47.472786 -08:00
+filter:
+  - erb
+---
+<div class="grid_8">
+	
+	<h1><%= h(@page.title) %></h1>
+
+	<p>Workforce Home Builders is a large-scale real estate developer of affordable housing for the workforce and seniors in Ontario, CA. Spitfire Sky created a <strong>custom design and configured Wordpress</strong> as the content management system.</p>
+	
+	<div class="screenshots">
+		<img src="/images/portfolios/workforcehomebuilders.com-0.jpg">
+		<img src="/images/portfolios/workforcehomebuilders.com-1.jpg">
+	</div>
+
+</div>

@@ -84,12 +84,13 @@ h1 {
 	font-size: 28px; 
 	text-transform: uppercase; font-weight: normal; 
 }
-
 h2 {
 	font-size: 21px;
 	background: transparent url(/images/cloudH2.png) center left no-repeat;
 }
-
+a:hover h2 {
+	text-decoration: underline;
+}
 h3 {
 	font-size: 18px;
 }
@@ -141,39 +142,8 @@ blockquote, q {
 	clear: both; color: #fdfdfd;
 }
 
-/*  Images
+/*  Banner
 ----------------------------------------------------------------------------------------------------*/
-.portfolio-thumb {
-	background: #fff;
-	padding: 4px; border: 1px solid #ccc;
-}
-.vthumb { /*for thumbs that are stacked vertically*/
-	background: #ffffff;
-	padding: 2px;
-	margin: 0 0 10px 0;
-}
-
-.thumb { /*for thumbs that are floated across horizontally and vetically*/
-	background: #ffffff;
-	padding: 2px;
-	margin: 0 0 10px 10px;
-	float: left;
-}
-
-.rthumb {
-	background: #ffffff;
-	padding: 3px;
-	margin: 0 0 0 0;
-}
-
-.thumb img, .vthumb img, .rthumb  {
- 	border: none;
-}
-
-.thumb:hover, .vthumb:hover, .rthumb:hover, .thumb img:hover, .vthumb img:hover, .rthumb img:hover, .portfolio-thumb:hover, .portfolio-thumb img:hover {
-	background: #0198D8;
-}
-
 #banner { /*made for images 934 x 234*/
 	margin-bottom: 20px;
 	height: 240px;
@@ -183,7 +153,14 @@ blockquote, q {
 #banner img {
 	height: 234px;
 	width: 934px;
+	background: #ffffff;
+	padding: 3px;
+	margin: 0 0 0 0;
 }
+#banner a img:hover {
+	background: #0198D8;
+}
+
 
 /*  Nav
 ----------------------------------------------------------------------------------------------------*/
@@ -312,6 +289,9 @@ li.post {
 li.post .date {
 	font-weight: bold; font-size: 120%; margin-right: 10px;
 }
+
+/*  Portfolio
+----------------------------------------------------------------------------------------------------*/
 .portfolio-item {
 	margin-bottom: 20px;
 }
@@ -321,10 +301,29 @@ li.post .date {
 	font-weight: normal; font-size: 14px;
 	letter-spacing: .5px; text-transform: uppercase;
 }
+.portfolio-item a h2:hover {
+	text-decoration: underline;
+}
+.portfolio-item img {
+	background: #fff;
+	padding: 4px; border: 1px solid #ccc;
+}
+.portfolio-item a img:hover {
+	background: #0198D8;
+}
 .portfolio-item p {
 	margin-left: 8px;
 }
 
+.screenshots {
+	margin-left: 24px;
+}
+.screenshots img {
+	background: #fff;
+	padding: 5px;
+	width: 560px;
+	margin-bottom: 20px;
+}
 
 /*  Footer
 ----------------------------------------------------------------------------------------------------*/

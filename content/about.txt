@@ -87,15 +87,15 @@ filter:
 	<h2>Testimonials</h2>
 
 	<div id="testimonials">	
-		<p class="testimonial">"I have found Spitfire Sky to be the #1 web software company in the Inland Empire, continually providing our business with custom solutions to fit our needs." <em>Ontario, CA</em></p>
+		<p class="testimonial">"I have found Spitfire Sky to be the #1 web software company in the Inland Empire, continually providing our business with custom solutions to fit our needs."<br /><em>Ontario, CA</em></p>
 
-		<p class="testimonial">"Spitfire Sky has the best web developers in town! They are experienced, educated, and passionate programmers, and and their agile approach to software development makes the development process truly enjoyable." - <em>Riverside, CA</em></p>
+		<p class="testimonial">"Spitfire Sky has the best web developers in town! They are experienced, educated, and passionate programmers, and and their agile approach to software development makes the development process truly enjoyable."<br /><em>Riverside, CA</em></p>
 				
-		<p class="testimonial">Spitfire Sky is great to work with. They deliver again and again. <em>Redlands, CA</em></p>
+		<p class="testimonial">Spitfire Sky is great to work with. They deliver again and again.<br /><em>Redlands, CA</em></p>
 
-		<p class="testimonial">"As a small business owner, I appreciated that Spitfire Sky took the time to listen to my needs and worked to create the perfect software solution to help my business grow." – <em>Hemet, CA</em></p>
+		<p class="testimonial">"As a small business owner, I appreciated that Spitfire Sky took the time to listen to my needs and worked to create the perfect software solution to help my business grow."<br /><em>Hemet, CA</em></p>
 		
-		<p class="testimonial">"I have never been more pleased with a web company! Spitfire Sky provided us with our very own website at a great price." - <em>Canyon Lake, CA</em></p>
+		<p class="testimonial">"I have never been more pleased with a web company! Spitfire Sky provided us with our very own website at a great price."<br /><em>Canyon Lake, CA</em></p>
 		
 
 	</div><!-- /testimonies -->
