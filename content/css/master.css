@@ -219,8 +219,8 @@ small {
 	padding: 0;
 }
 
-#footer a:link, #footer a:visited { color: #333; text-decoration: none; background: none;}
-#footer a:hover, #footer a:active { color: #72451C;; text-decoration: underline; background: none;}
+#footer a:link, #footer a:visited { color: #333; text-decoration: underline; background: none;}
+#footer a:hover, #footer a:active { color: #72451C;; text-decoration: none; background: none;}
 
 /*  Structure
 ----------------------------------------------------------------------------------------------------*/
