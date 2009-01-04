@@ -79,14 +79,22 @@ h1, h2, h3 {
 	padding: 0 0 0 20px;
 	color: #143347; letter-spacing: -0.5px;
 }
+h1 a, h2 a, h3 a, h1 a:visited, h2 a:visited, h3 a:visited {
+	text-decoration: none; color: #143347;
+}
+h1 a:hover, h2 a:hover, h3 a:hover {
+	color: #000;
+}
+
 h1 {
 	font-size: 28px; 
 	text-transform: uppercase; font-weight: normal; 
-}
-h2 {
-	font-size: 21px;
 	background: transparent url(/images/cloudH2.png) center left no-repeat;
 }
+h2 {
+	font-size: 21px; font-weight: normal;
+}
+
 a:hover h2 {
 	text-decoration: underline;
 }
@@ -317,7 +325,10 @@ li.post .date {
 	font-weight: normal; font-size: 14px;
 	letter-spacing: .5px; text-transform: uppercase;
 }
-.portfolio-item a h2:hover {
+h2 a:link, h2 a:visited {
+	text-decoration: none;
+}
+h2 a:hover {
 	text-decoration: underline;
 }
 .portfolio-item img {
@@ -332,7 +343,9 @@ li.post .date {
 }
 .portfolio-single h1 {
 	font-size: 16px;
-	margin-bottom: 3px;
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 
@@ -348,10 +361,10 @@ li.post .date {
 .jqGSContainer .jqGSImgContainer ul li img:hover {cursor: pointer;}
 
 /*pagination*/
-.jqGSContainer .jqGSPagination{position:relative;width:100%;margin: 0;padding: 0; border-bottom: 1px solid #ccc; }
-.jqGSContainer .jqGSPagination ul{padding:0;margin:10px;list-style:none;position:relative; width: 100%;}
-.jqGSContainer .jqGSPagination ul li{margin: 0 0 0 10px; display: inline; font-size: 9px;}
-.jqGSContainer .jqGSPagination ul li a{ padding: 2px 8px 2px 8px; margin-right: 7px; text-decoration: none; background: #ccc; color: #333; float:left; }
+.jqGSContainer .jqGSPagination{position:relative;width:100%;margin: 0;padding: 0; }
+.jqGSContainer .jqGSPagination ul{margin:0;padding:8px 20px 26px 20px;list-style:none;position:relative; width: 547px; border-bottom: 1px solid #ccc; }
+.jqGSContainer .jqGSPagination ul li{margin: 0 0 0 7px; padding: 0; float: left; display: inline; font-size: 9px;}
+.jqGSContainer .jqGSPagination ul li a{ padding: 2px 8px 2px 8px; margin: 0; text-decoration: none; background: #ccc; color: #333; float:left; display: block; }
 .jqGSContainer .jqGSPagination ul li a.selected, .jqGSContainer .jqGSPagination ul li a:hover{color: #fcfcfc; background: #143347;}
 
 
@@ -376,8 +389,11 @@ li.post .date {
 /*  Sidebar
 ----------------------------------------------------------------------------------------------------*/
 #sidebar {
-	
-	font-size: 12px;
+	font-size: 12px; padding-top: 5px;
+	background: transparent url(/images/sidebar-bg.png) top left;
+}
+#mini-sidebar {
+	padding-top: 5px;
 }
 #sidebar strong {
 	background: none;
@@ -385,13 +401,20 @@ li.post .date {
 #sidebar h2 {
 	font-weight: normal; 
 	color: #21566b;
+	background: none;
+}
+#sidebar h2 a, #sidebar h2 a:visited {
+	color: #21566b;
+}
+#sidebar h2 a:hover {
+	color: #000;
 }
 #sidebar ul {
 	margin-left: 0;
 	list-style: none;
 }
 #sidebar ul li {
-	margin-left: 10px;
+	margin-left: 0;
 }
 #sidebar ul li a {
 	text-decoration: none;
@@ -401,7 +424,10 @@ li.post .date {
 	padding-left: 24px;
 }
 #sidebar ul li a:hover {
-	background: transparent url(/images/list-on.png) top left;
+	color: #000;
+	background: #fdfdfd;
+	background: transparent url(/images/sidebar-bg.png) top left;
+	
 }
 
 #sidebar #testimonials {
@@ -416,8 +442,13 @@ p.testimonial:hover {
 	color: #000;
 }
 .get-in-touch {
+	margin-left: 20px;
+	margin-right: 20px;
 	font-size: 18px;
-	width: 220px;
+	text-align: left;
+}
+.get-in-touch a {
+	display: block;
 }
 /*  Corrections
 ----------------------------------------------------------------------------------------------------*/
@@ -427,6 +458,9 @@ p.testimonial:hover {
 }
 .no-margin {
 	margin: 0;
+}
+.no-background {
+	background: none;
 }
 
 

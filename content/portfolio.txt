@@ -5,55 +5,52 @@ created_at: 2008-12-31 20:44:31.093607 -08:00
 filter:
   - erb
 ---
-<h1>Websites and web applications</h1>
+<div class="grid_8">
+	<h1>Websites and web applications</h1>
+</div>
+
+<div id="mini-sidebar" class="grid_4">
+		<p class="get-in-touch"><a href="/contact.html">Like what you see? Get in touch with us &raquo;</a></p>
+</div>
+
+<div class="clear"></div>
+
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/millerjones.html">
-		<h2>Miller Jones Mortuary</h2>
-		<img src="/images/portfolios/miller-jones.com-thumb.gif" alt="Miller Jones Mortuary logo">
-	</a>
+	<h2><a href="/portfolio/millerjones.html">Miller Jones Mortuary</a></h2>
+	<a href="/portfolio/millerjones.html"><img src="/images/portfolios/miller-jones.com-thumb.gif" alt="Miller Jones Mortuary logo"></a>
 	<p>Miller Jones Mortuary &amp; Crematory is one of the largest mortuaries on the west coast, and we were commissioned to upgrade their previously outdated online presence. </p>
 </div>
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/twinstang.html">
-		<h2>Twinstang</h2>
-		<img src="/images/portfolios/twinstang.com-thumb.gif" alt="Twinstang logo">
-	</a>
+	<h2><a href="/portfolio/twinstang.html">Twinstang</a></h2>
+	<a href="/portfolio/twinstang.html"><img src="/images/portfolios/twinstang.com-thumb.gif" alt="Twinstang logo"></a>
 	<p>Twinstang is a web application for pilots to digitally log and track their flight hours. It is built with <a href="http://rubyonrails.org/">Ruby on Rails</a> and also works on the iPhone.</p>
 </div>
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/hrassist.html">
-		<h2>HRAssist</h2>
-		<img src="/images/portfolios/hrassist.com-thumb.gif" alt="HRAssist logo">
-	</a>
+	<h2><a href="/portfolio/hrassist.html">HRAssist</a></h2>
+	<a href="/portfolio/hrassist.html"><img src="/images/portfolios/hrassist.com-thumb.gif" alt="HRAssist logo"></a>
 	<p>HRAssist provides affordable Human Resources services. We programmed their site while <a href="http://collectiveindustry.com">Justin Pardee</a> did the design.</p>
 </div>
 
 <div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/hemetflightcenter.html">
-		<h2>Hemet Flight Center</h2>
-		<img src="/images/portfolios/hemetflightcenter.com-thumb.gif" alt="Hemet Flight Center logo">
-	</a>
+	<h2><a href="/portfolio/hemetflightcenter.html">Hemet Flight Center</a></h2>
+	<a href="/portfolio/hemetflightcenter.html"><img src="/images/portfolios/hemetflightcenter.com-thumb.gif" alt="Hemet Flight Center logo"></a>
 	<p>Hemet Flight Center is a mid-sized aviation school located in Hemet, CA. We created an updated design and programmed the content to be editable using <a href="http://wordpress.org">Wordpress</a>.</p>
 </div>
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/jacobshouse.html">
-		<h2>Jacobs House Temecula</h2>
-		<img src="/images/portfolios/jacobshousetemecula.org-thumb.gif" alt="Jacobs House Temecula logo">
-	</a>
+	<h2><a href="/portfolio/jacobshouse.html">Jacobs House Temecula</a></h2>
+	<a href="/portfolio/jacobshouse.html"><img src="/images/portfolios/jacobshousetemecula.org-thumb.gif" alt="Jacobs House Temecula logo"></a>
 	<p>Jacobs House is a local charity that functions a lot like Ronald McDonald House Charities, and we were hired to create their online identity.</p>
 </div>
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/ueg.html">
-		<h2>United Engineering Group</h2>
-		<img src="/images/portfolios/unitedeng.com-thumb.gif" alt="United Engineering Group logo">
-	</a>
+	<h2><a href="/portfolio/ueg.html">United Engineering Group</a></h2>
+	<a href="/portfolio/ueg.html"><img src="/images/portfolios/unitedeng.com-thumb.gif" alt="United Engineering Group logo"></a>
 	<p>UEG engineers and develops large residential tracks throughout Southern California, and we developed custom business software to increase their efficiency and client relations.</p>
 </div>
 
@@ -61,26 +58,20 @@ filter:
 
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/totalspectrum.html">
-		<h2>Total Spectrum</h2>
-		<img src="/images/portfolios/totalspectrumsga.com-thumb.gif" alt="Total Spectrum logo">
-	</a>
+	<h2><a href="/portfolio/totalspectrum.html">Total Spectrum</a></h2>
+	<a href="/portfolio/totalspectrum.html"><img src="/images/portfolios/totalspectrumsga.com-thumb.gif" alt="Total Spectrum logo"></a>
 	<p>Total Spectrum is a political consulting firm that operates in Washington D.C. They chose us to update their online identity and print materials.</p>
 </div>
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/southernhotel.html">
-		<h2>Southern Hotel Museum</h2>
-		<img src="/images/portfolios/southernhotel.org-thumb.gif" alt="Southern Hotel logo">
-	</a>
+	<h2><a href="/portfolio/southernhotel.html">Southern Hotel Museum</a></h2>
+	<a href="/portfolio/southernhotel.html"><img src="/images/portfolios/southernhotel.org-thumb.gif" alt="Southern Hotel logo"></a>
 	<p>The Southern Hotel is the JEM Foundation's first museum. It documents the history of the historic Perris Southern Hotel and the Bernasconi family that built it.</p>
 </div>
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/robschelling.html">
-		<h2>Rob Schelling - Attorney</h2>
-		<img src="/images/portfolios/rschelling.com-thumb.gif" alt="Workforce Home Builders LLC logo">
-	</a>
+	<h2><a href="/portfolio/robschelling.html">Rob Schelling - Attorney</a></h2>
+	<a href="/portfolio/robschelling.html"><img src="/images/portfolios/rschelling.com-thumb.gif" alt="Workforce Home Builders LLC logo"></a>
 	<p>Rob Schelling is an established attorney in Riverside County, and he came to us to develop his online identity - including a content management system.</p>
 </div>
 
@@ -88,27 +79,21 @@ filter:
 
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/workforcehomebuilders.html">
-		<h2>Workforce Home Builders LLC</h2>
-		<img src="/images/portfolios/workforcehomebuilders.com-thumb.gif" alt="Workforce Home Builders LLC logo">
-	</a>
+	<h2><a href="/portfolio/workforcehomebuilders.html">Workforce Home Builders LLC</a></h2>
+	<a href="/portfolio/workforcehomebuilders.html"><img src="/images/portfolios/workforcehomebuilders.com-thumb.gif" alt="Workforce Home Builders LLC logo"></a>
 	<p>Workforce Home Builders is a large-scale real estate developer of affordable housing for the workforce and seniors in Ontario, CA.</p>
 	
 </div>
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/annmotte.html">
-		<h2>Ann Motte</h2>
-		<img src="/images/portfolios/annmotte.com-thumb.gif" alt="Ann Motte logo">
-	</a>
+	<h2><a href="/portfolio/annmotte.html">Ann Motte</a></h2>
+	<a href="/portfolio/annmotte.html"><img src="/images/portfolios/annmotte.com-thumb.gif" alt="Ann Motte logo"></a>
 	<p>Ann Motte is a long-time elected trustee of Mount San Jacinto College and this is her blog.</p>
 </div>
 
 <div class="grid_4 portfolio-item">
-	<a href="/portfolio/darylbusch.html">
-		<h2>Daryl Busch</h2>
-		<img src="/images/portfolios/darylbusch.com-thumb.gif" alt="Ann Motte logo">
-	</a>
+	<h2><a href="/portfolio/darylbusch.html">Daryl Busch</a></h2>
+	<a href="/portfolio/darylbusch.html"><img src="/images/portfolios/darylbusch.com-thumb.gif" alt="Ann Motte logo"></a>
 	<p>Daryl Busch is the Mayor of Perris. Spitfire Sky was in charge of his online identity to help him win his election.</p>
 </div>
 

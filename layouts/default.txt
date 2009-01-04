@@ -75,8 +75,8 @@ filter:    erb
 					<div id="footerNav">
 						<%= render(:partial => "/navigation") %>
 					</div>
-					Copyright &#169; <%= Time.now.year %> Spitfire Sky. <br />
-					Built with <a href="http://webby.rubyforge.org/">Webby</a>. View <a href="http://github.com/scottmotte/spitfiresky.com/tree/master">source</a>.
+					<p>Copyright &#169; <%= Time.now.year %> Spitfire Sky. <br />
+					Built with <a href="http://webby.rubyforge.org/">Webby</a>. View <a href="http://github.com/scottmotte/spitfiresky.com/tree/master">source</a>.</p>
 					
 					<div class="clear"></div>
 				</div>
