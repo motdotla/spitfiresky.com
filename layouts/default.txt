@@ -23,7 +23,7 @@ filter:    erb
 		$(function() {
 			// cycle plugin for home page banner
 			$('#banner').cycle({
-					fx: 'blindY',
+					fx: 'scrollLeft',
 			    height:  'auto'
 			 });
 		});
