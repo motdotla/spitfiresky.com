@@ -9,10 +9,12 @@ filter:
 	<h1><%= h(@page.title) %></h1>
 
 	<ul id="screenshots">
-		<li><img src="/images/portfolios/southernhotel.org-0.jpg"></li>
 		<li><img src="/images/portfolios/southernhotel.org-1.jpg"></li>
 		<li><img src="/images/portfolios/southernhotel.org-2.jpg"></li>
 		<li><img src="/images/portfolios/southernhotel.org-3.jpg"></li>
+		<li><img src="/images/portfolios/southernhotel.org-4.jpg"></li>
+		<li><img src="/images/portfolios/southernhotel.org-5.jpg"></li>
+		<li><img src="/images/portfolios/southernhotel.org-6.jpg"></li>
 	</ul>
 	
 	<p>The Southern Hotel is the JEM Foundation's first museum. It documents the history of the historic Perris Southern Hotel and the Bernasconi family that built it.</p>
