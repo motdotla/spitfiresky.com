@@ -183,17 +183,25 @@ small {
 	display: inline;
 	list-style: none;
 	padding: 0 0 0 0;
-	margin: 0;
+	margin: 0 0 0 5px;
 	background: none;
+	float: left;
 }
 
-#mainNav ul {
+#mainNav ul#navigation {
 	margin: 0;
 	padding: 0;
 }
 
 #mainNav li a:link, #mainNav li a:visited { color: #143347; text-decoration: none; background: none; padding: 6px;}
 #mainNav li a:hover, #mainNav li a:active { color: #0198D8; text-decoration: none; background: #143347; padding: 6px;}
+
+body#home .clouds #page #header #mainNav li#n-home a,
+body#about .clouds #page #header #mainNav li#n-about a,
+body#portfolio .clouds #page #header #mainNav li#n-portfolio a,
+body#contact .clouds #page #header #mainNav li#n-contact a { 
+	color: #0198D8; text-decoration: none; background: #143347; padding: 6px;
+}
 
 #footerNav {
 	margin: 0 0 0 0;
@@ -209,7 +217,7 @@ small {
 	background: none;
 }
 
-#footerNav ul {
+#footerNav ul#navigation {
 	margin: 0 0 10px 0;
 }
 
@@ -368,16 +376,19 @@ li.post .date {
 /*  Sidebar
 ----------------------------------------------------------------------------------------------------*/
 #sidebar {
+	
+	font-size: 12px;
 }
 #sidebar strong {
 	background: none;
 }
 #sidebar h2 {
 	font-weight: normal; 
+	color: #21566b;
 }
 #sidebar ul {
-	list-style: none;
 	margin-left: 0;
+	list-style: none;
 }
 #sidebar ul li {
 	margin-left: 10px;
@@ -387,14 +398,13 @@ li.post .date {
 	color: #143347;
 	padding: 6px 0 6px 0;
 	display: block;
-	padding-left: 14px;
+	padding-left: 24px;
 }
 #sidebar ul li a:hover {
 	background: transparent url(/images/list-on.png) top left;
 }
 
 #sidebar #testimonials {
-	font-size: 12px;
 	}
 #sidebar #testimonials .testimonial {
 	padding-bottom: 15px;
@@ -404,6 +414,10 @@ p.testimonial {
 }
 p.testimonial:hover {
 	color: #000;
+}
+.get-in-touch {
+	font-size: 18px;
+	width: 220px;
 }
 /*  Corrections
 ----------------------------------------------------------------------------------------------------*/

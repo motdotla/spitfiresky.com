@@ -1,5 +1,6 @@
 ---
 title:      Miller Jones Mortuary
+page_id:    portfolio
 created_at: 2009-01-03 15:48:49.014740 -08:00
 filter:
   - erb

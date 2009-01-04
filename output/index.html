@@ -17,29 +17,34 @@
 	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
 	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.curvycorners.source.js"></script>
 	<script type="text/javascript">
-	$(function() {
+		
+		$(function() {
+			// cycle plugin for home page banner
 			$('#banner').cycle({
 					fx: 'blindY',
 			    height:  'auto'
 			 });
 		});
-	</script>
-	
-	<script type="text/javascript">
-	    $(document).ready(function(){
-	        $("#screenshots").jqGalScroll( {
-				   	width: 586,
-				    height: 429,
-				    direction : 'horizontal' // vertical horizontal diagonal
-				   });
-	    });
+		
+		// gallery scroller for portfolio pages
+		$(document).ready(function(){
+        $("#screenshots").jqGalScroll( {
+			   	width: 586,
+			    height: 429,
+			    direction : 'horizontal' // vertical horizontal diagonal
+			   });
+    });
+
+		
 	</script>
 	
 	
 </head>
-<body>
-
+<body id="home">
+	
+	
 <div class="clouds">
 	<div id="page" class="container_12">
 		
@@ -50,10 +55,10 @@
 				<div class="clear"></div>
 				<div id="mainNav">
 					<ul>
-	<li><a href="/">Home</a></li>
-	<li><a href="/about.html">About</a></li>
-	<li><a href="/portfolio.html">Portfolio</a></li>	
-	<li><a href="/contact.html">Contact</a></li>						
+	<li id="n-home"><a href="/">Home</a></li>
+	<li id="n-about"><a href="/about.html">About</a></li>
+	<li id="n-portfolio"><a href="/portfolio.html">Portfolio</a></li>	
+	<li id="n-contact"><a href="/contact.html">Contact</a></li>						
 </ul>
 
 				</div>
@@ -139,10 +144,10 @@
 				<div id="footerContent">
 					<div id="footerNav">
 						<ul>
-	<li><a href="/">Home</a></li>
-	<li><a href="/about.html">About</a></li>
-	<li><a href="/portfolio.html">Portfolio</a></li>	
-	<li><a href="/contact.html">Contact</a></li>						
+	<li id="n-home"><a href="/">Home</a></li>
+	<li id="n-about"><a href="/about.html">About</a></li>
+	<li id="n-portfolio"><a href="/portfolio.html">Portfolio</a></li>	
+	<li id="n-contact"><a href="/contact.html">Contact</a></li>						
 </ul>
 
 					</div>

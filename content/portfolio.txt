@@ -1,5 +1,6 @@
 ---
 title:      Portfolio
+page_id:    portfolio
 created_at: 2008-12-31 20:44:31.093607 -08:00
 filter:
   - erb

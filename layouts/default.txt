@@ -22,28 +22,32 @@ filter:    erb
 	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
 	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
 	<script type="text/javascript">
-	$(function() {
+		
+		$(function() {
+			// cycle plugin for home page banner
 			$('#banner').cycle({
 					fx: 'blindY',
 			    height:  'auto'
 			 });
 		});
-	</script>
-	
-	<script type="text/javascript">
-	    $(document).ready(function(){
-	        $("#screenshots").jqGalScroll( {
-				   	width: 586,
-				    height: 429,
-				    direction : 'horizontal' // vertical horizontal diagonal
-				   });
-	    });
+		
+		// gallery scroller for portfolio pages
+		$(document).ready(function(){
+        $("#screenshots").jqGalScroll( {
+			   	width: 586,
+			    height: 429,
+			    direction : 'horizontal' // vertical horizontal diagonal
+			   });
+    });
+
+		
 	</script>
 	
 	
 </head>
-<body>
-
+<body id="<%= @page.page_id %>">
+	
+	
 <div class="clouds">
 	<div id="page" class="container_12">
 		

@@ -2,7 +2,7 @@
 filter: erb
 ---
 <div id="sidebar" class="grid_4">
-	<img src="/images/get-in-touch.png" />
+	<p class="get-in-touch"><a href="/contact.html">Like what you see? Get in touch with us &raquo;</a></p>
 	
 	<h2>More projects</h2>
 	<ul>

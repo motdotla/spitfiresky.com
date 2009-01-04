@@ -1,5 +1,6 @@
 ---
 title:      Contact
+page_id:    contact
 created_at: 2008-12-31 20:46:39.625562 -08:00
 filter:
   - erb
