@@ -313,6 +313,12 @@ li.post {
 li.post .date {
 	font-weight: bold; font-size: 120%; margin-right: 10px;
 }
+#about img {
+	float: right;
+	border: 4px solid #fff;
+	margin: 0 0 7px 7px;
+}
+
 
 /*  Contact form
 ----------------------------------------------------------------------------------------------------*/
