@@ -34,7 +34,7 @@ filter:    erb
 	    $(document).ready(function(){
 	        $("#screenshots").jqGalScroll( {
 				   	width: 586,
-				    height: 439,
+				    height: 429,
 				    direction : 'horizontal' // vertical horizontal diagonal
 				   });
 	    });
