@@ -10,7 +10,6 @@ body {
 ----------------------------------------------------------------------------------------------------*/
 
 /* http://sonspring.com/journal/clearing-floats */
-
 .clear {
 	clear: both;
 	display: block;
@@ -319,16 +318,29 @@ li.post .date {
 .portfolio-item p {
 	margin-left: 8px;
 }
+.visit {
+	margin: 0; padding: 0; text-align: right;
+}
 
-.screenshots {
-	margin-left: 24px;
-}
-.screenshots img {
-	background: #fff;
-	padding: 5px;
-	width: 560px;
-	margin-bottom: 20px;
-}
+
+/*  Screenshots
+----------------------------------------------------------------------------------------------------*/
+/*container*/
+.jqGSContainer{margin:0 0 20px 24px;padding:4px;background: #fff;;position:relative;}
+.jqGSContainer .jqGSImgContainer{}
+.jqGSContainer .jqGSImgContainer ul{position:relative;list-style:none;padding: 0; margin:0;}
+.jqGSContainer .jqGSImgContainer ul li{padding:0;margin:0;position:relative;;float:left;}
+.jqGSContainer .jqGSImgContainer ul li .jqGSLoader{height:100%;position:absolute;}
+.jqGSContainer .jqGSImgContainer ul li img{width: 586px;}
+.jqGSContainer .jqGSImgContainer ul li img:hover {cursor: pointer;}
+
+/*pagination*/
+.jqGSContainer .jqGSPagination{position:relative;width:100%;margin: 0;padding: 0; }
+.jqGSContainer .jqGSPagination ul{padding:0;margin:10px 0 25px 0;list-style:none;position:relative; width: 100%;border-top: 1px solid #fff;}
+.jqGSContainer .jqGSPagination ul li{margin: 0 0 0 10px; float:left; font-size: 11px;}
+.jqGSContainer .jqGSPagination ul li a{ padding: 3px 6px 3px 6px; text-decoration: none; background: #ccc; color: #333;}
+.jqGSContainer .jqGSPagination ul li a.selected, .jqGSContainer .jqGSPagination ul li a:hover{color: #fcfcfc; background: #143347;}
+
 
 /*  Footer
 ----------------------------------------------------------------------------------------------------*/

@@ -8,16 +8,17 @@ filter:
 	
 	<h1><%= h(@page.title) %></h1>
 
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/southernhotel.org-0.jpg"></li>
+		<li><img src="/images/portfolios/southernhotel.org-1.jpg"></li>
+		<li><img src="/images/portfolios/southernhotel.org-2.jpg"></li>
+		<li><img src="/images/portfolios/southernhotel.org-3.jpg"></li>
+	</ul>
+	
 	<p>The Southern Hotel is the JEM Foundation's first museum. It documents the history of the historic Perris Southern Hotel and the Bernasconi family that built it.</p>
 	
 	<p><strong>Spitfire Sky was tasked with creation of the website and the 12 foot timeline.</strong> The website is written in <a href="http://www.ruby-lang.org/en/">Ruby</a> and was built using <a href="http://merbivore.com/">Merb</a>. The timeline was created in Photoshop, printed on industrial-sized printers, and mounted on the wall.</p>
 
-	<div class="screenshots">
-		<img src="/images/portfolios/southernhotel.org-0.jpg">
-		<img src="/images/portfolios/southernhotel.org-1.jpg">
-		<img src="/images/portfolios/southernhotel.org-2.jpg">
-		<img src="/images/portfolios/southernhotel.org-3.jpg">
-	</div>
 </div>
 
 <%= render(:partial => "/portfolio-sidebar") %>

@@ -16,6 +16,27 @@
 	<!-- Javascripts -->
 	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
+	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+	<script type="text/javascript">
+	$(function() {
+			$('#banner').cycle({
+					fx: 'blindY',
+			    height:  'auto'
+			 });
+		});
+	</script>
+	
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $("#screenshots").jqGalScroll( {
+				   	width: 586,
+				    height: 380,
+				    direction : 'horizontal' // vertical horizontal diagonal
+				   });
+	    });
+	</script>
+	
+	
 </head>
 <body>
 
@@ -44,12 +65,12 @@
 	
 	<h1>Workforce Home Builders LLC</h1>
 
-	<p>Workforce Home Builders is a large-scale real estate developer of affordable housing for the workforce and seniors in Ontario, CA. Spitfire Sky created a <strong>custom design and configured <a href="http://wordpress.org">Wordpress</a></strong> as the content management system.</p>
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/workforcehomebuilders.com-0.jpg"></li>
+		<li><img src="/images/portfolios/workforcehomebuilders.com-1.jpg"></li>
+	</ul>
 	
-	<div class="screenshots">
-		<img src="/images/portfolios/workforcehomebuilders.com-0.jpg">
-		<img src="/images/portfolios/workforcehomebuilders.com-1.jpg">
-	</div>
+	<p>Workforce Home Builders is a large-scale real estate developer of affordable housing for the workforce and seniors in Ontario, CA. Spitfire Sky created a <strong>custom design and configured <a href="http://wordpress.org">Wordpress</a></strong> as the content management system.</p>
 
 </div>
 
@@ -72,6 +93,7 @@
 </div>
 
 
+				<div class="clear"></div>
 		</div><!-- /content -->
 	</div><div class="clear"></div><!-- /page -->
 	

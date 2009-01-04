@@ -16,6 +16,27 @@
 	<!-- Javascripts -->
 	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
+	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+	<script type="text/javascript">
+	$(function() {
+			$('#banner').cycle({
+					fx: 'blindY',
+			    height:  'auto'
+			 });
+		});
+	</script>
+	
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $("#screenshots").jqGalScroll( {
+				   	width: 586,
+				    height: 380,
+				    direction : 'horizontal' // vertical horizontal diagonal
+				   });
+	    });
+	</script>
+	
+	
 </head>
 <body>
 
@@ -43,13 +64,13 @@
 				<div class="grid_8">
 	
 	<h1>Rob Schelling</h1>
-
-	<p>Rob Schelling is an established attorney in Riverside County, and he came to us to develop his online identity - including a content management system. <strong>We installed <a href="http://wordpress.org">Wordpress</a>, allowing Rob's assistant and secretary to manage the website, and we created a custom design that matched Rob's business cards.</strong></p>
 	
-	<div class="screenshots">
-		<img src="/images/portfolios/rschelling.com-0.jpg">
-		<img src="/images/portfolios/rschelling.com-1.jpg">
-	</div>
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/rschelling.com-0.jpg"></li>
+		<li><img src="/images/portfolios/rschelling.com-1.jpg"></li>
+	</ul>
+	
+	<p>Rob Schelling is an established attorney in Riverside County, and he came to us to develop his online identity - including a content management system. <strong>We installed <a href="http://wordpress.org">Wordpress</a>, allowing Rob's assistant and secretary to manage the website, and we created a custom design that matched Rob's business cards.</strong></p>
 
 </div>
 
@@ -72,6 +93,7 @@
 </div>
 
 
+				<div class="clear"></div>
 		</div><!-- /content -->
 	</div><div class="clear"></div><!-- /page -->
 	

@@ -16,6 +16,27 @@
 	<!-- Javascripts -->
 	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
+	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+	<script type="text/javascript">
+	$(function() {
+			$('#banner').cycle({
+					fx: 'blindY',
+			    height:  'auto'
+			 });
+		});
+	</script>
+	
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $("#screenshots").jqGalScroll( {
+				   	width: 586,
+				    height: 380,
+				    direction : 'horizontal' // vertical horizontal diagonal
+				   });
+	    });
+	</script>
+	
+	
 </head>
 <body>
 
@@ -43,16 +64,16 @@
 				<div class="grid_8">
 	
 	<h1>Jacobs House Temecula</h1>
-
+	
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/jacobshousetemecula.org-1.jpg"></li>
+		<li><img src="/images/portfolios/jacobshousetemecula.org-0.jpg"></li>
+		<li><img src="/images/portfolios/jacobshousetemecula.org-2.jpg"></li>
+	</ul>
+	
 	<p>Jacobs House is a local charity that functions a lot like Ronald McDonald House Charities, and we were hired to create their online identity.</p>
 	
 	<p>The site was custom designed as a theme on top of <a href="http://wordpress.org">Wordpress</a>. This allows the charity to easily keep the content up to date - even embedding video - as needed, when needed.</p>
-	
-	<div class="screenshots">
-		<img src="/images/portfolios/jacobshousetemecula.org-1.jpg">
-		<img src="/images/portfolios/jacobshousetemecula.org-0.jpg">
-		<img src="/images/portfolios/jacobshousetemecula.org-2.jpg">
-	</div>
 
 </div>
 
@@ -75,6 +96,7 @@
 </div>
 
 
+				<div class="clear"></div>
 		</div><!-- /content -->
 	</div><div class="clear"></div><!-- /page -->
 	

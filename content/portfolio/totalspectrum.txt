@@ -8,15 +8,15 @@ filter:
 	
 	<h1><%= h(@page.title) %></h1>
 
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/totalspectrumsga.com-0.jpg"></li>
+		<li><img src="/images/portfolios/totalspectrumsga.com-1.jpg"></li>
+		<li><img src="/images/portfolios/totalspectrumsga.com-2.jpg"></li>
+	</ul>
+	
 	<p>Total Spectrum is a political consulting firm that operates in Washington D.C. They chose us to update their online identity and print materials.</p>
 	
 	<p>The website was <strong>built using <a href="http://wordpress.org">Wordpress</a> and a custom design</strong>. The print materials were built with a combination of technologies - including fireworks, photoshop, powerpoint, and word.</p>
-
-	<div class="screenshots">
-		<img src="/images/portfolios/totalspectrumsga.com-0.jpg">
-		<img src="/images/portfolios/totalspectrumsga.com-1.jpg">
-		<img src="/images/portfolios/totalspectrumsga.com-2.jpg">
-	</div>
 
 </div>
 

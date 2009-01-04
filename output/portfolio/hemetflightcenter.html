@@ -16,6 +16,27 @@
 	<!-- Javascripts -->
 	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
+	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+	<script type="text/javascript">
+	$(function() {
+			$('#banner').cycle({
+					fx: 'blindY',
+			    height:  'auto'
+			 });
+		});
+	</script>
+	
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $("#screenshots").jqGalScroll( {
+				   	width: 586,
+				    height: 380,
+				    direction : 'horizontal' // vertical horizontal diagonal
+				   });
+	    });
+	</script>
+	
+	
 </head>
 <body>
 
@@ -44,16 +65,16 @@
 	
 	<h1>Hemetflightcenter</h1>
 
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/hemetflightcenter.com-0.jpg"></li>
+		<li><img src="/images/portfolios/hemetflightcenter.com-1.jpg"></li>
+		<li><img src="/images/portfolios/hemetflightcenter.com-3.jpg"></li>
+	</ul>
+	
 	<p>Hemet Flight Center is a mid-sized aviation school located in Hemet, CA. We created an updated design and programmed the content to be editable using <a href="http://wordpress.org">Wordpress</a>.</p>
 	
 	<p>The website includes a blog with subscription management so that subscribers can receive updates via email. The site also has a photo gallery pulled from a Flickr account.</p>
 	
-	<div class="screenshots">
-		<img src="/images/portfolios/hemetflightcenter.com-0.jpg">
-		<img src="/images/portfolios/hemetflightcenter.com-1.jpg">
-		<img src="/images/portfolios/hemetflightcenter.com-3.jpg">
-	</div>
-
 </div>
 
 <div id="sidebar" class="grid_4">
@@ -75,6 +96,7 @@
 </div>
 
 
+				<div class="clear"></div>
 		</div><!-- /content -->
 	</div><div class="clear"></div><!-- /page -->
 	

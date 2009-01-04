@@ -16,6 +16,27 @@
 	<!-- Javascripts -->
 	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
+	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+	<script type="text/javascript">
+	$(function() {
+			$('#banner').cycle({
+					fx: 'blindY',
+			    height:  'auto'
+			 });
+		});
+	</script>
+	
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $("#screenshots").jqGalScroll( {
+				   	width: 586,
+				    height: 380,
+				    direction : 'horizontal' // vertical horizontal diagonal
+				   });
+	    });
+	</script>
+	
+	
 </head>
 <body>
 
@@ -44,14 +65,14 @@
 	
 	<h1>HRAssist</h1>
 
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/hrassist.com-0.jpg"></li>
+		<li><img src="/images/portfolios/hrassist.com-1.jpg"></li>
+	</ul>
+	
 	<p>HRAssist provides affordable Human Resources services. We programmed the site while <a href="http://collectiveindustry.com">Justin Pardee</a> did the design. Justin does excellent design work. </p>
 	
 	<p>The website is built with <a href="http://rubyonrails.org">Ruby on Rails</a> and is a good example of pragmatic design. HRAssist is a startup company with a limited budget. In turn, to start, we built a basic five page website and used freely available technologies like Paypal and HR Support Center where possible. In the future, HRAssist plans to build out their own custom payment processing and web based support application on top of the basic site, and with Ruby on Rails the framework to do that is already in place.</p>
-	
-	<div class="screenshots">
-		<img src="/images/portfolios/hrassist.com-0.jpg">
-		<img src="/images/portfolios/hrassist.com-1.jpg">
-	</div>
 
 </div>
 
@@ -74,6 +95,7 @@
 </div>
 
 
+				<div class="clear"></div>
 		</div><!-- /content -->
 	</div><div class="clear"></div><!-- /page -->
 	

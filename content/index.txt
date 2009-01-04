@@ -13,15 +13,6 @@ filter:
 
 <div class="clear"></div>
 
-<script type="text/javascript">
-$(function() {
-		$('#banner').cycle({
-				fx: 'blindY',
-		    height:  'auto'
-		 });
-	});
-</script>
-
 <div id="banner" class="grid_12">
 	<a href="/portfolio/hemetflightcenter.html"><img src="/images/banners/hemetflightcenter.com.jpg" alt="Hemet Flight Center" /></a>
 	<a href="/portfolio/twinstang.html"><img src="/images/banners/twinstang.com.jpg" alt="Twinstang - Digital Pilot Logbooking" /></a>

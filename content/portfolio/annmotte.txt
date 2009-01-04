@@ -8,12 +8,12 @@ filter:
 	
 	<h1><%= h(@page.title) %></h1>
 	
-	<p>Ann Motte is a long-time elected trustee of Mount San Jacinto College and this is her blog. <strong>Ann manages the content of the blog herself using <a href="http://wordpress.org">Wordpress</a></strong> - which we programmed into the site.</p>
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/annmotte.com-0.jpg"></li>
+		<li><img src="/images/portfolios/annmotte.com-1.jpg"></li>
+	</ul>
 	
-	<div class="screenshots">
-		<img src="/images/portfolios/annmotte.com-0.jpg">
-		<img src="/images/portfolios/annmotte.com-1.jpg">
-	</div>
+	<p>Ann Motte is a long-time elected trustee of Mount San Jacinto College and this is her blog. <strong>Ann manages the content of the blog herself using <a href="http://wordpress.org">Wordpress</a></strong> - which we programmed into the site.</p>
 
 </div>
 

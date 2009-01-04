@@ -16,6 +16,27 @@
 	<!-- Javascripts -->
 	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
+	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+	<script type="text/javascript">
+	$(function() {
+			$('#banner').cycle({
+					fx: 'blindY',
+			    height:  'auto'
+			 });
+		});
+	</script>
+	
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $("#screenshots").jqGalScroll( {
+				   	width: 586,
+				    height: 380,
+				    direction : 'horizontal' // vertical horizontal diagonal
+				   });
+	    });
+	</script>
+	
+	
 </head>
 <body>
 
@@ -48,15 +69,6 @@
 </div>
 
 <div class="clear"></div>
-
-<script type="text/javascript">
-$(function() {
-		$('#banner').cycle({
-				fx: 'blindY',
-		    height:  'auto'
-		 });
-	});
-</script>
 
 <div id="banner" class="grid_12">
 	<a href="/portfolio/hemetflightcenter.html"><img src="/images/banners/hemetflightcenter.com.jpg" alt="Hemet Flight Center" /></a>
@@ -117,6 +129,7 @@ $(function() {
 
 
 
+				<div class="clear"></div>
 		</div><!-- /content -->
 	</div><div class="clear"></div><!-- /page -->
 	
