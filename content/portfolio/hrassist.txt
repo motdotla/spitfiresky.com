@@ -9,8 +9,8 @@ filter:
 	<h1><%= h(@page.title) %></h1>
 
 	<ul id="screenshots">
-		<li><img src="/images/portfolios/hrassist.com-0.jpg"></li>
 		<li><img src="/images/portfolios/hrassist.com-1.jpg"></li>
+		<li><img src="/images/portfolios/hrassist.com-2.jpg"></li>
 	</ul>
 	
 	<p>HRAssist provides affordable Human Resources services. We programmed the site while <a href="http://collectiveindustry.com">Justin Pardee</a> did the design. Justin does excellent design work. </p>

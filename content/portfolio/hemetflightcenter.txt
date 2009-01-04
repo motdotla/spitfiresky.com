@@ -9,8 +9,8 @@ filter:
 	<h1><%= h(@page.title) %></h1>
 
 	<ul id="screenshots">
-		<li><img src="/images/portfolios/hemetflightcenter.com-0.jpg"></li>
 		<li><img src="/images/portfolios/hemetflightcenter.com-1.jpg"></li>
+		<li><img src="/images/portfolios/hemetflightcenter.com-2.jpg"></li>
 		<li><img src="/images/portfolios/hemetflightcenter.com-3.jpg"></li>
 	</ul>
 	

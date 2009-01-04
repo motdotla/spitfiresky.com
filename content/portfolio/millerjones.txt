@@ -9,13 +9,13 @@ filter:
 	<h1><%= h(@page.title) %></h1>
 	
 	<ul id="screenshots">
-		<li><img src="/images/portfolios/miller-jones.com-0.jpg"></li>
 		<li><img src="/images/portfolios/miller-jones.com-1.jpg"></li>
 		<li><img src="/images/portfolios/miller-jones.com-2.jpg"></li>
 		<li><img src="/images/portfolios/miller-jones.com-3.jpg"></li>
 		<li><img src="/images/portfolios/miller-jones.com-4.jpg"></li>
 		<li><img src="/images/portfolios/miller-jones.com-5.jpg"></li>
 		<li><img src="/images/portfolios/miller-jones.com-6.jpg"></li>
+		<li><img src="/images/portfolios/miller-jones.com-7.jpg"></li>
 	</ul>
 	
 	<p>Miller Jones Mortuary &amp; Crematory is one of the largest mortuaries on the west coast, and we were commissioned to upgrade their previously outdated online presence. Similarly to the <a href="http://localhost:4331/portfolio/ueg.html">UEG application</a>, the site is built using <a href="http://rubyonrails.org/">Ruby on Rails</a>, <a href="http://jquery.com">jQuery</a> for <a href="http://en.wikipedia.org/wiki/Ajax_(programming)">AJAX</a>, a mid-level complex database to store the data using <a href="http://www.mysql.com/">MySQL</a>, and <a href="http://aws.amazon.com/s3/">Amazon S3</a> to store <a href="http://www.miller-jones.com/obituaries/404">uploaded videos</a>. The site also use <a href="http://en.wikipedia.org/wiki/Transport_Layer_Security">SSL</a> to securely encrypt the flower store transactions.</p>
