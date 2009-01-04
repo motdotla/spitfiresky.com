@@ -50,7 +50,7 @@ filter:    erb
 						<%= render(:partial => "/navigation") %>
 					</div>
 					Copyright &#169; <%= Time.now.year %> Spitfire Sky. <br />
-					Built with <a href="http://webby.rubyforge.org/">Webby</a>. View <a href="http://github.com/scottmotte/spitfiresky.com/tree/master">Source</a>.
+					Built with <a href="http://webby.rubyforge.org/">Webby</a>. View <a href="http://github.com/scottmotte/spitfiresky.com/tree/master">source</a>.
 					
 					<div class="clear"></div>
 				</div>
