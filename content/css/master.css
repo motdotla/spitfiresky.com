@@ -272,10 +272,14 @@ small {
 	line-height: 42px;
 	text-transform: uppercase;
 }
-#tagline p {
-	margin: 0;
-	margin-left: 14px;
+#tagline a, #tagline a:visited {
+	text-decoration: none;
+	color: #143347;
 }
+#tagline a:hover {
+	color: #000;
+}
+
 #news {
 }
 #news h2 {
@@ -318,15 +322,16 @@ li.post .date {
 .portfolio-item p {
 	margin-left: 8px;
 }
-.visit {
-	margin: 0; padding: 0; text-align: right;
+.portfolio-single h1 {
+	font-size: 16px;
+	margin-bottom: 3px;
 }
 
 
 /*  Screenshots
 ----------------------------------------------------------------------------------------------------*/
 /*container*/
-.jqGSContainer{margin:0 0 20px 24px;padding:4px;background: #fff;;position:relative;}
+.jqGSContainer{margin:0 0 20px 20px;padding:0;position:relative; border-top: 2px solid #ccc;width:586px;}
 .jqGSContainer .jqGSImgContainer{ border-bottom: 1px solid #ccc;}
 .jqGSContainer .jqGSImgContainer ul{position:relative;list-style:none;padding: 0; margin:0;}
 .jqGSContainer .jqGSImgContainer ul li{padding:0;margin:0;position:relative;;float:left;}
@@ -335,10 +340,10 @@ li.post .date {
 .jqGSContainer .jqGSImgContainer ul li img:hover {cursor: pointer;}
 
 /*pagination*/
-.jqGSContainer .jqGSPagination{position:relative;width:100%;margin: 0;padding: 0; }
-.jqGSContainer .jqGSPagination ul{padding:0;margin:10px 0 25px 0;list-style:none;position:relative; width: 100%;border-top: 1px solid #fff;}
-.jqGSContainer .jqGSPagination ul li{margin: 0 0 0 10px; float:left; font-size: 11px;}
-.jqGSContainer .jqGSPagination ul li a{ padding: 3px 6px 3px 6px; text-decoration: none; background: #ccc; color: #333;}
+.jqGSContainer .jqGSPagination{position:relative;width:100%;margin: 0;padding: 0; border-bottom: 1px solid #ccc; }
+.jqGSContainer .jqGSPagination ul{padding:0;margin:10px;list-style:none;position:relative; width: 100%;}
+.jqGSContainer .jqGSPagination ul li{margin: 0 0 0 10px; display: inline; font-size: 9px;}
+.jqGSContainer .jqGSPagination ul li a{ padding: 2px 8px 2px 8px; margin-right: 7px; text-decoration: none; background: #ccc; color: #333; float:left; }
 .jqGSContainer .jqGSPagination ul li a.selected, .jqGSContainer .jqGSPagination ul li a:hover{color: #fcfcfc; background: #143347;}
 
 
@@ -370,10 +375,27 @@ li.post .date {
 #sidebar h2 {
 	font-weight: normal; 
 }
+#sidebar ul {
+	list-style: none;
+	margin-left: 0;
+}
+#sidebar ul li {
+	margin-left: 10px;
+}
+#sidebar ul li a {
+	text-decoration: none;
+	color: #143347;
+	padding: 6px 0 6px 0;
+	display: block;
+	padding-left: 14px;
+}
+#sidebar ul li a:hover {
+	background: transparent url(/images/list-on.png) top left;
+}
+
 #sidebar #testimonials {
 	font-size: 12px;
 	}
-
 #sidebar #testimonials .testimonial {
 	padding-bottom: 15px;
 }

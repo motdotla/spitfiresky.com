@@ -2,6 +2,8 @@
 filter: erb
 ---
 <div id="sidebar" class="grid_4">
+	<img src="/images/get-in-touch.png" />
+	
 	<h2>More projects</h2>
 	<ul>
 		<li><a href="/portfolio/millerjones.html">Miller Jones Mortuary</a></li>

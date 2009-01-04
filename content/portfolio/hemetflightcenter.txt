@@ -4,7 +4,7 @@ created_at: 2009-01-03 10:49:41.388191 -08:00
 filter:
   - erb
 ---
-<div class="grid_8">
+<div class="portfolio-single grid_8">
 	
 	<h1><%= h(@page.title) %></h1>
 

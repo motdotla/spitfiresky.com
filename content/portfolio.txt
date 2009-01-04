@@ -4,7 +4,7 @@ created_at: 2008-12-31 20:44:31.093607 -08:00
 filter:
   - erb
 ---
-<h1>Our Work</h1>
+<h1>Websites and web applications</h1>
 
 <div class="grid_4 portfolio-item">
 	<a href="/portfolio/millerjones.html">

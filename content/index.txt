@@ -8,7 +8,7 @@ filter:
 <h1 class="hidden">Spitfire Sky</h1>
 
 <div id="tagline" class="grid_12">
-	We are a web software company. We build websites and web applications.
+	We are <a href="/about.html">a web software company</a>. We build <a href="/portfolio.html">websites and web applications</a>.
 </div>
 
 <div class="clear"></div>
@@ -34,9 +34,9 @@ filter:
 	
 	<p>The company is mostly just me (Scott Motte), but I occasionally work alongside other freelancers to get the job done. <em>I do good work at reasonable rates, and I am honest and diligent.</em></p>
 	
-	<p>We are also the team behind <a href="http://twinstang.com">http://twinstang.com</a> which provides online digital logbooking for pilots.</p>
+	<p>We are also the team behind <a href="http://twinstang.com">Twinstang</a> which provides online digital logbooking for pilots.</p>
 
-	<p>To find out more about me, visit my blog at <a href="http://scottmotte.com">http://scottmotte.com</a> or email me at <a href="mailto:scott@spitfiresky.com">scott@spitfiresky.com</a>.</p>
+	<p>To find out more about me, visit <a href="http://scottmotte.com">my blog</a> or email me at <a href="mailto:scott@spitfiresky.com">scott@spitfiresky.com</a>.</p>
 </div><!-- /about -->
 
 <div id="testimonials" class="grid_4">
