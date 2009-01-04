@@ -320,7 +320,7 @@ li.post .date {
 	margin-left: 24px;
 }
 .info {
-	display: none;
+	display: hidden;
 }
 
 
