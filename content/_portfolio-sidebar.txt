@@ -4,6 +4,9 @@ filter: erb
 <div id="sidebar" class="grid_4">
 	<h2>More projects</h2>
 	<ul>
+		<li><a href="/portfolio/millerjones.html">Miller Jones Mortuary</a></li>
+		<li><a href="/portfolio/twinstang.html">Twinstang</a></li>
+		<li><a href="/portfolio/hrassist.html">HRAssist</a></li>
 		<li><a href="/portfolio/hemetflightcenter.html">Hemet Flight Center</a></li>
 		<li><a href="/portfolio/jacobshouse.html">Jacobs House Temecula</a></li>
 		<li><a href="/portfolio/ueg.html">United Engineering Group</a></li>

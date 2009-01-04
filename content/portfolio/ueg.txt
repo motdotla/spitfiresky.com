@@ -10,7 +10,7 @@ filter:
 
 	<p>UEG engineers and develops large residential tracks throughout Southern California, and we developed custom business software to increase their efficiency and client relations.</p>
 	
-	<p>The application is built <strong>using <a href="http://rubyonrails.org/">Ruby on Rails</a></strong>, <a href="http://jquery.com">jQuery</a> for <a href="http://en.wikipedia.org/wiki/Ajax_(programming)">AJAX</a> effects</a>, a mid-level complex database to store the data using <a href="http://www.mysql.com/">MySQL</a>, and <a href="http://aws.amazon.com/s3/">Amazon S3</a> to store the attachments and other files.</p>
+	<p>The application is built <strong>using <a href="http://rubyonrails.org/">Ruby on Rails</a></strong>, <a href="http://jquery.com">jQuery</a> for <a href="http://en.wikipedia.org/wiki/Ajax_(programming)">AJAX</a> effects, a mid-level complex database to store the data using <a href="http://www.mysql.com/">MySQL</a>, and <a href="http://aws.amazon.com/s3/">Amazon S3</a> to store the attachments and other files.</p>
 	
 	<ul>
 		<li>Everything is securely password protected and the passwords are encrypted.</li>
