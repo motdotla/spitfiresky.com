@@ -140,7 +140,7 @@ blockquote, q {
 	font-size: 105%;
 	clear: both; color: #fdfdfd;
 }
-blockquote a {
+blockquote a, blockquote a:visited {
 	color: #fdfdfd;
 }
 small {
