@@ -319,6 +319,9 @@ li.post .date {
 #contact-form {
 	margin-left: 24px;
 }
+iframe {
+	height: 510px;
+}
 
 
 /*  Portfolio
