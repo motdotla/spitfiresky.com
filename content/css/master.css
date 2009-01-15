@@ -363,6 +363,10 @@ h2 a:hover {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+.url {
+	margin-right: 13px;
+	text-align: right;
+}
 
 
 /*  Screenshots
