@@ -9,6 +9,11 @@ filter:
 	
 <h1><%= h(@page.title) %></h1>
 
+
+*Friday 12:15pm*
+
+* Paul. 199 emails fetched 884 remaining
+
 *Friday 12pm*
 	
 * Holly. email is checked into new gmail box
