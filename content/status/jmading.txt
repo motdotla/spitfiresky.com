@@ -3,18 +3,20 @@ title:      Jmading Status
 created_at: 2009-01-16 12:03:39.422335 -08:00
 filter:
   - erb
-	- textile
+  - textile
 ---
 <div class="grid_8">
 	
-	<h1><%= h(@page.title) %></h1>
+<h1><%= h(@page.title) %></h1>
 
-	*Friday 12pm*
+*Friday 12pm*
+	
+* Holly. email is checked into new gmail box
+* Gina. email is checked in. Most of Gina's historical emails lie in Goldmine though.
+* James. much of .com email lies in Goldmine. .net email is checked in.
+* Carol. emails is checked in. Most of Carol's historical email lies in Goldmine though.
+* Paul's. Checking in the .com emails. .net email is checked in.
 
-	* Holly - email is checked into new gmail box
-	* Gina - email is checked in. Most of Gina's historical emails lie in Goldmine though.
-	* James - much of .com email lies in Goldmine. .net email is checked in.
-	* Carol - emails is checked in. Most of Carol's historical email lies in Goldmine though.
-	* Paul's - Checking the .com emails. .net email is checked in.
+Once Paul's emails finish checking in I will review again and begin the nameserver change.
 
 </div>
