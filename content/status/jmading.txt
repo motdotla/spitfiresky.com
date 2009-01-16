@@ -9,6 +9,10 @@ filter:
 	
 <h1><%= h(@page.title) %></h1>
 
+*Friday 1:05pm*
+* Paul. 200 mails fetched. View history  484 mails remaining. 
+
+Once the rest of these emails get fixed I can make the nameserver changes. Then our emails will all be on Google apps. Then we can go about configuring our mobile devices.
 
 *Friday 12:15pm*
 
