@@ -10,6 +10,10 @@ filter:
 <h1><%= h(@page.title) %></h1>
 
 Note: I use the term gmail and google apps interchangeably.
+
+*Saturday 1:30pm*
+I've uploaded the jmading logo. It is currently seen when going to mail.jmading.com, but it does not look like Google has it working on the mail just yet. This will probably take about an hour before it is viewable on mail, calendar, and documents at the top left.
+
 *Saturday 1:20pm*
 _Enourage_. Here is a <a href="http://blog.entourage.mvps.org/2007/11/connect_entourage_2004_to_gmails_imap_service.html">pictured tutorial on setting up entourage to work with google apps</a> for those of you using entourage.
 
