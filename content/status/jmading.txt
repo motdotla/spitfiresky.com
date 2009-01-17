@@ -9,6 +9,9 @@ filter:
 	
 <h1><%= h(@page.title) %></h1>
 
+*Saturday 12:51pm*
+Gina. Here's how to get gmail on your Motorola Q. <a href="http://www.google.com/mobile/motorola/mail.html">Click here to get gmail for Motorola</a>.
+
 *Saturday 12:45pm*
 Made Gina an admin user. She now has the ability to upgrade to the paid version, manage &amp; create users, and more.
 
