@@ -11,6 +11,12 @@ filter:
 
 Note: I use the term gmail and google apps interchangeably.
 
+*Saturday 1:15pm*
+_Outlook users._ Here are two videos for how to get outlook working with your gmail imap in Outlook 2003 and Outlook 2007 respectively.
+
+* <a href="http://www.youtube.com/watch?v=rlnygXKcWY8">Outlook 2003 Google Apps IMAP</a>
+* <a href="http://www.youtube.com/watch?v=kLZaDq-yewk">Outlook 2007 Google Apps IMAP</a>
+
 *Saturday 12:59pm*
 _Paul._ See this <a href="http://www.youtube.com/watch?v=uQ22euWXYog">video on how to get imap email</a> for ==@==jmading.com (and .net) on your iPhone. For your username put paul@jmading.com and for password put your password (make sure to choose a unique password. see below at Saturday 10:47am post on how to change your password in gmail)
 
