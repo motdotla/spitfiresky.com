@@ -9,6 +9,20 @@ filter:
 	
 <h1><%= h(@page.title) %></h1>
 
+*Saturday 10:50am*
+Blackberry Google Apps IMAP setup instructions. <a href="http://blackberrystorm.wikidot.com/set-up-gmail-imap">Click here for the instructions.</a>
+
+*Optionally*, there is also an eaiser to setup mobile app built by Google for blackberries. Here it is. <a href="http://www.google.com/mobile/blackberry/">Link</a>. It will be easier to get working, but the IMAP solution above is a better setup.
+
+*Saturday 10:47am*
+You should each change your password. To change your password:
+# Login to mail.jmading.com
+# Make sure you are in your email
+# Click 'Settings' at the top right part of your screen 
+# On the settings screen click the 'Accounts' tab
+# Click the 'Change Password' link (it's kinda small)
+# Follow the onscreen instructions to change your password
+
 *Saturday 2:10am*
 Email is up! To access to go to <a href="http://mail.jmading.com">mail.jmading.com</a>.
 
