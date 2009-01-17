@@ -9,6 +9,20 @@ filter:
 	
 <h1><%= h(@page.title) %></h1>
 
+*Saturday 2:10am*
+Email is up! To access to go to <a href="http://mail.jmading.com">mail.jmading.com</a>.
+
+* | username | password | email address | additional aliases | 
+* | gina|passwordpassword | gina@jmading.com | gduarte@.. | 
+* | james | passwordpassword | james@jmading.com | jj@.., jimmyjack@.., jimmy@.. | 
+* | paul | passwordpassword | paul@jmading.com | &nbsp; | 
+* | carol | passwordpassword | carol@jmading.com | cseeley@.. | 
+* | holly | passwordpassword | holly@jmading.com | &nbsp; | 
+* | jim | passwordpassword | jim@jmading.com | pappa@.. | 
+
+as well all email address also can be used as .com or .net interchangeably. It will all go to the same place. Tomorrow, I will post/send instructions for setting up your outlooks, entourages, cell phones, etc to grab mail from the gmail imap system.
+
+
 *Friday 5:45pm*
 
 Paul's emails have completed the move over. Initiating 'nameserver' name change to the new host for the website ns1.slicehost.net and ns2.slicehost.net. This is reversible if something goes wrong. Changes take anywhere from 30minuts to 24 hours to complete (it is possible to even take 48 hours but very rare). Following completion email will be available at <a href="http://mail.jmading.com">mail.jmading.com</a>
