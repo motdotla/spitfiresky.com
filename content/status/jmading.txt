@@ -10,6 +10,8 @@ filter:
 <h1><%= h(@page.title) %></h1>
 
 Note: I use the term gmail and google apps interchangeably.
+*Saturday 1:20pm*
+_Enourage_. Here is a <a href="http://blog.entourage.mvps.org/2007/11/connect_entourage_2004_to_gmails_imap_service.html">pictured tutorial on setting up entourage to work with google apps</a> for those of you using entourage.
 
 *Saturday 1:15pm*
 _Outlook users._ Here are two videos for how to get outlook working with your gmail imap in Outlook 2003 and Outlook 2007 respectively.
