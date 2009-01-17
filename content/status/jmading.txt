@@ -12,7 +12,7 @@ filter:
 Note: I use the term gmail and google apps interchangeably.
 
 *Saturday 12:59pm*
-_Paul._ Here's how to get the imap for @jmading.com (and .net) on your iPhone. For your username put paul@jmading.com and for password put your password (make sure to choose a unique password. see below at Saturday 10:47am post on how to change your password in gmail)
+_Paul._ See this <a href="http://www.youtube.com/watch?v=uQ22euWXYog">video on how to get imap email</a> for @jmading.com (and .net) on your iPhone. For your username put paul@jmading.com and for password put your password (make sure to choose a unique password. see below at Saturday 10:47am post on how to change your password in gmail)
 
 *Saturday 12:51pm*
 _Gina._ Here's how to get gmail on your Motorola Q. <a href="http://www.google.com/mobile/motorola/mail.html">Click here to get gmail for Motorola</a>.
