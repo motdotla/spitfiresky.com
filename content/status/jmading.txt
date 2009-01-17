@@ -9,6 +9,9 @@ filter:
 	
 <h1><%= h(@page.title) %></h1>
 
+*Saturday 12:45pm*
+Made Gina an admin user. She now has the ability to upgrade to the paid version, manage &amp; create users, and more.
+
 *Saturday 10:50am*
 Blackberry Google Apps IMAP setup instructions. <a href="http://blackberrystorm.wikidot.com/set-up-gmail-imap">Click here for the instructions.</a>
 

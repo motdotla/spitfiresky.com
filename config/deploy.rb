@@ -63,4 +63,4 @@ end
  
 after "deploy", "deploy:cleanup"
 after "deploy:cleanup", "deploy:symlinkify"
-after "deploy:symlinkify", "deploy:restart_apache"
+# after "deploy:symlinkify", "deploy:restart_apache"
