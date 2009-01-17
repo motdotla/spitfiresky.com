@@ -9,6 +9,10 @@ filter:
 	
 <h1><%= h(@page.title) %></h1>
 
+*Friday 5:45pm*
+
+Paul's emails have completed the move over. Initiating 'nameserver' name change to the new host for the website ns1.slicehost.net and ns2.slicehost.net. This is reversible if something goes wrong. Changes take anywhere from 30minuts to 24 hours to complete (it is possible to even take 48 hours but very rare). Following completion email will be available at <a href="http://mail.jmading.com">mail.jmading.com</a>
+
 *Friday 1:05pm*
 * Paul. 200 mails fetched. View history  484 mails remaining. 
 
