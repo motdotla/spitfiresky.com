@@ -39,6 +39,8 @@ Phase 2 (Goldmine configuration)
 
 The instructions are tough to describe just watch the <a href="/videos/goldmine-phase.mov"/>phase 2 screencast</a>.
 
+Finally, make sure to add 'Start Stunnel' to the Startup folder so you don't have to remember to start it up every time your computer shuts down. <a href="/videos/stunnel-startup.mov">Watch the video</a> to see how.
+
 *Saturday 2:10pm*
 Added domain aliases (securitypacific.us, buildershw.com, chasenmgmt.com). The way this works is that you can now receive email at james@securitypacific.us, or paul@chasenmgmt.com, or gina@builders.com, or jimmyjack@buildershw.com, etc.
 
