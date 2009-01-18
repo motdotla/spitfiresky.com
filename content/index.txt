@@ -46,6 +46,7 @@ filter:
 	<h2>News bites</h2>
 
 	<ul>
+		<li class="post"><span class="date">Jan 15</span> SpitfireSky.com completed. We've also been hard at work with a couple new clients. Check out our portfolio a month from now.</li>
 		<li class="post"><span class="date">Jan 01</span> Overall design of SpitfireSky.com completed. Portfolio and Contact page need attention now.</li>
 		<li class="post"><span class="date">Dec 15</span> We are redesigning SpitfireSky.com.</li>
 	</ul>
