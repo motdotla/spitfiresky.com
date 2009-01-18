@@ -11,6 +11,33 @@ filter:
 
 Note: I use the term gmail and google apps interchangeably.
 
+*Saturday 5:00pm*
+Goldmine is setup to work with Google apps on Gina's computer (I was able to access it remotely). The process is a bit involved because we have to wrap it in SSL using stunnel (Google apps requires SSL authentication but Goldmine 7 does not support SSL authentication.)
+
+Here are the steps:
+
+Phase 1 (stunnel configuration).
+
+The instructions are below, but you can also watch the <a href="/videos/stunnel-phase.mov"/>phase 1 screencast</a>.
+
+# <a href="http://www.stunnel.org/download/stunnel/win32/stunnel-4.26-installer.exe">Download stunnel to the desktop</a>
+# Install the program by double clicking on it
+# Once installed go to Start -> Programs -> Stunnel -> Edit stunnel.conf
+# Modify as follows
+## Uncomment the "client = yes" line (remove the ;  )
+## modify the [pop3s] section as follows: 
+### accept  = 995 
+### connect = pop.gmail.com:995
+## modify the [sstmp] section as follows:
+### accept  = 465 
+### connect = smtp.gmail.com:465
+# Save that file and close it
+# Click Start -> Programs -> Stunnel -> Service Install
+# and Click Start -> Programs -> Stunnel -> Run Stunnel
+
+Phase 2 (Goldmine configuration)
+
+The instructions are tough to describe just watch the <a href="/videos/goldmine-phase.mov"/>phase 2 screencast</a>.
 
 *Saturday 2:10pm*
 Added domain aliases (securitypacific.us, buildershw.com, chasenmgmt.com). The way this works is that you can now receive email at james@securitypacific.us, or paul@chasenmgmt.com, or gina@builders.com, or jimmyjack@buildershw.com, etc.

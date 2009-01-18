@@ -65,6 +65,35 @@
 				<div class="grid_8">
 <p><h1>Jmading.com Status</h1></p>
 <p>Note: I use the term gmail and google apps interchangeably.</p>
+<p><strong>Saturday 5:00pm</strong><br />
+Goldmine is setup to work with Google apps on Gina&#8217;s computer (I was able to access it remotely). The process is a bit involved because we have to wrap it in SSL using stunnel (Google apps requires SSL authentication but Goldmine 7 does not support SSL authentication.)</p>
+<p>Here are the steps:</p>
+<p>Phase 1 (stunnel configuration).</p>
+<p>The instructions are below, but you can also watch the <a href="/videos/stunnel-phase.mov"/>phase 1 screencast</a>.</p>
+<ol>
+	<li><a href="http://www.stunnel.org/download/stunnel/win32/stunnel-4.26-installer.exe">Download stunnel to the desktop</a></li>
+	<li>Install the program by double clicking on it</li>
+	<li>Once installed go to Start &#8594; Programs &#8594; Stunnel &#8594; Edit stunnel.conf</li>
+	<li>Modify as follows
+	<ol>
+		<li>Uncomment the &#8220;client = yes&#8221; line (remove the ;  )</li>
+		<li>modify the [pop3s] section as follows:
+		<ol>
+			<li>accept  = 995</li>
+			<li>connect = pop.gmail.com:995</li>
+		</ol></li>
+		<li>modify the [sstmp] section as follows:
+		<ol>
+			<li>accept  = 465</li>
+			<li>connect = smtp.gmail.com:465</li>
+		</ol></li>
+	</ol></li>
+	<li>Save that file and close it</li>
+	<li>Click Start &#8594; Programs &#8594; Stunnel &#8594; Service Install</li>
+	<li>and Click Start &#8594; Programs &#8594; Stunnel &#8594; Run Stunnel</li>
+</ol>
+<p>Phase 2 (Goldmine configuration)</p>
+<p>The instructions are tough to describe just watch the <a href="/videos/goldmine-phase.mov"/>phase 2 screencast</a>.</p>
 <p><strong>Saturday 2:10pm</strong><br />
 Added domain aliases (securitypacific.us, buildershw.com, chasenmgmt.com). The way this works is that you can now receive email at james@securitypacific.us, or paul@chasenmgmt.com, or gina@builders.com, or jimmyjack@buildershw.com, etc.</p>
 <p><strong>Saturday 1:45pm</strong><br />
