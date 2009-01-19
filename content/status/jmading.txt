@@ -11,6 +11,11 @@ filter:
 
 Note: I use the term gmail and google apps interchangeably.
 
+*Sunday 8:47pm*
+Well, I tried everything I could to get Paul's contacts off the exchange server. No luck. They are sitting there, but I couldn't get them. I was able to get them on my iPhone but for whatever reason I couldn't pull them down with Microsoft Outlook. I tried every configuration imaginable. I've already probably spent much more time on this than I should have. We are going to have to have a Microsoft dork come in.
+
+I just switched the nameservers back to the news. Email should be back up by morning.
+
 *Sunday 6:00pm*
 Email is temporarily unavailable. I have changed the name servers back to the original one's so that I can pull down Paul's contacts and calendar.
 
