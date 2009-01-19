@@ -11,6 +11,9 @@ filter:
 
 Note: I use the term gmail and google apps interchangeably.
 
+*Sunday 6:00pm*
+Email is temporarily unavailable. I have changed the name servers back to the original one's so that I can pull down Paul's contacts and calendar.
+
 *Saturday 5:00pm*
 Goldmine is setup to work with Google apps on Gina's computer (I was able to access it remotely). The process is a bit involved because we have to wrap it in SSL using stunnel (Google apps requires SSL authentication but Goldmine 7 does not support SSL authentication.)
 
