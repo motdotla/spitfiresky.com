@@ -1,0 +1,13 @@
+---
+title:      Thanks
+created_at: 2009-01-20 21:44:53.557655 -08:00
+filter:
+  - erb
+---
+<div class="grid_8">
+	
+	<h1>Thank you</h1>
+
+	<p>Thank you for your payment. -Scott</p>
+
+</div>
