@@ -105,16 +105,16 @@ h3 {
 /* `Spacing
 ----------------------------------------------------------------------------------------------------*/
 
-p {margin-left: 24px;}
+p {margin-left: 20px;}
 
 ol {
 	list-style: decimal;
-	margin-left: 24px;
+	margin-left: 20px;
 }
 
 ul {
 	list-style: square;
-	margin-left: 24px;
+	margin-left: 20px;
 }
 li {
 	margin-left: 30px;
@@ -482,6 +482,36 @@ p.testimonial:hover {
 .no-background {
 	background: none;
 }
+
+/*  Tweet
+----------------------------------------------------------------------------------------------------*/
+.tweet { margin: 0; padding: 0;}
+
+.tweet .tweet_list {
+	list-style-type: none;
+  margin: 0; padding: 0;
+}
+
+.tweet .tweet_list li {
+  overflow: auto; padding: 10px 0 10px 0; margin-left: 20px;
+}
+      
+.tweet .tweet_list li a {
+}
+    
+.tweet .tweet_list .tweet_even {
+/*	background-color: #91E5E7; */
+}
+
+.tweet .tweet_list .tweet_avatar {
+	padding-right: .5em;
+	float: left; 
+}
+
+.tweet .tweet_list .tweet_avatar img {
+	vertical-align: middle; 
+}
+
 
 
 

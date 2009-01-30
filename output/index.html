@@ -14,29 +14,31 @@
 	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
 	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.tweet.js"></script>
 	<script type="text/javascript">
 		
-		$(function() {
-			// cycle plugin for home page banner
-			$('#banner').cycle({
-					fx: 'scrollLeft',
-			    height:  'auto'
-			 });
+	// gallery scroller for portfolio pages
+	$(document).ready(function(){
+		// cycle plugin for home page banner
+		$('#banner').cycle({
+			fx: 'scrollLeft',
+			height:  'auto'
 		});
-		
-		// gallery scroller for portfolio pages
-		$(document).ready(function(){
-        $("#screenshots").jqGalScroll( {
-			   	width: 586,
-			    height: 429,
-			    direction : 'horizontal' // vertical horizontal diagonal
-			   });
-    });
+		// tweet plugin
+		$(".tweet").tweet({
+			username: "spitfiresky",
+			count: 5,
+			loading_text: "loading tweets..."
+		});
 
+		$("#screenshots").jqGalScroll( {
+			width: 586,
+			height: 429,
+			direction : 'horizontal' // vertical horizontal diagonal
+		});
+	});
 		
-	</script>
-	
-	
+	</script>	
 </head>
 <body id="home">
 	
@@ -100,14 +102,6 @@
 
 	<p>To find out more about me, visit <a href="http://scottmotte.com">my blog</a> or email me at <a href="mailto:scott@spitfiresky.com">scott@spitfiresky.com</a>.</p>
 	
-	<h2>News bites</h2>
-
-	<ul>
-		<li class="post"><span class="date">Jan 15</span> SpitfireSky.com completed. We've also been hard at work with a couple new clients. Check out our portfolio a month from now.</li>
-		<li class="post"><span class="date">Jan 01</span> Overall design of SpitfireSky.com completed. Portfolio and Contact page need attention now.</li>
-		<li class="post"><span class="date">Dec 15</span> We are redesigning SpitfireSky.com.</li>
-	</ul>
-	
 </div><!-- /about -->
 
 <div id="testimonials" class="grid_4">
@@ -118,20 +112,13 @@
 	<p class="testimonial">"I have found Spitfire Sky to be the #1 web software company in the Inland Empire, continually providing our business with custom solutions to fit our needs."<br /><em>Ontario, CA</em></p>
 		
 </div><!-- /testimonials -->
-
 <div class="clear"></div>
-
-<hr />
 
 <div id="news" class="grid_12">
-
-
-	
+	<h2>News bites</h2>
+	<div class="tweet"></div>
 </div><!-- /news -->
-
 <div class="clear"></div>
-
-
 
 
 

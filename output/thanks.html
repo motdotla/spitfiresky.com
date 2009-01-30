@@ -14,29 +14,31 @@
 	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
 	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.tweet.js"></script>
 	<script type="text/javascript">
 		
-		$(function() {
-			// cycle plugin for home page banner
-			$('#banner').cycle({
-					fx: 'scrollLeft',
-			    height:  'auto'
-			 });
+	// gallery scroller for portfolio pages
+	$(document).ready(function(){
+		// cycle plugin for home page banner
+		$('#banner').cycle({
+			fx: 'scrollLeft',
+			height:  'auto'
 		});
-		
-		// gallery scroller for portfolio pages
-		$(document).ready(function(){
-        $("#screenshots").jqGalScroll( {
-			   	width: 586,
-			    height: 429,
-			    direction : 'horizontal' // vertical horizontal diagonal
-			   });
-    });
+		// tweet plugin
+		$(".tweet").tweet({
+			username: "spitfiresky",
+			count: 5,
+			loading_text: "loading tweets..."
+		});
 
+		$("#screenshots").jqGalScroll( {
+			width: 586,
+			height: 429,
+			direction : 'horizontal' // vertical horizontal diagonal
+		});
+	});
 		
-	</script>
-	
-	
+	</script>	
 </head>
 <body id="">
 	
