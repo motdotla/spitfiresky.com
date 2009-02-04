@@ -27,17 +27,17 @@ filter:
 
 
 
-<div id="about" class="grid_8">
+<div id="about" class="grid_4">
 
 	<h2>About Spitfire Sky</h2>
 
 	<p>
-		<a href="http://scottmotte.com"><img src="/images/scott.jpg" class="rthumb"></a>
-		
 		We are a web software company. <strong>We build websites and web applications using technologies like <a href="http://rubyonrails.org/">Ruby on Rails</a>, <a href="http://merbivore.com/">Merb</a>, and <a href="http://wordpress.org">Wordpress</a>.</strong>
 	</p>
 	
-	<p>The company is mostly just me (Scott Motte), but I occasionally work alongside other freelancers to get the job done. <em>I do good work at reasonable rates, and I am honest and diligent.</em></p>
+	<p>
+		<a href="http://scottmotte.com"><img src="/images/scott.jpg" class="rthumb"></a>
+		The company is mostly just me (Scott Motte), but I occasionally work alongside other freelancers to get the job done. <em>I do good work at reasonable rates, and I am honest and diligent.</em></p>
 	
 	<p>We are also the team behind <a href="http://twinstang.com">Twinstang</a> which provides online digital logbooking for pilots.</p>
 
@@ -45,21 +45,25 @@ filter:
 	
 </div><!-- /about -->
 
+
+<div id="news" class="grid_4">
+	<h2><a href="http://twitter.com/spitfiresky">News bites</a></h2>
+	<div class="tweet"></div>
+</div><!-- /news -->
+
+
 <div id="testimonials" class="grid_4">
 	<h2>Testimonials</h2>
 
 	<p class="testimonial">"Spitfire Sky has the best web developers in town! They are experienced, educated, and passionate programmers, and their agile approach to software development makes the development process truly enjoyable."<br /><em>Riverside, CA</em></p>
 	
 	<p class="testimonial">"I have found Spitfire Sky to be the #1 web software company in the Inland Empire, continually providing our business with custom solutions to fit our needs."<br /><em>Ontario, CA</em></p>
-		
+	
+	<p class="testimonial">"I have never been more pleased with a web company! Spitfire Sky provided us with our very own website at a great price."<br /><em>Canyon Lake, CA</em></p>
 </div><!-- /testimonials -->
+
 <div class="clear"></div>
 
-<div id="news" class="grid_12">
-	<h2><a href="http://twitter.com/spitfiresky">News bites</a></h2>
-	<div class="tweet"></div>
-</div><!-- /news -->
-<div class="clear"></div>
 
 
 
