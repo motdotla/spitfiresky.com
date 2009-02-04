@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Charlotte Jones &laquo; Spitfire Sky</title>
+  <meta name="author" content="" />
+
+  <!--- CSS Framework -->
+	<link rel="stylesheet" href="/css/base.css" type="text/css" media="all" />
+
+	<!-- Javascripts -->
+	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
+	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.tweet.js"></script>
+	<script type="text/javascript">
+		
+	// gallery scroller for portfolio pages
+	$(document).ready(function(){
+		// cycle plugin for home page banner
+		$('#banner').cycle({
+			fx: 'scrollLeft',
+			height:  'auto'
+		});
+		// tweet plugin
+		$(".tweet").tweet({
+			username: "spitfiresky",
+			count: 5,
+			loading_text: "loading tweets..."
+		});
+
+		$("#screenshots").jqGalScroll( {
+			width: 586,
+			height: 429,
+			direction : 'horizontal' // vertical horizontal diagonal
+		});
+	});
+		
+	</script>	
+</head>
+<body id="portfolio">
+	
+	
+<div class="clouds">
+	<div id="page" class="container_12">
+		
+		<div id="header" class="grid_12">
+				<div id="current_rate">
+					Our current rate is <strong>$58 an hour</strong>
+				</div>
+				<div class="clear"></div>
+				<div id="mainNav">
+					<ul>
+	<li id="n-home"><a href="/">Home</a></li>
+	<li id="n-about"><a href="/about.html">About</a></li>
+	<li id="n-portfolio"><a href="/portfolio.html">Portfolio</a></li>	
+	<li id="n-contact"><a href="/contact.html">Contact</a></li>						
+</ul>
+
+				</div>
+				<div id="logo"><a href="/" title="Spitfire Sky Web Development">Spitfire Sky</a></div>
+		</div><div class="clear"></div><!-- header -->
+		
+		<div id="content">
+				<div class="portfolio-single grid_8">
+	
+	<div class="grid_5 alpha"><h1>Charlotte Jones</h1></div>
+	
+	<div class="clear"></div>
+
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/electcharlottejones.com-1.jpg"></li>
+		<li><img src="/images/portfolios/electcharlottejones.com-2.jpg"></li>
+		<li><img src="/images/portfolios/electcharlottejones.com-3.jpg"></li>
+		<li><img src="/images/portfolios/electcharlottejones.com-4.jpg"></li>
+	</ul>
+	
+	<p>Edwin Matthews is a flight instructor in Hemet, CA. He wanted a starter website, but he also wanted it to look better than his competitor <a href="http://wingspanaviation.com">Wingspan Aviation</a>. We built him a one page website and mixed in some <a href="http://jquery.com">jQuery</a> for some fancy navigational scrolling.</p>
+	
+</div>
+
+<div id="sidebar" class="grid_4">
+	<p class="get-in-touch"><a href="/contact.html">Like what you see? Get in touch with us &raquo;</a></p>
+	
+	<h2><a href="/portfolio.html">More projects</a></h2>
+	<ul>
+		<li><a href="/portfolio/edwinmatthews.html">Edwin Matthews</a></li>
+		<li><a href="/portfolio/millerjones.html">Miller Jones Mortuary</a></li>
+		<li><a href="/portfolio/twinstang.html">Twinstang</a></li>
+		<li><a href="/portfolio/hrassist.html">HRAssist</a></li>
+		<li><a href="/portfolio/hemetflightcenter.html">Hemet Flight Center</a></li>
+		<li><a href="/portfolio/jacobshouse.html">Jacobs House Temecula</a></li>
+		<li><a href="/portfolio/ueg.html">United Engineering Group</a></li>
+		<li><a href="/portfolio/totalspectrum.html">Total Spectrum</a></li>
+		<li><a href="/portfolio/southernhotel.html">Southern Hotel Museum</a></li>
+		<li><a href="/portfolio/robschelling.html">Rob Schelling</a></li>
+		<li><a href="/portfolio/workforcehomebuilders.html">Workforce Home Builders</a></li>
+		<li><a href="/portfolio/annmotte.html">Ann Motte</a></li>
+		<li><a href="/portfolio/darylbusch.html">Daryl Busch</a></li>
+	</ul>
+</div>
+
+
+				<div class="clear"></div>
+		</div><!-- /content -->
+	</div><div class="clear"></div><!-- /page -->
+	
+	<div id="footer">
+		<div class="container_12">
+			<div class="grid_8">
+				<div id="footerContent">
+					<div id="footerNav">
+						<ul>
+	<li id="n-home"><a href="/">Home</a></li>
+	<li id="n-about"><a href="/about.html">About</a></li>
+	<li id="n-portfolio"><a href="/portfolio.html">Portfolio</a></li>	
+	<li id="n-contact"><a href="/contact.html">Contact</a></li>						
+</ul>
+
+					</div>
+					<p>Copyright &#169; 2009 Spitfire Sky. <br />
+					Built with <a href="http://webby.rubyforge.org/">Webby</a>. View <a href="http://github.com/scottmotte/spitfiresky.com/tree/master">source</a>.</p>
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="grid_4">
+				<div class="spitfireAndRunway"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div> <!-- /footer -->
+	<div class="clear"></div>
+	
+</div> <!-- /clouds -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5347920-8");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+---
+title:      Charlotte Jones
+site_url:   http://electcharlottejones.com
+page_id:    portfolio
+created_at: 2009-02-04 12:02:02.227604 -08:00
+filter:
+  - erb
+---
+<div class="portfolio-single grid_8">
+	
+	<div class="grid_5 alpha"><h1><%= h(@page.title) %></h1></div>
+	
+	<div class="clear"></div>
+
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/electcharlottejones.com-1.jpg"></li>
+		<li><img src="/images/portfolios/electcharlottejones.com-2.jpg"></li>
+		<li><img src="/images/portfolios/electcharlottejones.com-3.jpg"></li>
+		<li><img src="/images/portfolios/electcharlottejones.com-4.jpg"></li>
+	</ul>
+	
+	<p>Edwin Matthews is a flight instructor in Hemet, CA. He wanted a starter website, but he also wanted it to look better than his competitor <a href="http://wingspanaviation.com">Wingspan Aviation</a>. We built him a one page website and mixed in some <a href="http://jquery.com">jQuery</a> for some fancy navigational scrolling.</p>
+	
+</div>
+
+<%= render(:partial => "/portfolio-sidebar") %>
