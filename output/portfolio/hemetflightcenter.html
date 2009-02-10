@@ -21,7 +21,7 @@
 	$(document).ready(function(){
 		// cycle plugin for home page banner
 		$('#banner').cycle({
-			fx: 'scrollLeft',
+			fx: 'fade',
 			height:  'auto'
 		});
 		// tweet plugin
@@ -35,8 +35,35 @@
 			width: 586,
 			height: 429,
 			direction : 'horizontal' // vertical horizontal diagonal
-		});
+		});	
+		
+			
+		// $('.clouds').cycle({
+		// 	fx: 'scrollLeft'
+		// });
+		
+		// $('#logo a').hover(function() {
+		// 		$(this).animate({ width: '7000px', marginTop: '500px' }, { duration: 500 });
+		// 	}, 
+		// 	function() {
+		// 		$(this).animate({ width: '4250px',	marginTop: '0px' })
+		// 	}
+		// );
+		
+		// $('.clouds')
+		// 	.css ( { backgroundPosition: "0 -20px" })
+		// 	.animate( { backgroundPosition: "0 0" }, {duration:500});
+		
+		$('#logo a')
+			.css ({ width: '3900px' })
+			.animate({ width: '4250px' }, { duration: 500 });
+		
+
+			
+			
 	});
+	
+	
 		
 	</script>	
 </head>
@@ -50,7 +77,9 @@
 				<div id="current_rate">
 					Our current rate is <strong>$58 an hour</strong>
 				</div>
-				<div class="clear"></div>
+				
+				<div id="logo"><a href="/" title="Spitfire Sky Web Development">Spitfire Sky</a></div>
+
 				<div id="mainNav">
 					<ul>
 	<li id="n-home"><a href="/">Home</a></li>
@@ -60,7 +89,7 @@
 </ul>
 
 				</div>
-				<div id="logo"><a href="/" title="Spitfire Sky Web Development">Spitfire Sky</a></div>
+
 		</div><div class="clear"></div><!-- header -->
 		
 		<div id="content">

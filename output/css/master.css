@@ -182,7 +182,8 @@ small {
 	height: 24px;
 	font-size: 17px;
 	letter-spacing: -0.5px;
-	text-align: left;
+	text-align: right;
+	clear: right;
 	float: right;
 	text-transform: uppercase;
 }
@@ -241,14 +242,19 @@ body#contact .clouds #page #header #mainNav li#n-contact a {
 ----------------------------------------------------------------------------------------------------*/
 
 .clouds {
-	background: transparent url(/images/headerAlpha.png) repeat-x top left;
+	background-image: url(/images/headerAlpha.png);
+	background-position: 0 0;
+	background-repeat: repeat-x;
 	height: 102px;
+	
 }
 
 #header {
-	background: transparent url(/images/logo.png) top left no-repeat;
 	height: 137px;
 	margin-bottom: 20px;
+	background-image: url(/images/logo-noplane.png);
+	background-position: top left;
+	background-repeat: no-repeat;
 }
 
 #logo {
@@ -260,7 +266,11 @@ body#contact .clouds #page #header #mainNav li#n-contact a {
 
 #logo a {
 	display: block;
-	padding: 45px 0;
+	padding: 0;
+	height: 134px;
+	background-image: url(/images/logo-onlyplane.png);
+	background-position: top right;
+	background-repeat: no-repeat;
 }
 
 #current_rate {
