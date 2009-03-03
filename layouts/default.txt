@@ -79,7 +79,7 @@ filter:    erb
 		
 		<div id="header" class="grid_12">
 				<div id="current_rate">
-					Our current rate is <strong>$58 an hour</strong>
+					Our current rate is <strong>$60 an hour</strong>
 				</div>
 				
 				<div id="logo"><a href="/" title="Spitfire Sky Web Development">Spitfire Sky</a></div>
