@@ -20,7 +20,12 @@ filter:
 		<li><img src="/images/portfolios/flossedtoday.com-3.jpg"></li>
 	</ul>
 	
-	<p><strong>Update:</strong> Check out what <a href="http://twitter.com/LaurynEffie">Lauren Effie</a> said <a href="http://eff-this.tumblr.com/post/87580220/flossed-today">about Flossed Today</a>. Thanks for the kind words Lauren!</p>
+	<p><strong>We've got some updates for you already:</strong></p> 
+		<ul>
+			<li><a href="http://twitter.com/LaurynEffie">Lauren Effie</a> says  <a href="http://eff-this.tumblr.com/post/87580220/flossed-today">I love it! ...try it out!</a>. Thanks Lauren!</li>
+			<li>Looks great on the iPhone.</li>
+			<li>Thoughtbot <a href="https://twitter.com/thoughtbot/status/1323447161">tweets flossedtoday</a>.</li>
+		</ul>
 	
 	<p><em>Have you flossed today?</em> We were terrible at flossing. Our dentists consistently scolded us so we built <a href="http://flossedtoday.com">Flossed Today</a> to help remind ourselves. Since then our teeth and gums are feeling much healthier!</p>
 	
