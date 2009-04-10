@@ -1,0 +1,28 @@
+---
+title:      Miss Mint
+site_url:   http://missmint.com
+page_id:    portfolio
+created_at: 2009-04-10 11:10:20.823234 -07:00
+filter:
+  - erb
+---
+<div class="portfolio-single grid_8">
+	
+	<div class="grid_5 alpha"><h1><%= h(@page.title) %></h1></div>
+	
+	<div class="grid_3 omega"><p class="url"><a href="<%= h(@page.site_url) %>"><%= h(@page.site_url) %></a></p></div>
+	
+	<div class="clear"></div>
+
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/missmint.com-1.jpg"></li>
+		<li><img src="/images/portfolios/missmint.com-2.jpg"></li>
+	</ul>
+
+	<p>MissMint.com sends helpful reminders for you to take your daily contraceptive pill - a 'miss mint'. It's proving helpful to women and is already receiving good <a href="http://search.twitter.com/search?q=missmint">comments on twitter</a>.</p>
+	
+	<p>Like Flossed Today, the application employs a combination of technologies like <a href="http://merbivore.com">Merb</a>, Send/Receive of SMS messages, and the <a href="http://code.google.com/apis/chart/">Google Charts API</a>.</p>
+	
+</div>
+
+<%= render(:partial => "/portfolio-sidebar") %>
