@@ -22,6 +22,7 @@ filter:
 	
 	<p><strong>We have some updates for you already:</strong></p> 
 		<ul>
+			<li>FlossedToday.com <a href="http://designshack.co.uk/design/flossedtoday.html">featured on DesignShack.co.uk</a> for it's great design!</a></li>
 			<li><a href="http://twitter.com/LaurynEffie">Lauren Effie</a> says  <a href="http://eff-this.tumblr.com/post/87580220/flossed-today">I love it! ...try it out!</a>. Thanks Lauren!</li>
 			<li>Looks great on the iPhone.</li>
 			<li>Thoughtbot <a href="https://twitter.com/thoughtbot/status/1323447161">tweets flossedtoday</a>.</li>
