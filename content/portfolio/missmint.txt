@@ -19,7 +19,7 @@ filter:
 		<li><img src="/images/portfolios/missmint.com-2.jpg"></li>
 	</ul>
 
-	<p>MissMint.com sends helpful reminders for you to take your daily contraceptive pill - a 'miss mint'. It's proving helpful to women and is already receiving good <a href="http://search.twitter.com/search?q=missmint">comments on twitter</a>.</p>
+	<p><em>MissMint.com</em> sends helpful reminders for you to take your daily contraceptive pill - a 'miss mint'. It's proving helpful to women and is already receiving good <a href="http://search.twitter.com/search?q=missmint">comments on twitter</a>.</p>
 	
 	<p>Like Flossed Today, the application employs a combination of technologies like <a href="http://merbivore.com">Merb</a>, Send/Receive of SMS messages, and the <a href="http://code.google.com/apis/chart/">Google Charts API</a>.</p>
 	

@@ -1,0 +1,34 @@
+---
+title:      Investapp
+site_url:   http://investapp.com
+page_id:    portfolio
+created_at: 2009-06-05 16:26:48.537613 +00:00
+filter:
+  - erb
+---
+<div class="portfolio-single grid_8">
+	
+	<div class="grid_5 alpha"><h1><%= h(@page.title) %></h1></div>
+	
+	<div class="grid_3 omega"><p class="url"><a href="<%= h(@page.site_url) %>"><%= h(@page.site_url) %></a></p></div>
+	
+	<div class="clear"></div>
+
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/investapp.com-1.jpg"></li>
+		<li><img src="/images/portfolios/investapp.com-2.jpg"></li>
+		<li><img src="/images/portfolios/investapp.com-3.jpg"></li>
+		<li><img src="/images/portfolios/investapp.com-4.jpg"></li>
+		<li><img src="/images/portfolios/investapp.com-5.jpg"></li>
+	</ul>
+	
+	<p><em>Investapp</em> is a new tool <strong>for investment groups and firms to discuss stock picks</strong>. You can do things like search historical comments, track comments by individual group members, chart your historical comments compared to the movement of the stock price, and organize your comments by symbols and tags.</p>
+	
+	<p>The application employes a number of technologies including, <a href="http://merbivore.com">merb</a>, <a href="http://spreedly.com/">spreedly</a> for subscription payment processing, <a href="http://github.com/scottmotte/merb_auth_slice_multisite/tree/master">merb_auth_slice_multisite</a> for the subdomains, and <a href="http://amCharts.com">amCharts.com</a> for charting historical comments to historical stock prices.</p>
+	
+	<p>This is the second project <a href="http://jeromegn.com">Jerome Gravel-Niquet</a> and I - <a href="http://scottmotte.com">Scott Motte</a> - have tackled together. We worked jointly - with Jerome heading up the ux design and myself heading up the programming of features.  </p>
+
+	
+</div>
+
+<%= render(:partial => "/portfolio-sidebar") %>

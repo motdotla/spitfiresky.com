@@ -17,6 +17,12 @@ filter:
 <div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
+	<h2><a href="/portfolio/investapp.html">Investapp</a></h2>
+	<a href="/portfolio/investapp.html"><img src="/images/portfolios/investapp.com-thumb.gif" alt="Investapp logo"></a>
+	<p>Investapp organizes your investment group. Discuss stock picks as a team. Keep all your comments in one place and see who is buying at the right times.</p>
+</div>
+
+<div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/jmading.html">J.Mading</a></h2>
 	<a href="/portfolio/jmading.html"><img src="/images/portfolios/jmading.com-thumb.gif" alt="J.Mading logo"></a>
 	<p>J.Mading is an insurance company in Orange County, CA. A one page static website with a mix of jquery was just what they needed.</p>
@@ -28,13 +34,13 @@ filter:
 	<p>Miss Mint helps you remember to take your daily birth control pill. It's free, discrete, and sends additional reminders if you forget to answer yes. <a href="http://missmint.com/subscribe">Give it a look.</a></p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/flossedtoday.html">Flossed Today</a></h2>
 	<a href="/portfolio/flossedtoday.html"><img src="/images/portfolios/flossedtoday.com-thumb.gif" alt="Flossed Today logo"></a>
 	<p>Flossed Today helps you remember to floss. It's completely free - built and conceived in our spare time. <a href="http://flossedtoday.com/subscribe">Try it out!</a></p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/edwinmatthews.html">Edwin Matthews</a></h2>
@@ -48,13 +54,13 @@ filter:
 	<p>Miller Jones Mortuary &amp; Crematory is one of the largest mortuaries on the west coast, and we were commissioned to upgrade their previously outdated online presence. </p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/twinstang.html">Twinstang</a></h2>
 	<a href="/portfolio/twinstang.html"><img src="/images/portfolios/twinstang.com-thumb.gif" alt="Twinstang logo"></a>
 	<p>Twinstang is a web application for pilots to digitally log and track their flight hours. It is built with <a href="http://rubyonrails.org/">Ruby on Rails</a> and also works on the iPhone.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/hrassist.html">HRAssist</a></h2>
@@ -68,13 +74,13 @@ filter:
 	<p>Hemet Flight Center is a mid-sized aviation school located in Hemet, CA. We created an updated design and programmed the content to be editable using <a href="http://wordpress.org">Wordpress</a>.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/jacobshouse.html">Jacobs House Temecula</a></h2>
 	<a href="/portfolio/jacobshouse.html"><img src="/images/portfolios/jacobshousetemecula.org-thumb.gif" alt="Jacobs House Temecula logo"></a>
 	<p>Jacobs House is a local charity that functions a lot like Ronald McDonald House Charities, and we were hired to create their online identity.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/ueg.html">United Engineering Group</a></h2>
@@ -88,13 +94,13 @@ filter:
 	<p>Total Spectrum is a political consulting firm that operates in Washington D.C. They chose us to update their online identity and print materials.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/southernhotel.html">Southern Hotel Museum</a></h2>
 	<a href="/portfolio/southernhotel.html"><img src="/images/portfolios/southernhotel.org-thumb.gif" alt="Southern Hotel logo"></a>
 	<p>The Southern Hotel is the JEM Foundation's first museum. It documents the history of the historic Perris Southern Hotel and the Bernasconi family that built it.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/robschelling.html">Rob Schelling - Attorney</a></h2>
@@ -108,13 +114,13 @@ filter:
 	<p>Charlotte is a member of the Hemet Unified School Board and an involved member in her community. We built her a basic campaign website for her recent election.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/workforcehomebuilders.html">Workforce Home Builders LLC</a></h2>
 	<a href="/portfolio/workforcehomebuilders.html"><img src="/images/portfolios/workforcehomebuilders.com-thumb.gif" alt="Workforce Home Builders LLC logo"></a>
 	<p>Workforce Home Builders is a large-scale real estate developer of affordable housing for the workforce and seniors in Ontario, CA.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/annmotte.html">Ann Motte</a></h2>
