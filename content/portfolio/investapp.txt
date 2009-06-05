@@ -15,6 +15,7 @@ filter:
 	<div class="clear"></div>
 
 	<ul id="screenshots">
+	  <li><img src="/images/portfolios/investapp.com-0.jpg"></li>
 		<li><img src="/images/portfolios/investapp.com-1.jpg"></li>
 		<li><img src="/images/portfolios/investapp.com-2.jpg"></li>
 		<li><img src="/images/portfolios/investapp.com-3.jpg"></li>
@@ -26,7 +27,7 @@ filter:
 	
 	<p>The application employes a number of technologies including, <a href="http://merbivore.com">merb</a>, <a href="http://spreedly.com/">spreedly</a> for subscription payment processing, <a href="http://github.com/scottmotte/merb_auth_slice_multisite/tree/master">merb_auth_slice_multisite</a> for the subdomains, and <a href="http://amCharts.com">amCharts.com</a> for charting historical comments to historical stock prices.</p>
 	
-	<p>This is the second project <a href="http://jeromegn.com">Jerome Gravel-Niquet</a> and I - <a href="http://scottmotte.com">Scott Motte</a> - have tackled together. We worked jointly - with Jerome heading up the ux design and myself heading up the programming of features.  </p>
+	<p>This is the second project <a href="http://jeromegn.com">Jerome Gravel-Niquet</a> and I - <a href="http://scottmotte.com">Scott Motte</a> - have tackled together. We worked jointly - with Jerome heading up the ux design and myself heading up the programming of features.</p>
 
 	
 </div>
