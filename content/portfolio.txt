@@ -7,6 +7,7 @@ filter:
 ---
 <div class="grid_8">
 	<h1>Websites and web applications</h1>
+  
 </div>
 
 <div id="mini-sidebar" class="grid_4">
@@ -14,6 +15,12 @@ filter:
 </div>
 
 <div class="clear"></div>
+
+<div class="grid_4 portfolio-item">
+	<h2><a href="/portfolio/jmading.html">J.Mading</a></h2>
+	<a href="/portfolio/jmading.html"><img src="/images/portfolios/jmading.com-thumb.gif" alt="J.Mading logo"></a>
+	<p>J.Mading is an insurance company in Orange County, CA. A one page static website with a mix of jquery was just what they needed.</p>
+</div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/missmint.html">Miss Mint</a></h2>
@@ -27,13 +34,13 @@ filter:
 	<p>Flossed Today helps you remember to floss. It's completely free - built and conceived in our spare time. <a href="http://flossedtoday.com/subscribe">Try it out!</a></p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/edwinmatthews.html">Edwin Matthews</a></h2>
 	<a href="/portfolio/edwinmatthews.html"><img src="/images/portfolios/edwinmatthews.com-thumb.gif" alt="Edwin Matthews logo"></a>
 	<p>Ed Matthews is a flight instructor in Hemet, CA. A one page static website was perfect for his needs.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/millerjones.html">Miller Jones Mortuary</a></h2>
@@ -47,13 +54,13 @@ filter:
 	<p>Twinstang is a web application for pilots to digitally log and track their flight hours. It is built with <a href="http://rubyonrails.org/">Ruby on Rails</a> and also works on the iPhone.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/hrassist.html">HRAssist</a></h2>
 	<a href="/portfolio/hrassist.html"><img src="/images/portfolios/hrassist.com-thumb.gif" alt="HRAssist logo"></a>
 	<p>HRAssist provides affordable Human Resources services. We programmed their site while <a href="http://collectiveindustry.com">Justin Pardee</a> did the design.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/hemetflightcenter.html">Hemet Flight Center</a></h2>
@@ -67,13 +74,13 @@ filter:
 	<p>Jacobs House is a local charity that functions a lot like Ronald McDonald House Charities, and we were hired to create their online identity.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/ueg.html">United Engineering Group</a></h2>
 	<a href="/portfolio/ueg.html"><img src="/images/portfolios/unitedeng.com-thumb.gif" alt="United Engineering Group logo"></a>
 	<p>UEG engineers and develops large residential tracks throughout Southern California, and we developed custom business software to increase their efficiency and client relations.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/totalspectrum.html">Total Spectrum</a></h2>
@@ -87,13 +94,13 @@ filter:
 	<p>The Southern Hotel is the JEM Foundation's first museum. It documents the history of the historic Perris Southern Hotel and the Bernasconi family that built it.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/robschelling.html">Rob Schelling - Attorney</a></h2>
 	<a href="/portfolio/robschelling.html"><img src="/images/portfolios/rschelling.com-thumb.gif" alt="Workforce Home Builders LLC logo"></a>
 	<p>Rob Schelling is an established attorney in Riverside County, and he came to us to develop his online identity - including a content management system.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/charlottejones.html">Charlotte Jones</a></h2>
@@ -107,13 +114,13 @@ filter:
 	<p>Workforce Home Builders is a large-scale real estate developer of affordable housing for the workforce and seniors in Ontario, CA.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/annmotte.html">Ann Motte</a></h2>
 	<a href="/portfolio/annmotte.html"><img src="/images/portfolios/annmotte.com-thumb.gif" alt="Ann Motte logo"></a>
 	<p>Ann Motte is a long-time elected trustee of Mount San Jacinto College and this is her blog.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/darylbusch.html">Daryl Busch</a></h2>
@@ -124,9 +131,10 @@ filter:
 <div class="clear"></div>
 
 <div class="grid_8 alpha omega">
-<h1>Open Source Contribution</h1>
+<h1 id="open-source">Open Source Contributions</h1>
 <ul>
-	<li><em>merb_auth_slice_multisite</em> - Add subdomain/multisite functionality to your merb application. Works with merb-auth. Available <a href="http://github.com/scottmotte/merb_auth_slice_multisite/tree/master">on github</a>.</li>
+	<li><em><a href="http://github.com/scottmotte/merb_auth_slice_multisite/tree/master">merb_auth_slice_multisite</a></em> - Add subdomain/multisite functionality to your merb application. Works with merb-auth. Available <a href="http://github.com/scottmotte/merb_auth_slice_multisite/tree/master">on github</a>.</li>
+	<li><em><a href="http://github.com/terralien/spreedly-gem/tree/master">spreedly-gem</a></em> - I've contributed some code to the <a href="http://github.com/terralien/spreedly-gem/tree/master">spreedly gem</a>.</li>
 </ul>
 </div>
 

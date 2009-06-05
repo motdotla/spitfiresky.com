@@ -1,0 +1,26 @@
+---
+title:      J.Mading
+site_url:   http://jmading.com
+page_id:    portfolio
+created_at: 2009-06-05 15:54:57.760102 +00:00
+filter:
+  - erb
+---
+<div class="portfolio-single grid_8">
+	
+	<div class="grid_5 alpha"><h1><%= h(@page.title) %></h1></div>
+	
+	<div class="grid_3 omega"><p class="url"><a href="<%= h(@page.site_url) %>"><%= h(@page.site_url) %></a></p></div>
+	
+	<div class="clear"></div>
+
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/jmading.com-1.jpg"></li>
+		<li><img src="/images/portfolios/jmading.com-2.jpg"></li>
+	</ul>
+
+	<p>One page websites are a good way to go since they <strong>communicate your message quickly and are cheap to build</strong>. Mix in a little jquery and the site is a nice example of a simple one page website.</p>
+	
+</div>
+
+<%= render(:partial => "/portfolio-sidebar") %>
