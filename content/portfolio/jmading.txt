@@ -20,7 +20,7 @@ filter:
 	</ul>
 
 	<p>One page websites are a good way to go since they <strong>communicate your message quickly and are cheap to build</strong>. Mix in a little jquery and the site is a nice example of a simple one page website.</p>
-	
+	<p>Additionally, we also migrated J.Mading's email and calendar system away from an expensive in-house exchange server to <a href="http://www.google.com/apps/intl/en/business/details.html">google apps</a>.</p>
 </div>
 
 <%= render(:partial => "/portfolio-sidebar") %>
