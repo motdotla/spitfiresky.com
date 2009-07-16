@@ -4,9 +4,6 @@ body {
 	color: #143347;
 	font-size: 14px;
 }
-span {
-  color: #999;
-}
 h2 {
   font-size: 18px;
 }
@@ -34,13 +31,24 @@ h4 {
       color: #333;
     }
     #nav:hover {
-      background: #ffff99;
+/*      background: #ffff99;*/
     }
-  #articles li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  #articles {
+    background: #86d1f1;
+    color: #fff;
   }
+    #articles ul {
+      padding: 10px;
+      margin: 0;
+    }
+      #articles li {
+        list-style: none;
+        margin: 0;
+        padding: 2px 4px 2px 4px;
+      }
+    #articles span {
+      color: #fff;
+    }
 /* Sidebar */
 #sidebar {
   margin-top: 160px;
