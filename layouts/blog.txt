@@ -8,30 +8,48 @@ filter:    haml
     %title= "#{@page.title} &laquo; Spitfire Sky"    
     %link{:type => 'text/css', :href => '/css/blog_base.css', :charset => 'utf-8', :media => 'all', :rel => 'Stylesheet'}
     / finish with javascripts
-  %body
+  %body{:id => 'top'}
     #page.container_12
+      #header.grid_4
+        &nbsp;
+      #header.grid_8
+        #articles
+          %ul
+            - articles = @pages.find(:all, :in_directory => '/articles', :recursive => true, :sort_by => "created_at", :reverse => true, :article => true)
+            - articles.each do |article|
+              %li
+                %span= article.created_at.strftime('%d %b %Y')
+                &raquo;
+                = link_to_page(article)
+        #nav
+          %a{:href => "#top", :class => "show_articles"} Articles list
+          
       #sidebar.grid_4
-        %a{:href => '/'}
+        %a{:href => '/articles'}
           %img{:src => '/images/logo.png'}
-        %h4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; You should hire us
+        %p
+          %a{:href => '/articles'}
+            %img{:src => '/images/house.png'} 
+          %a{:href => '#top', :class => "show_articles"}
+            %img{:src => '/images/report.png'}
+          %a{:href => 'http://spitfiresky.com/contact.html'}
+            %img{:src => '/images/email.png'} 
+          %a{:href => '#'}
+            %img{:src => '/images/rss.png'}
+          %a{:href => 'http://github.com/scottmotte/spitfiresky.com/tree/master'}
+            %img{:src => '/images/ruby.png'}
     
       #content.grid_7
-        #articles
-          - articles = @pages.find(:all, :in_directory => '/articles', :recursive => true, :sort_by => "created_at", :reverse => true, :article => true)
-
-          - articles.each do |article|
-            %li
-              %span= article.created_at.strftime('%d %b %Y')
-              &raquo;
-              = link_to_page(article)
-        #nav
-          %a{:href => '#articles', :id => "show_articles"} Articles list
-          
-        %h2= @page.title
+        #twitter
+          .icon
+            %a{:href => 'http://twitter.com/spitfiresky'}
+              %img{:src => '/images/twitter.png', :width => 48}
+          .tweets
+          .clear
         = @content
         
     %script{:type => 'text/javascript', :src => '/javascripts/jquery.js' }
-    %script{:type => 'text/javascript', :src => '/javascripts/sammy.js' }
+    %script{:type => 'text/javascript', :src => '/javascripts/jquery.tweet.js'}
     %script{:type => 'text/javascript', :src => '/javascripts/blog.js' }
         
 

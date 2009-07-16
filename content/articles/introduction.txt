@@ -7,6 +7,8 @@ filter:
   - haml
 ---
 
+%h2= @page.title
+
 %p Good day. My name is Scott Motte. Here I introduce myself and my company.
 
 %h3 Scott Motte

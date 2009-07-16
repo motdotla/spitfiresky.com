@@ -5,24 +5,56 @@
     <link charset='utf-8' href='/css/blog_base.css' media='all' rel='Stylesheet' type='text/css' />
     <!-- finish with javascripts -->
   </head>
-  <body>
+  <body id='top'>
     <div class='container_12' id='page'>
-      <div class='grid_4' id='sidebar'>
-        <a href='/'>
-          <img src='/images/logo.png' />
-        </a>
-        <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; You should hire us</h4>
+      <div class='grid_4' id='header'>
+        &nbsp;
       </div>
-      <div class='grid_7' id='content'>
+      <div class='grid_8' id='header'>
         <div id='articles'>
-          <li>
-            <span>15 Jul 2009</span>
-            &raquo;
-            <a href="/articles/introduction.html">Introduction</a>
-          </li>
+          <ul>
+            <li>
+              <span>15 Jul 2009</span>
+              &raquo;
+              <a href="/articles/introduction.html">Introduction</a>
+            </li>
+          </ul>
         </div>
         <div id='nav'>
-          <a href='#articles' id='show_articles'>Articles list</a>
+          <a class='show_articles' href='#top'>Articles list</a>
+        </div>
+      </div>
+      <div class='grid_4' id='sidebar'>
+        <a href='/articles'>
+          <img src='/images/logo.png' />
+        </a>
+        <p>
+          <a href='/articles'>
+            <img src='/images/house.png' />
+          </a>
+          <a class='show_articles' href='#top'>
+            <img src='/images/report.png' />
+          </a>
+          <a href='http://spitfiresky.com/contact.html'>
+            <img src='/images/email.png' />
+          </a>
+          <a href='#'>
+            <img src='/images/rss.png' />
+          </a>
+          <a href='http://github.com/scottmotte/spitfiresky.com/tree/master'>
+            <img src='/images/ruby.png' />
+          </a>
+        </p>
+      </div>
+      <div class='grid_7' id='content'>
+        <div id='twitter'>
+          <div class='icon'>
+            <a href='http://twitter.com/spitfiresky'>
+              <img src='/images/twitter.png' width='48' />
+            </a>
+          </div>
+          <div class='tweets'></div>
+          <div class='clear'></div>
         </div>
         <h2>Introduction</h2>
         <p>Good day. My name is Scott Motte. Here I introduce myself and my company.</p>
@@ -47,7 +79,7 @@
       </div>
     </div>
     <script src='/javascripts/jquery.js' type='text/javascript'></script>
-    <script src='/javascripts/sammy.js' type='text/javascript'></script>
+    <script src='/javascripts/jquery.tweet.js' type='text/javascript'></script>
     <script src='/javascripts/blog.js' type='text/javascript'></script>
   </body>
 </html>

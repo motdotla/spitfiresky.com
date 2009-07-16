@@ -1,51 +1,85 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
-    <title>Recent Article &laquo; Spitfire Sky</title>
+    <title>Recent &laquo; Spitfire Sky</title>
     <link charset='utf-8' href='/css/blog_base.css' media='all' rel='Stylesheet' type='text/css' />
     <!-- finish with javascripts -->
   </head>
-  <body>
+  <body id='top'>
     <div class='container_12' id='page'>
-      <div class='grid_4' id='sidebar'>
-        <a href='/'>
-          <img src='/images/logo.png' />
-        </a>
-        <h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; You should hire us</h4>
+      <div class='grid_4' id='header'>
+        &nbsp;
       </div>
-      <div class='grid_7' id='content'>
+      <div class='grid_8' id='header'>
         <div id='articles'>
-          <li>
-            <span>15 Jul 2009</span>
-            &raquo;
-            <a href="/articles/test.html">Test</a>
-          </li>
-          <li>
-            <span>15 Jul 2009</span>
-            &raquo;
-            <a href="/articles/introduction.html">Introduction</a>
-          </li>
+          <ul>
+            <li>
+              <span>15 Jul 2009</span>
+              &raquo;
+              <a href="/articles/introduction.html">Introduction</a>
+            </li>
+          </ul>
         </div>
         <div id='nav'>
-          <a href='#articles' id='show_articles'>Articles list</a>
+          <a class='show_articles' href='#top'>Articles list</a>
         </div>
-        <h2>Recent Article</h2>
-        <div id='articles'>
-          <li>
-            <span>15 Jul 2009</span>
-            &raquo;
-            <a href="/articles/test.html">Test</a>
-          </li>
-          <li>
-            <span>15 Jul 2009</span>
-            &raquo;
-            <a href="/articles/introduction.html">Introduction</a>
-          </li>
+      </div>
+      <div class='grid_4' id='sidebar'>
+        <a href='/articles'>
+          <img src='/images/logo.png' />
+        </a>
+        <p>
+          <a href='/articles'>
+            <img src='/images/house.png' />
+          </a>
+          <a class='show_articles' href='#top'>
+            <img src='/images/report.png' />
+          </a>
+          <a href='http://spitfiresky.com/contact.html'>
+            <img src='/images/email.png' />
+          </a>
+          <a href='#'>
+            <img src='/images/rss.png' />
+          </a>
+          <a href='http://github.com/scottmotte/spitfiresky.com/tree/master'>
+            <img src='/images/ruby.png' />
+          </a>
+        </p>
+      </div>
+      <div class='grid_7' id='content'>
+        <div id='twitter'>
+          <div class='icon'>
+            <a href='http://twitter.com/spitfiresky'>
+              <img src='/images/twitter.png' width='48' />
+            </a>
+          </div>
+          <div class='tweets'></div>
+          <div class='clear'></div>
         </div>
+        <h2>Introduction</h2>
+        <p>Good day. My name is Scott Motte. Here I introduce myself and my company.</p>
+        <h3>Scott Motte</h3>
+        <p>Southern California. I was born here. I spent much of my early years swimming and building things with legos. That's still me today; torn between active living outside and mind numbing programming inside.</p>
+        <p>From elementary to high school I spent my extracurricular time in athletics. Baseball was my favorite. I wanted one day to be a professional, but it wasn't to be. I had a good brain though so I went on to Pepperdine University to study international business.</p>
+        <p>Freshman year in college I created my first website using the free 10mb of web space granted to each student - Pepperdine's greatest gift to me. Since then I've been forced to throw out much of what that school taught me about business, finding it ineffective, but that's for another post. It's 5 years later, and I'm mostly indoors now. Building things.</p>
+        <h3>Spitfire Sky</h3>
+        <p>I fly, and my favorite plane is the Spitfire. Couple it with 'Sky', and it becomes unique, memorable, google-able, and says something about who I am. It rolls off the tongue nicely too. Who is Spitfire Sky? Mostly it's just me, but increasingly I'm working with <a href="http://jeromegn.com">jeromegn</a> because he does exemplary work and makes me a better programmer.</p>
+        <p>My hopes and plans for Spitfire Sky are to see it become recognized as a decent player in the field of other ruby developers/companies over the remainder of the year. During next year, I'd like to see Spitfire Sky recognized as a prominent player in that same field and see this blog become a source for quality information on some of the latest techniques and technologies related to web development.</p>
+        <h3>In Ending (but lacking a conclusion)</h3>
+        <p>What would I be doing if I was independently wealthy?</p>
+        <p>I'd spend my mornings building web applications and my afternoons at the local general aviation airport.</p>
+        <p>What is my greatest regret?</p>
+        <p>I never hit a home run.</p>
+        <p class='followme'>
+          <strong>
+            You should follow me on twitter
+            <a href='http://twitter.com/spitfiresky'>here</a>
+          </strong>
+        </p>
       </div>
     </div>
     <script src='/javascripts/jquery.js' type='text/javascript'></script>
-    <script src='/javascripts/sammy.js' type='text/javascript'></script>
+    <script src='/javascripts/jquery.tweet.js' type='text/javascript'></script>
     <script src='/javascripts/blog.js' type='text/javascript'></script>
   </body>
 </html>
