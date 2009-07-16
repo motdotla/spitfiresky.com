@@ -1,0 +1,47 @@
+/* Basics - override text.css*/
+body {
+  background: #E6F5FB;
+	color: #143347;
+	font-size: 14px;
+}
+span {
+  color: #999;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px; font-style: italic; font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Content */
+#content {
+}
+  #content h2 {
+    margin-top: 10px;
+  }
+  #nav {
+    float: right;
+    text-align: right;
+    background: #86d1f1;
+    padding: 2px 10px 2px 10px;
+  }
+    #nav a {
+      text-decoration: none;
+      color: #333;
+    }
+    #nav:hover {
+      background: #ffff99;
+    }
+  #articles li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+/* Sidebar */
+#sidebar {
+  margin-top: 160px;
+}

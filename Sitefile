@@ -4,10 +4,4 @@ task :default => :build
 desc 'deploy the site to the webserver'
 task :deploy => [:build, 'deploy:rsync']
 
-
-SITE.user = "scottmotte"
-SITE.host = "209.20.81.23"
-# SITE.ssh_port = "1985"
-SITE.remote_dir = "/public_html/spitfiresky.com/public/"
-
 # EOF

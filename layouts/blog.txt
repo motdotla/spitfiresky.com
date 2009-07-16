@@ -1,0 +1,28 @@
+---
+extension: html
+filter:    haml
+---
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+  %head
+    %meta{"http-equiv" => "content-type", :content=> "text/html;charset=UTF-8"}
+    %title= "#{@page.title} &laquo; Spitfire Sky"
+    %link{:type => 'text/css', :href => '/css/blog_base.css', :charset => 'utf-8', :media => 'all', :rel => 'Stylesheet'}
+    %meta{:name => 'description', :content => 'Spitfire Sky is a web software company. We build websites and web applications in Perris, California. This is our blog.'}
+    %meta{:name => 'keywords', :content => 'spitfire sky, perris, motte, scottmotte, web development, web applications, web app '}
+  %body
+    #page.container_12
+      #sidebar.grid_4
+        %a{:href => '/'}
+          %img{:src => '/images/logo.png'}
+        %h4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; You should hire us
+
+        
+      #content.grid_7
+        #nav
+          %a{:href => '/blog'} Articles list
+          
+        %h2= @page.title
+        = @content
+          
+      
