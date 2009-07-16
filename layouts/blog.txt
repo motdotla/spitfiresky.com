@@ -43,7 +43,7 @@ filter:    haml
         #twitter
           .icon
             %a{:href => 'http://twitter.com/spitfiresky'}
-              %img{:src => '/images/twitter.png', :width => 48}
+              %img{:src => '/images/twitter4.png'}
           .tweets
           .clear
         = @content
