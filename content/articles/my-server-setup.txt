@@ -1,0 +1,257 @@
+---
+layout:     blog
+title:      My Server Setup
+created_at: 2009-07-23 13:37:08.861667 -07:00
+article:    true
+filter:
+  - haml
+---
+
+%h2= @page.title
+
+%p This is the setup I use for my server. I host on <a href="http://rackspacecloud.com">Rackspace Cloud</a>
+
+%h3 Basics
+
+%p After setting up your server on the cloud ssh in, and follow the following articles: link to slicehost articles
+
+%h3 Install Ruby
+
+cd ~/sources
+wget http://rubyforge.org/frs/download.php/58677/ruby-enterprise-1.8.6-20090610.tar.gz
+tar xzvf ruby-enterprise[press tab]
+sudo ./ruby-enterprise[press tab]/installer
+Follow the instructions from the installer
+It will install to the location: /opt/ruby-enterprise-1.8.6-20090610
+sudo nano /etc/environment
+And add the /opt/ruby-enterprise/bin dir to your PATH variable like this:
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ruby-enterprise-1.8.6-20090610/bin"
+This will get the scripts at the "bin" folder available to your user but not when you use "sudo" calls (Ubuntu just overrides the PATH when you call "sudo" for security reasons) so we’ll need to symlink some of the files to "/usr/bin" to be sure that they’re visible when you’re sudoing:
+sudo ln -s /opt/ruby-enterprise-1.8.6-20090610/bin/ruby /usr/bin/ruby
+sudo ln -s /opt/ruby-enterprise-1.8.6-20090610/bin/gem /usr/bin/gem
+sudo ln -s /opt/ruby-enterprise-1.8.6-20090610/bin/ri /usr/bin/ri
+sudo ln -s /opt/ruby-enterprise-1.8.6-20090610/bin/rdoc /usr/bin/rdoc
+sudo ln -s /opt/ruby-enterprise-1.8.6-20090610/bin/irb /usr/bin/irb
+sudo ln -s /opt/ruby-enterprise-1.8.6-20090610/bin/rake /usr/bin/rake
+try ruby -v it should be ruby-enterprise edition
+Add github gem sources: sudo gem sources -a http://gems.github.com
+Stop ri and rdoc from installing default from http://buddingrubyist.com/2009/02/14/how-to-speed-up-gem-installs-10x/: 
+  sudo nano ~/.gemrc and add the line 'gem: --no-ri --no-rdoc' at the end
+Now try installing a gem sudo gem install thor or sudo gem install capistrano
+
+%h3 Install Nginx and Passenger
+sudo /opt//ruby-enterprise-1.8.6-20090610/bin/passenger-install-nginx-module --auto --auto-download
+press 'enter' at all the prompts
+sudo apt-get install git-core
+cd ~/sources
+git clone git://github.com/jnstq/rails-nginx-passenger-ubuntu.git
+sudo mv rails-nginx-passenger-ubuntu/nginx/nginx /etc/init.d/nginx
+sudo chown root:root /etc/init.d/nginx
+sudo /etc/init.d/nginx start
+sudo /etc/init.d/nginx restart
+sudo /etc/init.d/nginx (to see the list of available commands)
+browse to your ipaddress in your browser and you should see 'Welcome to nginx'
+
+%h3 Customize nginx
+
+Customize things according to here: http://articles.slicehost.com/2009/3/5/ubuntu-intrepid-nginx-configuration
+sudo nano /opt/nginx/conf/nginx.conf
+Change to:
+  worker_processes  4;
+  tcp_nopush        on;
+  gzip              on;
+  gzip_comp_level 2;
+  gzip_proxied any;
+  gzip_types      text/plain text/html text/css application/x-javascript text/xml
+                  application/xml application/xml+rss text/javascript;
+  include /opt/nginx/sites-enabled/*;
+You can cut out the rest of the file.
+  
+%h3 Virtual Hosts
+
+mkdir /home/scottmotte/public_html
+mkdir -p /home/scottmotte/public_html/southernhotel.org/{public,private,log,backup}
+nano /home/scottmotte/public_html/southernhotel.org/public/index.html   type southernhotel.org
+sudo mkdir /opt/nginx/sites-available
+sudo mkdir /opt/nginx/sites-enabled
+sudo nano /opt/nginx/sites-available/southernhotel.org
+paste in:
+server {
+  listen   80;
+  server_name  www.southernhotel.org;
+  rewrite ^/(.*) http://southernhotel.org/$1 permanent;
+}        
+
+server {
+  listen   80;
+  server_name southernhotel.org;
+
+  access_log /home/scottmotte/public_html/southernhotel.org/log/access.log;
+  error_log /home/scottmotte/public_html/southernhotel.org/log/error.log;
+
+  location / {
+    root   /home/twinstang/public_html/southernhotel.org/public/;
+    index  index.html;
+  }
+}
+
+Next,
+sudo ln -s /opt/nginx/sites-available/southernhotel.org /opt/nginx/sites-enabled/southernhotel.org
+Restart nginx
+sudo /etc/init.d/nginx stop
+sudo /etc/init.d/nginx start
+
+It's a good idea to create a default layout as well using your ip address
+
+sudo nano /opt/nginx/sites-available/default
+server {
+    listen       80;
+    server_name  174.143.211.138;
+
+    location / {
+        root   /opt/nginx/html;
+        index  index.html index.htm;
+    }
+}
+
+
+
+
+
+
+
+
+
+------------------------------------------
+Download ubuntu jaunty 9.04
+
+Open up .iso with vmware
+
+Launch .iso
+
+Press fn + F4 and choose the 'Install a minimal virtual machine'. Press enter and enter again to start install
+
+for 'write changes to disk' part choose 'yes'
+
+sudo apt-get install ssh
+ifconfig (note the ip address)
+Take note of the IP address in the eth0 section alongside inet addr:. This is the IP address of your virtual machine (if you’re using NAT—if you’re using bridged it’ll be a non-local IP).
+ssh [username]@[ip address] with your normal terminal to make the rest of stuff easier. (the vmware terminal sucks with no copy and paste)
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo shutdown -r now
+sudo apt-get install wget
+mkdir ~/sources
+cd ~/sources
+wget http://chrysaor.info/scripts/ubuntu904vmtools.sh
+sudo bash ./ubuntu904vmtools.sh
+press enter at all the prompts
+Go to vmware and change the settings to share a folder and choose a folder to share
+sudo reboot
+go to /mnt/hgfs and you should see the folder you shared
+
+take a snapshot
+
+
+# Couchdb - we use jaunty so that these actually work. hardy doesn't work with apt-get mainly because of the erlang package
+sudo apt-get install automake autoconf libtool subversion-tools help2man
+sudo apt-get install build-essential erlang libicu38 libicu-dev
+sudo apt-get install libreadline5-dev checkinstall libmozjs-dev wget
+sudo apt-get install libcurl4-openssl-dev
+cd ~/sources
+wget http://mirror.csclub.uwaterloo.ca/apache/couchdb/0.9.0/apache-couchdb-0.9.0.tar.gz
+tar -xzvf apache-couchdb-0.9.0.tar.gz
+cd apache-couchdb-0.9.0/
+./configure
+make && sudo make install
+sudo adduser couchdb
+sudo mkdir -p /usr/local/var/lib/couchdb
+sudo chown -R couchdb /usr/local/var/lib/couchdb
+sudo mkdir -p /usr/local/var/log/couchdb
+sudo chown -R couchdb /usr/local/var/log/couchdb
+sudo mkdir -p /usr/local/var/run
+sudo chown -R couchdb /usr/local/var/run
+sudo cp /usr/local/etc/init.d/couchdb /etc/init.d/
+sudo update-rc.d couchdb defaults
+sudo /etc/init.d/couchdb start
+
+sudo apt-get install nano
+By default CouchDB listens only for connections from the local host. To change that edit /usr/local/etc/couchdb/local.ini:
+Modify the following lines:
+port = 5984
+bind_address = 0.0.0.0
+You should now be able to access couchdb by typing your ipaddress:5984
+take another snapshot
+
+# Ruby Enterprise Edition
+cd ~/sources
+wget http://www.rubyenterpriseedition.com/ruby-enterprise_1.8.6-20090610_amd64.deb
+sudo dpkg -i ruby-enterprise[press tab]
+sudo nano /etc/environment
+And add the /opt/ruby-enterprise/bin dir to your PATH variable like this:
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ruby-enterprise/bin"
+This will get the scripts at the “bin” folder available to your user but not when you use “sudo” calls (Ubuntu just overrides the PATH when you call “sudo” for security reasons) so we’ll need to symlink some of the files to “/usr/bin” to be sure that they’re visible when you’re sudoing:
+sudo ln -s /opt/ruby-enterprise/bin/ruby /usr/bin/ruby
+sudo ln -s /opt/ruby-enterprise/bin/gem /usr/bin/gem
+sudo ln -s /opt/ruby-enterprise/bin/ri /usr/bin/ri
+sudo ln -s /opt/ruby-enterprise/bin/rdoc /usr/bin/rdoc
+sudo ln -s /opt/ruby-enterprise/bin/irb /usr/bin/irb
+sudo ln -s /opt/ruby-enterprise/bin/rake /usr/bin/rake
+try ruby -v & installing a gem sudo gem install thor
+take another snapshot
+
+# Nginx with passenger
+sudo /opt/ruby-enterprise/bin/passenger-install-nginx-module --auto --auto-download
+press 'enter' at all the prompts
+sudo apt-get install git-core
+cd ~/sources
+git clone git://github.com/jnstq/rails-nginx-passenger-ubuntu.git
+sudo mv rails-nginx-passenger-ubuntu/nginx/nginx /etc/init.d/nginx
+sudo chown root:root /etc/init.d/nginx
+sudo /etc/init.d/nginx start
+sudo /etc/init.d/nginx restart
+sudo /etc/init.d/nginx (to see the list of available commands)
+browse to your ipaddress in your browser and you should see 'Welcome to nginx'
+take a snapshot
+
+# Setup your first running app
+sudo nano /opt/nginx/conf/nginx.conf & add the following line in the appropriate place
+server {
+  listen 80;
+  rack_env development;
+  server_name localhost;
+  root /mnt/hgfs/code/merb/twinstang.com/public;
+  passenger_enabled on;
+
+}
+
+# get your read/write permissions going correctly
+type 'id' in terminal
+Work out your user and main group ID by typing: id (this will usually be 1000 and 1000);
+Edit your sharing settings with: sudo nano /etc/fstab;
+Edit the line starting with: .host:/ /mnt/hgf to look like: host:/ /mnt/hgfs vmhgfs defaults,ttl=5,uid=1000,gid=1000 0, where uid=1000 and gid=1000 are the actual user and group IDs we discovered back in the first step.
+sudo reboot
+
+
+# install merb
+sudo apt-get install libsqlite3-dev
+sudo apt-get install libmysqlclient15-dev
+sudo gem install merb
+
+# install some added libraries like imagemagick
+sudo apt-get install build-essential libmagickcore-dev imagemagick libpcre3 libfcgi-dev libfcgi0ldbl libxml2-dev libxslt1-dev -y
+
+
+
+
+# twinstang specifics
+sudo bin/rake populate:all
+thor merb:gem:redeploy
+
+
+%p.followme
+  %strong
+    You should follow me on twitter 
+    %a{:href=> 'http://twitter.com/spitfiresky'} here
+

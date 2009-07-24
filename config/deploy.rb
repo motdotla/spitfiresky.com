@@ -31,7 +31,7 @@ set :deploy_via, :remote_cache
 default_run_options[:pty] = true
 ssh_options[:paranoid] = false
 ssh_options[:keys] = %w(/Users/scottmotte/.ssh/id_rsa)
-ssh_options[:port] = 1985
+ssh_options[:port] = 1984
  
 # =============================================================================
 # RAKE TASKS & OTHER SERVER TASKS
@@ -50,9 +50,10 @@ namespace :deploy do
   task :restart do
   end
   
-  desc 'Restart apache'
-  task :restart_apache, :roles => :web do
-    sudo '/etc/init.d/apache2 restart'
+  desc 'Restart nginx'
+  task :restart_nginx, :roles => :web do
+    sudo '/etc/init.d/nginx stop'
+    sudo '/etc/init.d/nginx start'
   end
   
   desc "Create symlink to public_html/#{domain}/public"
@@ -63,4 +64,3 @@ end
  
 after "deploy", "deploy:cleanup"
 after "deploy:cleanup", "deploy:symlinkify"
-# after "deploy:symlinkify", "deploy:restart_apache"
