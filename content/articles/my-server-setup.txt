@@ -13,7 +13,7 @@ filter:
 
 %h3 Basics
 
-%p Use the Slicehost articles <a href="http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-1">Step 1</a> and <a href="http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-2">Step 2</a> to get your basics of your fresh server setup. The Ubuntu Intrepid setup works just fine until they post the setup for Ubuntu Jaunty.
+%p Use the Slicehost articles <a href="http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-1">Step 1</a> and <a href="http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-2">Step 2</a> to get the basics of your server going. Use the Ubuntu Intrepid setup. It will work just fine with Ubuntu 9.04.
 
 %h3 Ruby
 
