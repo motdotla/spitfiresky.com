@@ -11,63 +11,6 @@
 
   <!--- CSS Framework -->
 	<link rel="stylesheet" href="/css/base.css" type="text/css" media="all" />
-
-	<!-- Javascripts -->
-	<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
-	<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
-	<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
-	<script type="text/javascript" src="/javascripts/jquery.tweet.js"></script>
-	<script type="text/javascript">
-		
-	// gallery scroller for portfolio pages
-	$(document).ready(function(){
-		// cycle plugin for home page banner
-		$('#banner').cycle({
-			fx: 'fade',
-			height:  'auto'
-		});
-		// tweet plugin
-		$(".tweet").tweet({
-			username: "spitfiresky",
-			count: 5,
-			loading_text: "loading tweets..."
-		});
-
-		$("#screenshots").jqGalScroll( {
-			width: 586,
-			height: 429,
-			direction : 'horizontal' // vertical horizontal diagonal
-		});	
-		
-			
-		// $('.clouds').cycle({
-		// 	fx: 'scrollLeft'
-		// });
-		
-		// $('#logo a').hover(function() {
-		// 		$(this).animate({ width: '7000px', marginTop: '500px' }, { duration: 500 });
-		// 	}, 
-		// 	function() {
-		// 		$(this).animate({ width: '4250px',	marginTop: '0px' })
-		// 	}
-		// );
-		
-		// $('.clouds')
-		// 	.css ( { backgroundPosition: "0 -20px" })
-		// 	.animate( { backgroundPosition: "0 0" }, {duration:500});
-		
-		$('#logo a')
-			.css ({ width: '3900px' })
-			.animate({ width: '4250px' }, { duration: 500 });
-		
-
-			
-			
-	});
-	
-	
-		
-	</script>	
 </head>
 <body id="portfolio">
 	
@@ -76,9 +19,15 @@
 	<div id="page" class="container_12">
 		
 		<div id="header" class="grid_12">
-				<div id="current_rate">
-					Our current rate is <strong>$60 an hour</strong>
+		    <div id="articles">
+				  Read our journal <a href="/articles">here</a>
 				</div>
+				
+				<div id="current_rate">
+					We are <strong>$60/hr</strong>.
+				</div>
+
+		    
 				
 				<div id="logo"><a href="/" title="Spitfire Sky Web Development">Spitfire Sky</a></div>
 
@@ -86,7 +35,7 @@
 					<ul>
 	<li id="n-home"><a href="/">Home</a></li>
 	<li id="n-about"><a href="/about.html">About</a></li>
-	<li id="n-portfolio"><a href="/portfolio.html">Portfolio</a></li>	
+	<li id="n-portfolio"><a href="/portfolio.html">Portfolio</a></li>
 	<li id="n-contact"><a href="/contact.html">Contact</a></li>						
 </ul>
 
@@ -151,7 +100,7 @@
 						<ul>
 	<li id="n-home"><a href="/">Home</a></li>
 	<li id="n-about"><a href="/about.html">About</a></li>
-	<li id="n-portfolio"><a href="/portfolio.html">Portfolio</a></li>	
+	<li id="n-portfolio"><a href="/portfolio.html">Portfolio</a></li>
 	<li id="n-contact"><a href="/contact.html">Contact</a></li>						
 </ul>
 
@@ -172,6 +121,65 @@
 	
 </div> <!-- /clouds -->
 
+
+
+
+<!-- Javascripts -->
+<script type="text/javascript" src="/javascripts/jquery-1.2.6.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.cycle.all-2.32.js"></script>
+<script type="text/javascript" src="/javascripts/jqgalscroll.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.tweet.js"></script>
+<script type="text/javascript">
+	
+// gallery scroller for portfolio pages
+$(document).ready(function(){
+	// cycle plugin for home page banner
+	$('#banner').cycle({
+		fx: 'fade',
+		height:  'auto'
+	});
+	// tweet plugin
+	$(".tweet").tweet({
+		username: "spitfiresky",
+		count: 5,
+		loading_text: "loading tweets..."
+	});
+
+	$("#screenshots").jqGalScroll( {
+		width: 586,
+		height: 429,
+		direction : 'horizontal' // vertical horizontal diagonal
+	});	
+	
+		
+	// $('.clouds').cycle({
+	// 	fx: 'scrollLeft'
+	// });
+	
+	// $('#logo a').hover(function() {
+	// 		$(this).animate({ width: '7000px', marginTop: '500px' }, { duration: 500 });
+	// 	}, 
+	// 	function() {
+	// 		$(this).animate({ width: '4250px',	marginTop: '0px' })
+	// 	}
+	// );
+	
+	// $('.clouds')
+	// 	.css ( { backgroundPosition: "0 -20px" })
+	// 	.animate( { backgroundPosition: "0 0" }, {duration:500});
+	
+	$('#logo a')
+		.css ({ width: '3900px' })
+		.animate({ width: '4250px' }, { duration: 500 });
+	
+
+		
+		
+});
+
+
+	
+</script>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

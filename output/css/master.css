@@ -274,8 +274,8 @@ body#contact .clouds #page #header #mainNav li#n-contact a {
 }
 
 #current_rate {
-	background: #143347;
-	background: #ffff99;
+/*  background: #143347;*/
+/*  background: #ffff99;*/
 	color: #0198D8;
 	color: #000;
 	padding: 4px 11px 6px 11px;
@@ -283,7 +283,21 @@ body#contact .clouds #page #header #mainNav li#n-contact a {
 	margin: 0;
 }
 #current_rate strong {
-	background: #ffff99;
+	background: none;
+}
+#articles {
+	background: #143347;
+	background: #ef4a4a;
+  background: #ffff99;
+	color: #0198D8;
+	color: #000;
+	padding: 4px 11px 6px 11px;
+	float: right;
+	margin: 0;
+	margin-right: 10px;
+}
+#articles a {
+  color: #000;
 }
 
 .c1 { /*basic alternating containers*/
