@@ -42,6 +42,11 @@ Customize things according to <a href="http://articles.slicehost.com/2009/3/5/ub
 
 <script src="http://gist.github.com/156653.js"></script>
 
+%h3 Install mongodb
+
+<script src="http://gist.github.com/157744.js"></script>
+
+
 %p.followme
   %strong
     You should follow me on twitter 
