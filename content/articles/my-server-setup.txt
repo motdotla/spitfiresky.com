@@ -50,6 +50,11 @@ Customize things according to <a href="http://articles.slicehost.com/2009/3/5/ub
 
 <script src="http://gist.github.com/157765.js"></script>
 
+%h3 Install minimagick
+
+<script src="http://gist.github.com/157844.js"></script>
+
+
 %h3 Ending
 
 %p If you found this article useful <a href="https://www.rackspacecloud.com/signup">sign up with Rackspace Cloud</a> using referral code REF-SPITFIRESKY.
