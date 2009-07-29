@@ -14,6 +14,11 @@
         <div id='articles'>
           <ul>
             <li>
+              <span>28 Jul 2009</span>
+              &raquo;
+              <a href="/articles/choice-email-setup-with-merb.html">Choice Email Setup with Merb</a>
+            </li>
+            <li>
               <span>23 Jul 2009</span>
               &raquo;
               <a href="/articles/my-server-setup.html">My Server Setup</a>
@@ -60,180 +65,29 @@
           <div class='tweets'></div>
           <div class='clear'></div>
         </div>
-        <h2>My Server Setup</h2>
-        <p>Good day. Here I detail my server setup with <a href="http://www.ubuntu.com/getubuntu/download-server">Ubuntu 9.04</a> on <a href="http://rackspacecloud.com">Rackspace Cloud</a></p>
-        <h3>Basics</h3>
-        <p>Use the Slicehost articles <a href="http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-1">Step 1</a> and <a href="http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-2">Step 2</a> to get your basics of your fresh server setup. The Ubuntu Intrepid setup works just fine until they post the setup for Ubuntu Jaunty.</p>
-        <h3>Ruby</h3>
-        <script src="http://gist.github.com/156639.js"></script>
-        <h3>Install Nginx and Passenger</h3>
-        <script src="http://gist.github.com/156642.js"></script>
-        <h3>Customize nginx</h3>
-        Customize things according to <a href="http://articles.slicehost.com/2009/3/5/ubuntu-intrepid-nginx-configuration">here</a>.
-        <script src="http://gist.github.com/156644.js"></script>
-        <h3>Virtual Hosts</h3>
-        <script src="http://gist.github.com/156649.js"></script>
-        <h3>Install mysql</h3>
-        <script src="http://gist.github.com/156650.js"></script>
-        <h3>Install couchdb</h3>
-        <script src="http://gist.github.com/156653.js"></script>
+        <h2>Choice Email Setup with Merb</h2>
+        <p>Good day. Here I describe a choice email setup with Merb. You should be using this setup too.</p>
+        <h3>SMTP or Sendmail?</h3>
+        <p>Use Google smtp to send your mail from your merb application. Sendmail has three serious limitations.</p>
+        <p>#1: Sendmail is specific to your server. When you move servers, you will have to reinstall sendmail. Your app should be as mobile and self-contained as possible. Merb does a great job of this with its bundling of gems, and you should continue that trend.</p>
+        <p>#2: Emails sent via sendmail on your server are sent with extra hidden data that you don't need. This isn't a problem when you are sending regular emails, but is is a problem when you start sending text messages via email and want your web application to receive the user's text reply back. I was using sendmail with <a href="http://flossedtoday.com">Flossed Today</a> to send out text messages, but subscribers using AT&T (and I imagine other cell providers as well), were unable to reply back to the message. The reply was deemed too large for a text message by AT&T's sms protocols. I determined this was because it was sending all the hidden sendmail data along with the text message. When I switched to gmail smtp I no longer experienced this issue.</p>
+        <p>#3: Gmail keeps a nice sent mail history. Sendmail's logs are just not the same as being able to search through your sent mails using gmail's interface.</p>
+        <h3>Won't using smtp lock up my app's response/request cycle?</h3>
+        <p>No, it doesn't have to. Use Merb's send_later method and you are golden.</p>
+        <p>Many argue that using gmail smtp is a bad idea because sendmail makes your web app appear to run faster. They are right. With sendmail your application passes the email request to your local sendmail command. It doesn't have far to go so it is fast. With gmail smtp your app has to connect to the remote smtp server. It has a further distance to travel, and the connection time typically lasts 2-5 seconds. During this time your web app appears to be thinking to your visitor and they are left waiting an extra 2-5 seconds on top of whatever load time speeds your site already does.</p>
+        <p>Thankfully, Merb has a send_later method that allows you to pass this email connection time off to a separate thread. Your application then loads speedily, and your user doesn't have to wait an extra 2-5 seconds. The major reason for not using gmail smtp is now removed.</p>
+        <h3>Setup</h3>
+        <p>Signup for a google apps account - <a href="http://www.google.com/apps/intl/en/group/index.html">http://www.google.com/apps/intl/en/group/index.html</a>. (You could use gmail, but you won't get the @yourdomain.com functionality.). Follow through the process, set up your mx records, verify it is working, etc.</p>
+        <p>Next setup your app to handle smtp</p>
+        <script src="http://gist.github.com/157807.js"></script>
+        Assuming you've setup your server similar to <a href="/articles/my-server-setup.html">my server setup</a>
+        <h3>Setup</h3>
         <p class='followme'>
           <strong>
             You should follow me on twitter
             <a href='http://twitter.com/spitfiresky'>here</a>
           </strong>
         </p>
-        <!-- 
-        -->
-        <!-- 
-        -->
-        <!-- ------------------------------------------ -->
-        <!-- Download ubuntu jaunty 9.04 -->
-        <!-- 
-        -->
-        <!-- Open up .iso with vmware -->
-        <!-- 
-        -->
-        <!-- Launch .iso -->
-        <!-- 
-        -->
-        <!-- Press fn + F4 and choose the 'Install a minimal virtual machine'. Press enter and enter again to start install -->
-        <!-- 
-        -->
-        <!-- for 'write changes to disk' part choose 'yes' -->
-        <!-- 
-        -->
-        <!-- sudo apt-get install ssh -->
-        <!-- ifconfig (note the ip address) -->
-        <!-- Take note of the IP address in the eth0 section alongside inet addr:. This is the IP address of your virtual machine (if you’re using NAT—if you’re using bridged it’ll be a non-local IP). -->
-        <!-- ssh [username]@[ip address] with your normal terminal to make the rest of stuff easier. (the vmware terminal sucks with no copy and paste) -->
-        <!-- sudo apt-get update -->
-        <!-- sudo apt-get upgrade -->
-        <!-- sudo apt-get dist-upgrade -->
-        <!-- sudo shutdown -r now -->
-        <!-- sudo apt-get install wget -->
-        <!-- mkdir ~/sources -->
-        <!-- cd ~/sources -->
-        <!-- wget http://chrysaor.info/scripts/ubuntu904vmtools.sh -->
-        <!-- sudo bash ./ubuntu904vmtools.sh -->
-        <!-- press enter at all the prompts -->
-        <!-- Go to vmware and change the settings to share a folder and choose a folder to share -->
-        <!-- sudo reboot -->
-        <!-- go to /mnt/hgfs and you should see the folder you shared -->
-        <!-- 
-        -->
-        <!-- take a snapshot -->
-        <!-- 
-        -->
-        <!-- 
-        -->
-        <!-- # Couchdb - we use jaunty so that these actually work. hardy doesn't work with apt-get mainly because of the erlang package -->
-        <!-- sudo apt-get install automake autoconf libtool subversion-tools help2man -->
-        <!-- sudo apt-get install build-essential erlang libicu38 libicu-dev -->
-        <!-- sudo apt-get install libreadline5-dev checkinstall libmozjs-dev wget -->
-        <!-- sudo apt-get install libcurl4-openssl-dev -->
-        <!-- cd ~/sources -->
-        <!-- wget http://mirror.csclub.uwaterloo.ca/apache/couchdb/0.9.0/apache-couchdb-0.9.0.tar.gz -->
-        <!-- tar -xzvf apache-couchdb-0.9.0.tar.gz -->
-        <!-- cd apache-couchdb-0.9.0/ -->
-        <!-- ./configure -->
-        <!-- make && sudo make install -->
-        <!-- sudo adduser couchdb -->
-        <!-- sudo mkdir -p /usr/local/var/lib/couchdb -->
-        <!-- sudo chown -R couchdb /usr/local/var/lib/couchdb -->
-        <!-- sudo mkdir -p /usr/local/var/log/couchdb -->
-        <!-- sudo chown -R couchdb /usr/local/var/log/couchdb -->
-        <!-- sudo mkdir -p /usr/local/var/run -->
-        <!-- sudo chown -R couchdb /usr/local/var/run -->
-        <!-- sudo cp /usr/local/etc/init.d/couchdb /etc/init.d/ -->
-        <!-- sudo update-rc.d couchdb defaults -->
-        <!-- sudo /etc/init.d/couchdb start -->
-        <!-- 
-        -->
-        <!-- sudo apt-get install nano -->
-        <!-- By default CouchDB listens only for connections from the local host. To change that edit /usr/local/etc/couchdb/local.ini: -->
-        <!-- Modify the following lines: -->
-        <!-- port = 5984 -->
-        <!-- bind_address = 0.0.0.0 -->
-        <!-- You should now be able to access couchdb by typing your ipaddress:5984 -->
-        <!-- take another snapshot -->
-        <!-- 
-        -->
-        <!-- # Ruby Enterprise Edition -->
-        <!-- cd ~/sources -->
-        <!-- wget http://www.rubyenterpriseedition.com/ruby-enterprise_1.8.6-20090610_amd64.deb -->
-        <!-- sudo dpkg -i ruby-enterprise[press tab] -->
-        <!-- sudo nano /etc/environment -->
-        <!-- And add the /opt/ruby-enterprise/bin dir to your PATH variable like this: -->
-        <!-- PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/ruby-enterprise/bin" -->
-        <!-- This will get the scripts at the “bin” folder available to your user but not when you use “sudo” calls (Ubuntu just overrides the PATH when you call “sudo” for security reasons) so we’ll need to symlink some of the files to “/usr/bin” to be sure that they’re visible when you’re sudoing: -->
-        <!-- sudo ln -s /opt/ruby-enterprise/bin/ruby /usr/bin/ruby -->
-        <!-- sudo ln -s /opt/ruby-enterprise/bin/gem /usr/bin/gem -->
-        <!-- sudo ln -s /opt/ruby-enterprise/bin/ri /usr/bin/ri -->
-        <!-- sudo ln -s /opt/ruby-enterprise/bin/rdoc /usr/bin/rdoc -->
-        <!-- sudo ln -s /opt/ruby-enterprise/bin/irb /usr/bin/irb -->
-        <!-- sudo ln -s /opt/ruby-enterprise/bin/rake /usr/bin/rake -->
-        <!-- try ruby -v & installing a gem sudo gem install thor -->
-        <!-- take another snapshot -->
-        <!-- 
-        -->
-        <!-- # Nginx with passenger -->
-        <!-- sudo /opt/ruby-enterprise/bin/passenger-install-nginx-module --auto --auto-download -->
-        <!-- press 'enter' at all the prompts -->
-        <!-- sudo apt-get install git-core -->
-        <!-- cd ~/sources -->
-        <!-- git clone git://github.com/jnstq/rails-nginx-passenger-ubuntu.git -->
-        <!-- sudo mv rails-nginx-passenger-ubuntu/nginx/nginx /etc/init.d/nginx -->
-        <!-- sudo chown root:root /etc/init.d/nginx -->
-        <!-- sudo /etc/init.d/nginx start -->
-        <!-- sudo /etc/init.d/nginx restart -->
-        <!-- sudo /etc/init.d/nginx (to see the list of available commands) -->
-        <!-- browse to your ipaddress in your browser and you should see 'Welcome to nginx' -->
-        <!-- take a snapshot -->
-        <!-- 
-        -->
-        <!-- # Setup your first running app -->
-        <!-- sudo nano /opt/nginx/conf/nginx.conf & add the following line in the appropriate place -->
-        <!-- server { -->
-        <!-- listen 80; -->
-        <!-- rack_env development; -->
-        <!-- server_name localhost; -->
-        <!-- root /mnt/hgfs/code/merb/twinstang.com/public; -->
-        <!-- passenger_enabled on; -->
-        <!-- 
-        -->
-        <!-- } -->
-        <!-- 
-        -->
-        <!-- # get your read/write permissions going correctly -->
-        <!-- type 'id' in terminal -->
-        <!-- Work out your user and main group ID by typing: id (this will usually be 1000 and 1000); -->
-        <!-- Edit your sharing settings with: sudo nano /etc/fstab; -->
-        <!-- Edit the line starting with: .host:/ /mnt/hgf to look like: host:/ /mnt/hgfs vmhgfs defaults,ttl=5,uid=1000,gid=1000 0, where uid=1000 and gid=1000 are the actual user and group IDs we discovered back in the first step. -->
-        <!-- sudo reboot -->
-        <!-- 
-        -->
-        <!-- 
-        -->
-        <!-- # install merb -->
-        <!-- sudo apt-get install libsqlite3-dev -->
-        <!-- sudo apt-get install libmysqlclient15-dev -->
-        <!-- sudo gem install merb -->
-        <!-- 
-        -->
-        <!-- # install some added libraries like imagemagick -->
-        <!-- sudo apt-get install build-essential libmagickcore-dev imagemagick libpcre3 libfcgi-dev libfcgi0ldbl libxml2-dev libxslt1-dev -y -->
-        <!-- 
-        -->
-        <!-- 
-        -->
-        <!-- 
-        -->
-        <!-- 
-        -->
-        <!-- # twinstang specifics -->
-        <!-- sudo bin/rake populate:all -->
-        <!-- thor merb:gem:redeploy -->
       </div>
     </div>
     <script src='/javascripts/jquery.js' type='text/javascript'></script>
