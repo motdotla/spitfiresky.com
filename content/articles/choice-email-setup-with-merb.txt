@@ -1,0 +1,57 @@
+---
+layout:     blog
+title:      Choice Email Setup with Merb
+created_at: 2009-07-28 17:51:28.919818 -07:00
+article:    true
+filter:
+  - haml
+---
+
+%h2= @page.title
+
+%p Good day. Here I describe a choice email setup with Merb. You should be using this setup too.
+
+%h3 SMTP or Sendmail?
+
+%p Use Google smtp to send your mail from your merb application. Sendmail has three serious limitations.
+
+%p #1: Sendmail is specific to your server. When you move servers, you will have to reinstall sendmail. Your app should be as mobile and self-contained as possible. Merb does a great job of this with its bundling of gems, and you should continue that trend. 
+
+%p #2: Emails sent via sendmail on your server are sent with extra hidden data that you don't need. This isn't a problem when you are sending regular emails, but is is a problem when you start sending text messages via email and want your web application to receive the user's text reply back. I was using sendmail with <a href="http://flossedtoday.com">Flossed Today</a> to send out text messages, but subscribers using AT&T (and I imagine other cell providers as well), were unable to reply back to the message. The reply was deemed too large for a text message by AT&T's sms protocols. I determined this was because it was sending all the hidden sendmail data along with the text message. When I switched to gmail smtp I no longer experienced this issue. 
+
+%p #3: Gmail keeps a nice sent mail history. Sendmail's logs are just not the same as being able to search through your sent mails using gmail's interface.
+
+%h3 Won't using smtp lock up my app's response/request cycle?
+
+%p No, it doesn't have to. Use Merb's send_later method and you are golden. 
+
+%p Many argue that using gmail smtp is a bad idea because sendmail makes your web app appear to run faster. They are right. With sendmail your application passes the email request to your local sendmail command. It doesn't have far to go so it is fast. With gmail smtp your app has to connect to the remote smtp server. It has a further distance to travel, and the connection time typically lasts 2-5 seconds. During this time your web app appears to be thinking to your visitor and they are left waiting an extra 2-5 seconds on top of whatever load time speeds your site already does. 
+
+%p Thankfully, Merb has a send_later method that allows you to pass this email connection time off to a separate thread. Your application then loads speedily, and your user doesn't have to wait an extra 2-5 seconds. The major reason for not using gmail smtp is now removed.
+
+%h3 Setup
+
+%p Signup for a google apps account - <a href="http://www.google.com/apps/intl/en/group/index.html">http://www.google.com/apps/intl/en/group/index.html</a>. (You could use gmail, but you won't get the @yourdomain.com functionality.). Follow through the process, set up your mx records, verify it is working, etc.
+
+%p Next setup your app to handle smtp
+
+<script src="http://gist.github.com/157807.js"></script>
+
+
+
+
+
+
+
+
+Assuming you've setup your server similar to <a href="/articles/my-server-setup.html">my server setup</a>
+
+
+%h3 Setup
+
+
+%p.followme
+  %strong
+    You should follow me on twitter 
+    %a{:href=> 'http://twitter.com/spitfiresky'} here
+
