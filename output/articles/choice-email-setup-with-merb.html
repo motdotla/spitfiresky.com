@@ -73,15 +73,25 @@
         <p>#2: Emails sent via sendmail on your server are sent with extra hidden data that you don't need. This isn't a problem when you are sending regular emails, but is is a problem when you start sending text messages via email and want your web application to receive the user's text reply back. I was using sendmail with <a href="http://flossedtoday.com">Flossed Today</a> to send out text messages, but subscribers using AT&T (and I imagine other cell providers as well), were unable to reply back to the message. The reply was deemed too large for a text message by AT&T's sms protocols. I determined this was because it was sending all the hidden sendmail data along with the text message. When I switched to google apps smtp I no longer experienced this issue.</p>
         <p>#3: Google Apps keeps a nice sent mail history. Sendmail's logs are just not the same as being able to search in google apps.</p>
         <h3>Won't smtp's connection time lock up my app's response/request cycle?</h3>
-        <p>No, it doesn't have to. Use Merb's send_later method and you are golden.</p>
+        <p>No, it doesn't have to. Use Merb's run_later method and you are golden.</p>
         <p>Many argue that using smtp is a bad idea because sendmail makes your web app appear to run faster. They are right. With sendmail your application passes the email request to your local sendmail command. It doesn't have far to go so it is fast. With google apps smtp your app has to connect to the remote smtp server. It has a further distance to travel, and the connection time typically lasts 2-5 seconds. During this time your web app appears to be thinking to your visitor and they are left waiting an extra 2-5 seconds on top of whatever load time speeds your site already does.</p>
-        <p>Thankfully, Merb has a send_later method that allows you to pass this email connection time off to a separate thread. Your application then loads speedily, and your user doesn't have to wait an extra 2-5 seconds. Now you can have the speed of sendmail and the advantages of google apps.</p>
+        <p>Thankfully, Merb has a run_later method that allows you to pass this email connection time off to a separate thread. Your application then loads speedily, and your user doesn't have to wait an extra 2-5 seconds. Now you can have the speed of sendmail and the advantages of google apps.</p>
         <h3>Setup</h3>
         <p>Signup for a google apps account - <a href="http://www.google.com/apps/intl/en/group/index.html">here</a>, and finish the process verifying that you can send/receive emails from your new google apps account.</p>
         <p>Next setup your app to handle smtp.</p>
         <script src="http://gist.github.com/157807.js"></script>
-        Assuming you've setup your server similar to <a href="/articles/my-server-setup.html">my server setup</a>
-        <h3>Setup</h3>
+        <h3>Sending emails</h3>
+        <p>In your application use the run_later method in conjunction</p>
+        <h4>run_later</h4>
+        <p>Merb's run_later method works out of the box with thin and mongrel, but has a bug with passenger and Merb 1.0.x. Create the the file '/merb/hacks/run_later.rb' in your application with the following code to fix it.</p>
+        <script src="http://gist.github.com/157821.js"></script>
+        <p>Then add the following to your init.rb file</p>
+        <script src="http://gist.github.com/157822.js"></script>
+        <h4>send_mail</h4>
+        <p>Setup your mailers in merb like usual and use in your controller surrounded by run_later. Here is an example sending a confirmation email after a user signs up.</p>
+        <script src="http://gist.github.com/157824.js"></script>
+        <h3>Conclusion</h3>
+        <p>Linux's sendmail can be great, but when it comes to features and ease of configuration Google Apps can't be beat. Couple it with Merb's run_later method, and you can create really nice email functionality within your app. Plus, it is more scaleable since all the configuration is in the app, and connects remotely to google apps.</p>
         <p class='followme'>
           <strong>
             You should follow me on twitter

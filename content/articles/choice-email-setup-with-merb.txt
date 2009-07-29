@@ -23,11 +23,11 @@ filter:
 
 %h3 Won't smtp's connection time lock up my app's response/request cycle?
 
-%p No, it doesn't have to. Use Merb's send_later method and you are golden. 
+%p No, it doesn't have to. Use Merb's run_later method and you are golden. 
 
 %p Many argue that using smtp is a bad idea because sendmail makes your web app appear to run faster. They are right. With sendmail your application passes the email request to your local sendmail command. It doesn't have far to go so it is fast. With google apps smtp your app has to connect to the remote smtp server. It has a further distance to travel, and the connection time typically lasts 2-5 seconds. During this time your web app appears to be thinking to your visitor and they are left waiting an extra 2-5 seconds on top of whatever load time speeds your site already does. 
 
-%p Thankfully, Merb has a send_later method that allows you to pass this email connection time off to a separate thread. Your application then loads speedily, and your user doesn't have to wait an extra 2-5 seconds. Now you can have the speed of sendmail and the advantages of google apps.
+%p Thankfully, Merb has a run_later method that allows you to pass this email connection time off to a separate thread. Your application then loads speedily, and your user doesn't have to wait an extra 2-5 seconds. Now you can have the speed of sendmail and the advantages of google apps.
 
 %h3 Setup
 
@@ -37,17 +37,32 @@ filter:
 
 <script src="http://gist.github.com/157807.js"></script>
 
+%h3 Sending emails
+
+%p In your application use the run_later method in conjunction
+
+%h4 run_later 
+
+%p Merb's run_later method works out of the box with thin and mongrel, but has a bug with passenger and Merb 1.0.x. Create the the file '/merb/hacks/run_later.rb' in your application with the following code to fix it.
+
+<script src="http://gist.github.com/157821.js"></script>
+
+%p Then add the following to your init.rb file
+
+<script src="http://gist.github.com/157822.js"></script>
+
+%h4 send_mail
+
+%p Setup your mailers in merb like usual and use in your controller surrounded by run_later. Here is an example sending a confirmation email after a user signs up.
+
+<script src="http://gist.github.com/157824.js"></script>
+
+%h3 Conclusion
+
+%p Linux's sendmail can be great, but when it comes to features and ease of configuration Google Apps can't be beat. Couple it with Merb's run_later method, and you can create really nice email functionality within your app. Plus, it is more scaleable since all the configuration is in the app, and connects remotely to google apps.
 
 
 
-
-
-
-
-Assuming you've setup your server similar to <a href="/articles/my-server-setup.html">my server setup</a>
-
-
-%h3 Setup
 
 
 %p.followme
