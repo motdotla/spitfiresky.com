@@ -36,7 +36,7 @@ Customize things according to <a href="http://articles.slicehost.com/2009/3/5/ub
 
 %h3 Install mysql
 
-<script src="http://gist.github.com/156650.js"></script>
+<script src="http://gist.github.com/156650.js">-</script>
 
 %h3 Install couchdb
 
@@ -46,6 +46,9 @@ Customize things according to <a href="http://articles.slicehost.com/2009/3/5/ub
 
 <script src="http://gist.github.com/157744.js"></script>
 
+%h3 Install email support with Postfix
+
+<script src="http://gist.github.com/157765.js"></script>
 
 %p.followme
   %strong
