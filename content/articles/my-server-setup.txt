@@ -50,7 +50,7 @@ Customize things according to <a href="http://articles.slicehost.com/2009/3/5/ub
 
 <script src="http://gist.github.com/157765.js"></script>
 
-%h3 Install minimagick
+%h3 Install ImageMagick
 
 <script src="http://gist.github.com/157844.js"></script>
 
