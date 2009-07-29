@@ -77,8 +77,8 @@
         <p>Many argue that using smtp is a bad idea because sendmail makes your web app appear to run faster. They are right. With sendmail your application passes the email request to your local sendmail command. It doesn't have far to go so it is fast. With google apps smtp your app has to connect to the remote smtp server. It has a further distance to travel, and the connection time typically lasts 2-5 seconds. During this time your web app appears to be thinking to your visitor and they are left waiting an extra 2-5 seconds on top of whatever load time speeds your site already does.</p>
         <p>Thankfully, Merb has a send_later method that allows you to pass this email connection time off to a separate thread. Your application then loads speedily, and your user doesn't have to wait an extra 2-5 seconds. Now you can have the speed of sendmail and the advantages of google apps.</p>
         <h3>Setup</h3>
-        <p>Signup for a google apps account - <a href="http://www.google.com/apps/intl/en/group/index.html">http://www.google.com/apps/intl/en/group/index.html</a>. Follow through the process, set up your mx records, verify it is working, etc.</p>
-        <p>Next setup your app to handle smtp</p>
+        <p>Signup for a google apps account - <a href="http://www.google.com/apps/intl/en/group/index.html">here</a>, and finish the process verifying that you can send/receive emails from your new google apps account.</p>
+        <p>Next setup your app to handle smtp.</p>
         <script src="http://gist.github.com/157807.js"></script>
         Assuming you've setup your server similar to <a href="/articles/my-server-setup.html">my server setup</a>
         <h3>Setup</h3>

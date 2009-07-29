@@ -31,9 +31,9 @@ filter:
 
 %h3 Setup
 
-%p Signup for a google apps account - <a href="http://www.google.com/apps/intl/en/group/index.html">http://www.google.com/apps/intl/en/group/index.html</a>. Follow through the process, set up your mx records, verify it is working, etc.
+%p Signup for a google apps account - <a href="http://www.google.com/apps/intl/en/group/index.html">here</a>, and finish the process verifying that you can send/receive emails from your new google apps account.
 
-%p Next setup your app to handle smtp
+%p Next setup your app to handle smtp.
 
 <script src="http://gist.github.com/157807.js"></script>
 
