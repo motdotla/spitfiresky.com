@@ -24,7 +24,7 @@ filter:    erb
 		
 		<div id="header" class="grid_12">
 		    <div id="articles">
-				  Read our journal <a href="/articles">here</a>
+				  Read our <a href="/blog">weblog</a>.
 				</div>
 				
 				<div id="current_rate">

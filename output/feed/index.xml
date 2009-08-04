@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
-  <title>Spitfire Sky Articles</title>
-  <subtitle>articles from a web developer</subtitle>
+  <title>Spitfire Sky Blog</title>
+  <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2009-08-04T13:45:18-07:00</updated>
+  <updated>2009-08-04T14:00:49-07:00</updated>
   <author>
-    <name>Scott Motte</name>
+    <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
   </author>
   <id>http://spitfiresky.com/</id>
   
   <entry>
     <title>Choice Email Setup with Merb</title>
-    <link href="/articles/choice-email-setup-with-merb.html" />
+    <link href="/blog/choice-email-setup-with-merb.html" />
     <id>tag:spitfiresky.com,Tue Jul 28 17:51:28 -0700 2009:1248828688</id>
     <updated>Tue Jul 28 17:51:28 -0700 2009</updated>
     <content type="html">&lt;h2&gt;Choice Email Setup with Merb&lt;/h2&gt;
@@ -55,19 +54,19 @@
   
   <entry>
     <title>My Server Setup</title>
-    <link href="/articles/my-server-setup.html" />
+    <link href="/blog/my-server-setup.html" />
     <id>tag:spitfiresky.com,Thu Jul 23 13:37:08 -0700 2009:1248381428</id>
     <updated>Thu Jul 23 13:37:08 -0700 2009</updated>
     <content type="html">&lt;h2&gt;My Server Setup&lt;/h2&gt;
 &lt;p&gt;Good day. Here I detail my server setup with &lt;a href=&quot;http://www.ubuntu.com/getubuntu/download-server&quot;&gt;Ubuntu 9.04&lt;/a&gt; on &lt;a href=&quot;http://rackspacecloud.com&quot;&gt;Rackspace Cloud&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Basics&lt;/h3&gt;
-&lt;p&gt;Use the Slicehost articles &lt;a href=&quot;http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-1&quot;&gt;Step 1&lt;/a&gt; and &lt;a href=&quot;http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-2&quot;&gt;Step 2&lt;/a&gt; to get the basics of your server going. Use the Ubuntu Intrepid setup. It will work just fine with Ubuntu 9.04.&lt;/p&gt;
+&lt;p&gt;Use the Slicehost articles &lt;a href=&quot;http://blog.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-1&quot;&gt;Step 1&lt;/a&gt; and &lt;a href=&quot;http://blog.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-2&quot;&gt;Step 2&lt;/a&gt; to get the basics of your server going. Use the Ubuntu Intrepid setup. It will work just fine with Ubuntu 9.04.&lt;/p&gt;
 &lt;h3&gt;Ruby&lt;/h3&gt;
 &lt;script src=&quot;http://gist.github.com/156639.js&quot;&gt;&lt;/script&gt;
 &lt;h3&gt;Install Nginx and Passenger&lt;/h3&gt;
 &lt;script src=&quot;http://gist.github.com/156642.js&quot;&gt;&lt;/script&gt;
 &lt;h3&gt;Customize nginx&lt;/h3&gt;
-Customize things according to &lt;a href=&quot;http://articles.slicehost.com/2009/3/5/ubuntu-intrepid-nginx-configuration&quot;&gt;here&lt;/a&gt;.
+Customize things according to &lt;a href=&quot;http://blog.slicehost.com/2009/3/5/ubuntu-intrepid-nginx-configuration&quot;&gt;here&lt;/a&gt;.
 &lt;script src=&quot;http://gist.github.com/156644.js&quot;&gt;&lt;/script&gt;
 &lt;h3&gt;Virtual Hosts&lt;/h3&gt;
 &lt;script src=&quot;http://gist.github.com/156649.js&quot;&gt;&lt;/script&gt;
@@ -94,7 +93,7 @@ Customize things according to &lt;a href=&quot;http://articles.slicehost.com/200
   
   <entry>
     <title>Introduction</title>
-    <link href="/articles/introduction.html" />
+    <link href="/blog/introduction.html" />
     <id>tag:spitfiresky.com,Wed Jul 15 21:47:05 -0700 2009:1247719625</id>
     <updated>Wed Jul 15 21:47:05 -0700 2009</updated>
     <content type="html">&lt;h2&gt;Introduction&lt;/h2&gt;
@@ -108,47 +107,6 @@ Customize things according to &lt;a href=&quot;http://articles.slicehost.com/200
 &lt;p&gt;Spitfire Sky is not just me though. Since January 2009 I have worked closely with &lt;a href=&quot;http://jeromegn.com&quot;&gt;Jerome Gravel-Niquet of Canada&lt;/a&gt;. He does exemplary design work and has made me a better programmer. The designs for Flossed Today and Investapp were completely his. Working together we have proven to be a good team and are sharing ownership on our next project - &lt;a href=&quot;http://twinstang.com&quot;&gt;Twinstang&lt;/a&gt;. You should really &lt;a href=&quot;/contact.html&quot;&gt;hire us&lt;/a&gt; for your next web application project.&lt;/p&gt;
 &lt;h3&gt;Concluding&lt;/h3&gt;
 &lt;p&gt;I'm a disciplined hard working fellow. I like to set goals, and I'm good at programming. For fun, I like to fly. If I was independently wealthy, I'd spend my mornings building web applications and my afternoons flying airplanes. My greatest regret is that I never hit a home run all my years in baseball. Inside the park homeruns, yes, many, but never over the fence.&lt;/p&gt;
-&lt;p class='followme'&gt;
-  &lt;strong&gt;
-    You should follow me on twitter
-    &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
-  &lt;/strong&gt;
-&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>Recent</title>
-    <link href="/articles/" />
-    <id>tag:spitfiresky.com,Tue Jun 30 18:19:41 -0700 2009:1246411181</id>
-    <updated>Tue Jun 30 18:19:41 -0700 2009</updated>
-    <content type="html">&lt;h2&gt;Choice Email Setup with Merb&lt;/h2&gt;
-&lt;p&gt;Good day. Here I describe a choice email setup with Merb. You should be using this setup too.&lt;/p&gt;
-&lt;h3&gt;SMTP or Sendmail?&lt;/h3&gt;
-&lt;p&gt;Use Google Apps SMTP to send your mail from your merb application. Sendmail has three serious limitations.&lt;/p&gt;
-&lt;p&gt;#1: Sendmail is specific to your server. When you move servers, you will have to reinstall sendmail. Your app should be as mobile and self-contained as possible. Merb does a great job of this with its bundling of gems, and you should continue that trend.&lt;/p&gt;
-&lt;p&gt;#2: Emails sent via sendmail on your server are sent with extra hidden data that you don't need. This isn't a problem when you are sending regular emails, but is is a problem when you start sending text messages via email and want your web application to receive the user's text reply back. I was using sendmail with &lt;a href=&quot;http://flossedtoday.com&quot;&gt;Flossed Today&lt;/a&gt; to send out text messages, but subscribers using AT&amp;T (and I imagine other cell providers as well), were unable to reply back to the message. The reply was deemed too large for a text message by AT&amp;T's sms protocols. I determined this was because it was sending all the hidden sendmail data along with the text message. When I switched to Google Apps SMTP I no longer experienced this issue.&lt;/p&gt;
-&lt;p&gt;#3: Google Apps keeps a nice sent mail history. Sendmail's logs are just not the same as being able to search in Google Apps.&lt;/p&gt;
-&lt;h3&gt;Won't SMTP's connection time lock up my app's response/request cycle?&lt;/h3&gt;
-&lt;p&gt;No, it doesn't have to. Use Merb's run_later method and you are golden.&lt;/p&gt;
-&lt;p&gt;Many argue that using SMTP is a bad idea because sendmail makes your web app appear to run faster. They are right. With sendmail your application passes the email request to your local sendmail command. It doesn't have far to go so it is fast. With Google Apps SMTP your app has to connect to the remote SMTP server. It has a further distance to travel, and the connection time typically lasts 2-5 seconds. During this time your web app appears to be thinking to your visitor and they are left waiting an extra 2-5 seconds on top of whatever load time speeds your site already does.&lt;/p&gt;
-&lt;p&gt;Thankfully, Merb has a run_later method that allows you to pass this email connection time off to a separate thread. Your application then loads speedily, and your user doesn't have to wait an extra 2-5 seconds. Now you can have the speed of sendmail and the advantages of Google Apps.&lt;/p&gt;
-&lt;h3&gt;Setup&lt;/h3&gt;
-&lt;p&gt;Signup for a Google Apps account - &lt;a href=&quot;http://www.google.com/apps/intl/en/group/index.html&quot;&gt;here&lt;/a&gt;, and finish the process verifying that you can send/receive emails from your new Google Apps account.&lt;/p&gt;
-&lt;p&gt;Next setup your app to handle SMTP.&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/157807.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Sending emails&lt;/h3&gt;
-&lt;p&gt;In your application use the run_later method in conjunction&lt;/p&gt;
-&lt;h4&gt;run_later&lt;/h4&gt;
-&lt;p&gt;Merb's run_later method works out of the box with thin and mongrel, but has a bug with passenger and Merb 1.0.x. Create the the file '/merb/hacks/run_later.rb' in your application with the following code to fix it.&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/157821.js&quot;&gt;&lt;/script&gt;
-&lt;p&gt;Then add the following to your init.rb file&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/157822.js&quot;&gt;&lt;/script&gt;
-&lt;h4&gt;send_mail&lt;/h4&gt;
-&lt;p&gt;Setup your mailers in merb like usual and use in your controller surrounded by run_later. Here is an example sending a confirmation email after a user signs up.&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/157824.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;Linux's sendmail can be great, but when it comes to features and ease of configuration Google Apps can't be beat. Couple it with Merb's run_later method, and you can create really nice email functionality within your app. Plus, it is more scaleable since all the configuration is in the app, and connects remotely to Google Apps.&lt;/p&gt;
 &lt;p class='followme'&gt;
   &lt;strong&gt;
     You should follow me on twitter

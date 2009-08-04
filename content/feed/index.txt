@@ -1,8 +1,8 @@
 ---
-title:     Spitfire Sky Articles
-subtitle:  - articles from a web developer
+title:     Spitfire Sky Blog
+subtitle:  - web development blog
 site:      spitfiresky.com
-author:    Scott Motte
+author:    scottmotte
 email:     scott@spitfiresky.com
 extension: xml
 layout:    nil
@@ -11,7 +11,6 @@ filter:    erb
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
   <title><%= h(@page.title) %></title>
   <subtitle><%= h(@page.subtitle) %></subtitle>
   <link href="http://<%= @page.site %>//" rel="self" />
@@ -23,11 +22,11 @@ filter:    erb
   </author>
   <id>http://<%= @page.site %>/</id>
   <% @pages.find(:limit => 10,
-                 :in_directory => '/articles',
+                 :in_directory => '/blog',
                  :recursive => true,
                  :sort_by => 'created_at',
                  :reverse => true).each do |article|
-    next if article == @page
+    next if article == @page || article.title == "Blog"
   %>
   <entry>
     <title><%= h(article.title) %></title>

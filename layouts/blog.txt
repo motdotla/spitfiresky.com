@@ -15,7 +15,7 @@ filter:    haml
       #header.grid_8
         #articles
           %ul
-            - articles = @pages.find(:all, :in_directory => '/articles', :recursive => true, :sort_by => "created_at", :reverse => true, :article => true)
+            - articles = @pages.find(:all, :in_directory => '/blog', :recursive => true, :sort_by => "created_at", :reverse => true, :article => true)
             - articles.each do |article|
               %li
                 %span= article.created_at.strftime('%d %b %Y')
@@ -28,7 +28,7 @@ filter:    haml
         %a{:href => '/'}
           %img{:src => '/images/logo.png'}
         %p
-          %a{:href => '/articles'}
+          %a{:href => '/blog'}
             %img{:src => '/images/house.png'} 
           %a{:href => '#top', :class => "show_articles"}
             %img{:src => '/images/report.png'}
