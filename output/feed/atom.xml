@@ -5,7 +5,7 @@
   <subtitle>articles from a web developer</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2009-08-04T13:42:03-07:00</updated>
+  <updated>2009-08-04T13:45:18-07:00</updated>
   <author>
     <name>Scott Motte</name>
     <email>scott@spitfiresky.com</email>
@@ -13,6 +13,7 @@
   <id>http://spitfiresky.com/</id>
   
   <entry>
+    <title>Choice Email Setup with Merb</title>
     <link href="/articles/choice-email-setup-with-merb.html" />
     <id>tag:spitfiresky.com,Tue Jul 28 17:51:28 -0700 2009:1248828688</id>
     <updated>Tue Jul 28 17:51:28 -0700 2009</updated>
@@ -53,6 +54,7 @@
   </entry>
   
   <entry>
+    <title>My Server Setup</title>
     <link href="/articles/my-server-setup.html" />
     <id>tag:spitfiresky.com,Thu Jul 23 13:37:08 -0700 2009:1248381428</id>
     <updated>Thu Jul 23 13:37:08 -0700 2009</updated>
@@ -91,6 +93,7 @@ Customize things according to &lt;a href=&quot;http://articles.slicehost.com/200
   </entry>
   
   <entry>
+    <title>Introduction</title>
     <link href="/articles/introduction.html" />
     <id>tag:spitfiresky.com,Wed Jul 15 21:47:05 -0700 2009:1247719625</id>
     <updated>Wed Jul 15 21:47:05 -0700 2009</updated>
@@ -115,6 +118,7 @@ Customize things according to &lt;a href=&quot;http://articles.slicehost.com/200
   </entry>
   
   <entry>
+    <title>Recent</title>
     <link href="/articles/" />
     <id>tag:spitfiresky.com,Tue Jun 30 18:19:41 -0700 2009:1246411181</id>
     <updated>Tue Jun 30 18:19:41 -0700 2009</updated>

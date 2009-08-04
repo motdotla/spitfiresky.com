@@ -30,6 +30,7 @@ filter:    erb
     next if article == @page
   %>
   <entry>
+    <title><%= h(article.title) %></title>
     <link href="<%= article.url %>" />
     <id>tag:<%= @page.site %>,<%= article.created_at %>:<%= article.created_at.to_i %></id>
     <updated><%= article.created_at %></updated>
