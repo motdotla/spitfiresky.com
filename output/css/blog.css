@@ -12,22 +12,48 @@ a:visited {
   color: #356083;
 }
 h2 {
-  font-size: 18px;
+  font-size: 22px;
 }
 h3 {
-  font-size: 16px;
+  font-size: 18px;
 }
 h4 {
   font-size: 14px; font-style: italic; font-family: Georgia, 'Times New Roman', serif;
+}
+small {
+  font-size: 80%;
 }
 .clear {
   clear: both;
 }
 /* Content */
 #content {
+  margin-bottom: 30px;
 }
   #content h2 {
     margin-top: 10px;
+  }
+  #content h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  #content h4 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+  }
+  #content p {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  #content ul {
+    margin-bottom: 0;
+  }
+  #content table {
+    width: 100%;
+  }
+  #content table td {
+    padding: 5px;
+    border: 1px solid #ccc;
   }
   #twitter {
     border-bottom: 1px solid #ccc;
