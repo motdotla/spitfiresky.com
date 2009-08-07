@@ -4,7 +4,7 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2009-08-07T11:06:42-07:00</updated>
+  <updated>2009-08-07T11:10:47-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
@@ -19,7 +19,7 @@
     <content type="html">&lt;h2&gt;Recap of my sdruby presentation on mongodb&lt;/h2&gt;
 &lt;p&gt;Here I recap my presentation on mongodb at sdruby last night.&lt;/p&gt;
 &lt;h3&gt;Slides&lt;/h3&gt;
-&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_1825613&quot;&gt;&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mongodb-090806212433-phpapp01&amp;stripped_title=mongodb-1825613&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mongodb-090806212433-phpapp01&amp;stripped_title=mongodb-1825613&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mongodb-090806212433-phpapp01&amp;stripped_title=mongodb-1825613&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mongodb-090806212433-phpapp01&amp;stripped_title=mongodb-1825613&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
 &lt;h3&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;I am using mongodb on &lt;a href=&quot;http://staging.twinstang.com&quot;&gt;Twinstang redesigned&lt;/a&gt;. &lt;strong&gt;I started with couchdb, but encountered difficulties grasping the concept of map/reduce&lt;/strong&gt; for more powerful but necessary querying.&lt;/p&gt;
 &lt;p&gt;Because of this limitation in my skills (and partially because couchdb is limited to doing map/reduce on your documents and cannot do an additional map/reduce on top of a previous map/reduce) I began running into barriers in development of features for my app, and I foresaw more issues on the way.&lt;/p&gt;
