@@ -4,12 +4,119 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2009-08-07T11:03:40-07:00</updated>
+  <updated>2009-08-07T11:06:42-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
   </author>
   <id>http://spitfiresky.com/</id>
+  
+  <entry>
+    <title>Recap of my sdruby presentation on mongodb</title>
+    <link href="/blog/recap-of-my-sdruby-presentation-on-mongodb.html" />
+    <id>tag:spitfiresky.com,Fri Aug 07 09:30:06 -0700 2009:1249662606</id>
+    <updated>Fri Aug 07 09:30:06 -0700 2009</updated>
+    <content type="html">&lt;h2&gt;Recap of my sdruby presentation on mongodb&lt;/h2&gt;
+&lt;p&gt;Here I recap my presentation on mongodb at sdruby last night.&lt;/p&gt;
+&lt;h3&gt;Slides&lt;/h3&gt;
+&lt;div style=&quot;width:425px;text-align:left&quot; id=&quot;__ss_1825613&quot;&gt;&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mongodb-090806212433-phpapp01&amp;stripped_title=mongodb-1825613&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mongodb-090806212433-phpapp01&amp;stripped_title=mongodb-1825613&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+&lt;h3&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I am using mongodb on &lt;a href=&quot;http://staging.twinstang.com&quot;&gt;Twinstang redesigned&lt;/a&gt;. &lt;strong&gt;I started with couchdb, but encountered difficulties grasping the concept of map/reduce&lt;/strong&gt; for more powerful but necessary querying.&lt;/p&gt;
+&lt;p&gt;Because of this limitation in my skills (and partially because couchdb is limited to doing map/reduce on your documents and cannot do an additional map/reduce on top of a previous map/reduce) I began running into barriers in development of features for my app, and I foresaw more issues on the way.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I switched to mongodb using MongoMapper and have been super satisfied.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dynamic queries are a welcome return&lt;/li&gt;
+  &lt;li&gt;There is a good balance of speed, features, and schema-less freedom&lt;/li&gt;
+  &lt;li&gt;It should scale better than mysql with less effort&lt;/li&gt;
+  &lt;li&gt;MongoMapper makes it a pleasure to work with&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Installation &amp; Running it&lt;/h3&gt;
+&lt;p&gt;Installation of mongodb is from source but is quick and painless. After installation type sudo mongod run to run mongodb. You will probably want to use something like monit or god to monitor the process.&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/164002.js&quot;&gt;&lt;/script&gt;
+&lt;h3&gt;Mongo vs Couch&lt;/h3&gt;
+&lt;p&gt;Couchdb is really cool and I can't say enough how much I've enjoyed it - especially the concepts it is pushing. It has huge potential to open up applications to the masses with its embedded apps. It is essentially a framework and server rolled into one. And it has convinced me that the language of the future is javascript. Furthermore, it's idea to run apps in the browser locally and then replicate/sync is mouthwatering. There are a lot of promises and hopes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;However, map/reduce is difficult to grasp and couchdb's map/reduce feels like a neutered version&lt;/strong&gt;. How come I can't do map/reduces on already built design documents? In the end, couchdb left me somewhat disappointed. It was wrong for my app but was so exciting. I will be using couchdb in the future to build simple api based web apps that users can hook into.&lt;/p&gt;
+&lt;p&gt;Mongodb on the other hand feels more traditional. It is not trying to shake things up. Instead, &lt;strong&gt;Mongodb accomplishes its main goal very well&lt;/strong&gt; - to bridge the gap between key/value stores and sql databases. It's fast, is focused on solving scaling issues that have haunted mysql, and it maintains the ease of use and power of dynamic queries.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use mongodb for your traditional web app - where your users are doing a lot of updates but where you are generally controlling the interface and features.&lt;/strong&gt; Use couchdb for focused web apps that are mostly an api or web hook and where your users are controlling the interface.&lt;/p&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;strong&gt;Mongodb (C++)&lt;/strong&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;strong&gt;Couchdb (Erlang)&lt;/strong&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;drivers &lt;small&gt;(php driver, ruby, python, and more)&lt;/small&gt;&lt;/td&gt;
+    &lt;td&gt;REST &lt;small&gt;(very cool, but slightly slower. not really slower in practice though - except when it comes to replication as a tool to scale)&lt;/small&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;bson, document, schema-free&lt;/td&gt;
+    &lt;td&gt;json, document, schema-free&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Dynamic queries, indexing &lt;small&gt;(familiar, and great for development time. it works.)&lt;/small&gt;&lt;/td&gt;
+    &lt;td&gt;map/reduce &lt;small&gt;(needs a way to do map/reduce on a design document - essentially a map/reduce on top of a map/reduce)&lt;/small&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;gridfs &lt;small&gt;(needs an nginx/apache module. using send_data through an app or even through rack is too slow. however, supposed to be comparative to S3 if a module becomes available)&lt;/small&gt;&lt;/td&gt;
+    &lt;td&gt;embedded attachments &lt;small&gt;(think email attachments. i really like the way couchdb handles attachments)&lt;/small&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;RAM&lt;/td&gt;
+    &lt;td&gt;http cache&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Good at the web, faster development time &lt;small&gt;(dynamic queries are what we are used to User.first(:login =&gt; 'jennifer'))&lt;/small&gt;&lt;/td&gt;
+    &lt;td&gt;Good at the web, slower development time &lt;small&gt;(because of map/reduce and you have to construct all your queries from javascript)&lt;/small&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Update in place &lt;small&gt;(good for high update rates)&lt;/small&gt;&lt;/td&gt;
+    &lt;td&gt;MVCC &lt;small&gt;(fault tolerant, but requires compacting.)&lt;/small&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;master-master &lt;small&gt;(auto-sharding is under development and planned. which should make things quite easy to scale. *thanks Mark)&lt;/small&gt;&lt;/td&gt;
+    &lt;td&gt;replication &lt;small&gt;(great for peer shared apps, but will be slow for large traditional web app databases replicating across servers - it's http)&lt;/small&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;50s kid &lt;small&gt;(Traditional, yet rock n' roll, fast cars. Feels comfortable yet feels like the future. good for traditional web apps)&lt;/small&gt;&lt;/td&gt;
+    &lt;td&gt;indy kid &lt;small&gt;(Untraditional, crazy cool ideas (like embedded apps and running in your browser), but uncertain. better for untraditional web apps right now)&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;h3&gt;Mongodb orms&lt;/h3&gt;
+&lt;p&gt;If you are a rubyist use &lt;a href=&quot;http://github.com/jnunemaker/mongomapper&quot;&gt;MongoMapper&lt;/a&gt;. Hands down it's the best orm. It basically makes the driver easy to use and familiar with rails/merb.&lt;/p&gt;
+&lt;h3&gt;Using MongoMapper&lt;/h3&gt;
+&lt;h4&gt;Installation&lt;/h4&gt;
+&lt;p&gt;sudo gem install mongomapper&lt;/p&gt;
+&lt;p&gt;config.gem 'jnunemaker-mongomapper'&lt;/p&gt;
+&lt;p&gt;dependency 'jnunemaker-mongomapper'&lt;/p&gt;
+&lt;h4&gt;Model&lt;/h4&gt;
+&lt;script src=&quot;http://gist.github.com/164028.js&quot;&gt;&lt;/script&gt;
+&lt;h4&gt;Controller&lt;/h4&gt;
+&lt;script src=&quot;http://gist.github.com/164033.js&quot;&gt;&lt;/script&gt;
+&lt;h4&gt;Validations&lt;/h4&gt;
+&lt;script src=&quot;http://gist.github.com/164035.js&quot;&gt;&lt;/script&gt;
+&lt;h4&gt;Callbacks&lt;/h4&gt;
+&lt;script src=&quot;http://gist.github.com/164036.js&quot;&gt;&lt;/script&gt;
+&lt;h4&gt;Relationships&lt;/h4&gt;
+&lt;script src=&quot;http://gist.github.com/164038.js&quot;&gt;&lt;/script&gt;
+&lt;h4&gt;Embedded Documents&lt;/h4&gt;
+&lt;script src=&quot;http://gist.github.com/164040.js&quot;&gt;&lt;/script&gt;
+&lt;h4&gt;Additional info&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;created_at and updated_at are included automatically by MongoMapper&lt;/li&gt;
+  &lt;li&gt;_id cannot currently be set with MongoMapper like it can in Couchrest&lt;/li&gt;
+  &lt;li&gt;cannot currently do @doc[‘custom_field’] like in couchrest.&lt;/li&gt;
+  &lt;li&gt;indexing: @doc.ensure_index :login&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Overall, I think mongodb with mongomapper is a smart way to go for a traditional web apps that is somewhat complicated (think facebook, basecamp, social networks) where you are providing an interface for your users to put information and then doing all kinds of things with that information.&lt;/p&gt;
+&lt;p&gt;I think couchdb is more suited to simple applications with express purposes (think blogs, a 'twitter' of your friends, apis) and where replicating that data from computer to computer and going offline is important.&lt;/p&gt;
+&lt;p class='followme'&gt;
+  &lt;strong&gt;
+    You should follow me on twitter
+    &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
+  &lt;/strong&gt;
+&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Choice Email Setup with Merb</title>

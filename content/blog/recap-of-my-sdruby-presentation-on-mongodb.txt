@@ -1,6 +1,6 @@
 ---
 layout:     blog
-title:      Mongodb: Getting started, vs couchdb, and mongomapper
+title:      Recap of my sdruby presentation on mongodb
 created_at: 2009-08-07 09:30:06.651732 -07:00
 article:    true
 filter:
