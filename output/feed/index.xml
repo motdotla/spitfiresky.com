@@ -4,7 +4,7 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2009-08-07T11:10:47-07:00</updated>
+  <updated>2009-08-08T08:25:53-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
@@ -107,7 +107,7 @@
   &lt;li&gt;indexing: @doc.ensure_index :login&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;Overall, I think mongodb with mongomapper is a smart way to go for a traditional web apps that is somewhat complicated (think facebook, basecamp, social networks) where you are providing an interface for your users to put information and then doing all kinds of things with that information.&lt;/p&gt;
+&lt;p&gt;Overall, I think mongodb with mongomapper is a smart way to go for a traditional web apps that are somewhat complicated (think facebook, basecamp, social networks) where you are providing an interface for your users to put information and then doing all kinds of things with that information.&lt;/p&gt;
 &lt;p&gt;I think couchdb is more suited to simple applications with express purposes (think blogs, a 'twitter' of your friends, apis) and where replicating that data from computer to computer and going offline is important.&lt;/p&gt;
 &lt;p class='followme'&gt;
   &lt;strong&gt;

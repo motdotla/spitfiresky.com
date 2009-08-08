@@ -122,7 +122,7 @@ filter:
 
 %h3 Conclusion
 
-%p Overall, I think mongodb with mongomapper is a smart way to go for a traditional web apps that is somewhat complicated (think facebook, basecamp, social networks) where you are providing an interface for your users to put information and then doing all kinds of things with that information. 
+%p Overall, I think mongodb with mongomapper is a smart way to go for a traditional web apps that are somewhat complicated (think facebook, basecamp, social networks) where you are providing an interface for your users to put information and then doing all kinds of things with that information. 
 
 %p I think couchdb is more suited to simple applications with express purposes (think blogs, a 'twitter' of your friends, apis) and where replicating that data from computer to computer and going offline is important.
 
