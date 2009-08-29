@@ -4,7 +4,7 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2009-08-29T01:53:29-07:00</updated>
+  <updated>2009-08-29T02:20:28-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
@@ -17,7 +17,7 @@
     <id>tag:spitfiresky.com,Sat Aug 29 00:11:46 -0700 2009:1251529906</id>
     <updated>Sat Aug 29 00:11:46 -0700 2009</updated>
     <content type="html">&lt;h2&gt;Counter Caching with MongoMapper&lt;/h2&gt;
-&lt;p&gt;MongoMapper makes column based counter caching simple. I think you'll be impressed.&lt;/p&gt;
+&lt;p&gt;MongoMapper makes column based counter caching simple. I think you'll be delighted.&lt;/p&gt;
 &lt;h3&gt;What is counter caching?&lt;/h3&gt;
 &lt;p&gt;Counter caching is a way to display the record count (or total - using the term loosely) for a has_many assocation. Ryan Bates did a screencast on &lt;a href=&quot;http://railscasts.com/episodes/23-counter-cache-column&quot;&gt;it&lt;/a&gt; and many apps today employ counter caching. &lt;small&gt;(aside: You should be doing things like counter caching before you just go and grab memcache.)&lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;For example, I am building an application that keeps track of pilots' flights. A pilot is able to log their flights, and the application returns their total flights count. At first I displayed this value using Flight.count(:user_id =&gt; id) in the view. This was ok at first, but once a pilot had one thousand flights, page load times were noticeably longer so I added a counter cache column.&lt;/p&gt;
@@ -43,12 +43,14 @@
   &lt;script src=&quot;http://gist.github.com/177427.js&quot;&gt;&lt;/script&gt;
 &lt;/p&gt;
 &lt;p&gt;That's it. You're done. You can now use @user.total_hours, @user.total_landings, etc in your views and your app will stay snappy.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;But am I leaving something out? Shouldn't I define the column for total_hours_cache&lt;/strong&gt; in my users collection/table, not to mention all the other columns I want to cache?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Nope. MongoMapper does this for you&lt;/strong&gt; on the fly. This is thanks not only to MongoDB's schemaless nature but thanks to how smartly written the MongoMapper gem is by John Nunemaker.&lt;/p&gt;
-&lt;hr /&gt;
 &lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;Counter caching with MongoMapper ended up being just 13 lines of code. You don't have to hassle with migrations or even list the schema. It works with floating point numbers too.&lt;/p&gt;
+&lt;p&gt;Counter caching with MongoMapper ended up being just 14 lines of code. You don't have to hassle with migrations and you can meta-program your schema into the model. &lt;small&gt;(Thanks to John Nunemaker for building it that way. Thought: I really don't like the way ActiveRecord uses migrations. Plus, it decouples the schema from the model.)&lt;/small&gt;. It works with floating point numbers too.&lt;/p&gt;
+&lt;p class='followme'&gt;
+  &lt;strong&gt;
+    Keep updated at
+    &lt;a href='http://twitter.com/spitfiresky'&gt;twitter.com/spitfiresky&lt;/a&gt;
+  &lt;/strong&gt;
+&lt;/p&gt;
 </content>
   </entry>
   

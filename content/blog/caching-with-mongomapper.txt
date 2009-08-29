@@ -9,7 +9,7 @@ filter:
 
 %h2= @page.title
 
-%p MongoMapper makes column based counter caching simple. I think you'll be impressed.
+%p MongoMapper makes column based counter caching simple. I think you'll be delighted.
 
 %h3 What is counter caching?
 
@@ -48,13 +48,10 @@ filter:
 
 %p That's it. You're done. You can now use @user.total_hours, @user.total_landings, etc in your views and your app will stay snappy.
 
-%hr 
-
-%p <strong>But am I leaving something out? Shouldn't I define the column for total_hours_cache</strong> in my users collection/table, not to mention all the other columns I want to cache?
-
-%p <strong>Nope. MongoMapper does this for you</strong> on the fly. This is thanks not only to MongoDB's schemaless nature but thanks to how smartly written the MongoMapper gem is by John Nunemaker. 
-
-%hr 
-
 %h3 Conclusion
-%p Counter caching with MongoMapper ended up being just 13 lines of code. You don't have to hassle with migrations or even list the schema. It works with floating point numbers too.
+%p Counter caching with MongoMapper ended up being just 14 lines of code. You don't have to hassle with migrations and you can meta-program your schema into the model. <small>(Thanks to John Nunemaker for building it that way. Thought: I really don't like the way ActiveRecord uses migrations. Plus, it decouples the schema from the model.)</small>. It works with floating point numbers too.
+
+%p.followme
+  %strong
+    Keep updated at  
+    %a{:href=> 'http://twitter.com/spitfiresky'} twitter.com/spitfiresky

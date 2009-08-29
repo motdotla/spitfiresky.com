@@ -76,32 +76,40 @@
           <div class='clear'></div>
         </div>
         <h2>Counter Caching with MongoMapper</h2>
-        <p>MongoMapper makes column based counter caching simple. I think you'll be impressed.</p>
+        <p>MongoMapper makes column based counter caching simple. I think you'll be delighted.</p>
         <h3>What is counter caching?</h3>
-        <p>Counter caching is a way to display the record count for a has_many assocation. Ryan Bates did a screencast on <a href="http://railscasts.com/episodes/23-counter-cache-column">it</a> and many apps today employ counter caching. <small>(aside: you should be doing things like counter caching before you just go and grab memcache)</small></p>
-        <p>For example, I am building an application that keeps track of pilots' flights. A pilot is able to log their flights, and the application returns their total flights count. At first I displayed this value using Flight.count(:user_id => id) in the view. This was ok at first, but once a pilot had 1,000 flights page load became noticeably slower so I added a counter cache column.</p>
+        <p>Counter caching is a way to display the record count (or total - using the term loosely) for a has_many assocation. Ryan Bates did a screencast on <a href="http://railscasts.com/episodes/23-counter-cache-column">it</a> and many apps today employ counter caching. <small>(aside: You should be doing things like counter caching before you just go and grab memcache.)</small></p>
+        <p>For example, I am building an application that keeps track of pilots' flights. A pilot is able to log their flights, and the application returns their total flights count. At first I displayed this value using Flight.count(:user_id => id) in the view. This was ok at first, but once a pilot had one thousand flights, page load times were noticeably longer so I added a counter cache column.</p>
+        <p>Counter caching works well. I received some significant speed improvements.</p>
         <p>
           <script src="http://gist.github.com/177422.js"></script>
         </p>
-        <p>As you can see, speed improvements were significant - just as they are if you do similarly using ActiveRecord with MySQL.</p>
-        <h3>Setting up counter caching in MongoMapper</h3>
-        <p>In my application a User has many Flights, and each flight has fields like hours, landings, night_hours, etc. I want to have methods like @user.total_hours, @user.total_landings, and @user.total_night_hours that cache themselves so my app can get the speed advantages you see in the above <a href="http://gist.github.com/177422">gist</a>.</p>
+        <p>Ok, let's get on it with it.</p>
+        <h3>How to setup counter caching in MongoMapper</h3>
+        <h4>Scenario</h4>
+        <p>I want to store the sum of a column in a cache. In my application a User has many Flights, and each flight has fields like hours, landings, night_hours, etc. I want to have methods like @user.total_hours, @user.total_landings, and @user.total_night_hours that cache themselves so my app can get similar speed advantages like you saw above.</p>
         <p><strong>To do this, I:</strong></p>
         <ol>
           <li>Added @user.total_something instance methods to my User model.</li>
           <li>Added callbacks in my Flight model to clear the cache whenever the pilot adds/updates/destroys a flight.</li>
         </ol>
-        <h4>Adding the instance methods to User.rb</h4>
-        <script src="http://gist.github.com/177426.js"></script>
-        <h4>Adding the callbacks to Flight.rb</h4>
-        <script src="http://gist.github.com/177427.js"></script>
+        <h4>Step #1: Add the instance methods to User.rb</h4>
+        <p>
+          <script src="http://gist.github.com/177426.js"></script>
+        </p>
+        <h4>Step #2: Add the clear cache callbacks to Flight.rb</h4>
+        <p>
+          <script src="http://gist.github.com/177427.js"></script>
+        </p>
         <p>That's it. You're done. You can now use @user.total_hours, @user.total_landings, etc in your views and your app will stay snappy.</p>
-        <hr />
-        <p><strong>But am I leaving something out? Shouldn't I define the column for total_hours_cache</strong> in my users collection/table, not to mention all the other columns I want to cache?</p>
-        <p><strong>Nope. MongoMapper does this for you</strong> on the fly. This is thanks not only to MongoDB's schemaless nature but thanks to how smartly written the MongoMapper gem is by John Nunemaker.</p>
-        <hr />
         <h3>Conclusion</h3>
-        <p>Counter caching with MongoMapper is just 13 lines of code. You don't have to hassle with migrations or even list the schema. It works with floating point numbers too.</p>
+        <p>Counter caching with MongoMapper ended up being just 14 lines of code. You don't have to hassle with migrations and you can meta-program your schema into the model. <small>(Thanks to John Nunemaker for building it that way. Thought: I really don't like the way ActiveRecord uses migrations. Plus, it decouples the schema from the model.)</small>. It works with floating point numbers too.</p>
+        <p class='followme'>
+          <strong>
+            Keep updated at
+            <a href='http://twitter.com/spitfiresky'>twitter.com/spitfiresky</a>
+          </strong>
+        </p>
       </div>
     </div>
     <script src='/javascripts/jquery.js' type='text/javascript'></script>
