@@ -7,7 +7,7 @@ filter:    haml
   %head
     %title= "#{@page.title} &laquo; Spitfire Sky"    
     %link{:type => 'text/css', :href => '/css/blog_base.css', :charset => 'utf-8', :media => 'all', :rel => 'Stylesheet'}
-    / finish with javascripts
+    %link{:rel => 'alternate', :type => 'application/rss+xml', :title => 'Spitfire Sky RSS Feed', :href => 'http://feeds.feedburner.com/spitfiresky'}
   %body{:id => 'top'}
     #page.container_12
       #header.grid_4
