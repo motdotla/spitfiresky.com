@@ -48,6 +48,14 @@ small {
   #content ul {
     margin-bottom: 0;
   }
+  #content ol {
+    margin-bottom: 0;
+    font-style: italic;
+  }
+    #content ol li {
+      list-style: decimal;
+      padding: 5px 5px 5px 0;
+    }
   #content table {
     width: 100%;
   }

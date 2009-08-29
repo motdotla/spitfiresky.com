@@ -14,6 +14,11 @@
         <div id='articles'>
           <ul>
             <li>
+              <span>29 Aug 2009</span>
+              &raquo;
+              <a href="/blog/caching-with-mongomapper.html">Counter Caching with MongoMapper</a>
+            </li>
+            <li>
               <span>07 Aug 2009</span>
               &raquo;
               <a href="/blog/recap-of-my-sdruby-presentation-on-mongodb.html">Recap of my sdruby presentation on mongodb</a>
@@ -70,105 +75,33 @@
           <div class='tweets'></div>
           <div class='clear'></div>
         </div>
-        <h2>Recap of my sdruby presentation on mongodb</h2>
-        <p>Here I recap my presentation on mongodb at sdruby last night.</p>
-        <h3>Slides</h3>
-        <object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mongodb-090806212433-phpapp01&stripped_title=mongodb-1825613" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=mongodb-090806212433-phpapp01&stripped_title=mongodb-1825613" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object>
-        <h3>Introduction</h3>
-        <p>I am using mongodb on <a href="http://staging.twinstang.com">Twinstang redesigned</a>. <strong>I started with couchdb, but encountered difficulties grasping the concept of map/reduce</strong> for more powerful but necessary querying.</p>
-        <p>Because of this limitation in my skills (and partially because couchdb is limited to doing map/reduce on your documents and cannot do an additional map/reduce on top of a previous map/reduce) I began running into barriers in development of features for my app, and I foresaw more issues on the way.</p>
-        <p><strong>I switched to mongodb using MongoMapper and have been super satisfied.</strong></p>
-        <ul>
-          <li>Dynamic queries are a welcome return</li>
-          <li>There is a good balance of speed, features, and schema-less freedom</li>
-          <li>It should scale better than mysql with less effort</li>
-          <li>MongoMapper makes it a pleasure to work with</li>
-        </ul>
-        <h3>Installation & Running it</h3>
-        <p>Installation of mongodb is from source but is quick and painless. After installation type sudo mongod run to run mongodb. You will probably want to use something like monit or god to monitor the process.</p>
-        <script src="http://gist.github.com/164002.js"></script>
-        <h3>Mongo vs Couch</h3>
-        <p>Couchdb is really cool and I can't say enough how much I've enjoyed it - especially the concepts it is pushing. It has huge potential to open up applications to the masses with its embedded apps. It is essentially a framework and server rolled into one. And it has convinced me that the language of the future is javascript. Furthermore, it's idea to run apps in the browser locally and then replicate/sync is mouthwatering. There are a lot of promises and hopes.</p>
-        <p><strong>However, map/reduce is difficult to grasp and couchdb's map/reduce feels like a neutered version</strong>. How come I can't do map/reduces on already built design documents? In the end, couchdb left me somewhat disappointed. It was wrong for my app but was so exciting. I will be using couchdb in the future to build simple api based web apps that users can hook into.</p>
-        <p>Mongodb on the other hand feels more traditional. It is not trying to shake things up. Instead, <strong>Mongodb accomplishes its main goal very well</strong> - to bridge the gap between key/value stores and sql databases. It's fast, is focused on solving scaling issues that have haunted mysql, and it maintains the ease of use and power of dynamic queries.</p>
-        <p><strong>Use mongodb for your traditional web app - where your users are doing a lot of updates but where you are generally controlling the interface and features.</strong> Use couchdb for focused web apps that are mostly an api or web hook and where your users are controlling the interface.</p>
-        <table>
-          <tr>
-            <td><strong>Mongodb (C++)</strong></td>
-            <td><strong>Couchdb (Erlang)</strong></td>
-          </tr>
-          <tr>
-            <td>drivers <small>(php driver, ruby, python, and more)</small></td>
-            <td>REST <small>(very cool, but slightly slower. not really slower in practice though - except when it comes to replication as a tool to scale)</small></td>
-          </tr>
-          <tr>
-            <td>bson, document, schema-free</td>
-            <td>json, document, schema-free</td>
-          </tr>
-          <tr>
-            <td>Dynamic queries, indexing <small>(familiar, and great for development time. it works.)</small></td>
-            <td>map/reduce <small>(needs a way to do map/reduce on a design document - essentially a map/reduce on top of a map/reduce)</small></td>
-          </tr>
-          <tr>
-            <td>gridfs <small>(needs an nginx/apache module. using send_data through an app or even through rack is too slow. however, supposed to be comparative to S3 if a module becomes available)</small></td>
-            <td>embedded attachments <small>(think email attachments. i really like the way couchdb handles attachments)</small></td>
-          </tr>
-          <tr>
-            <td>RAM</td>
-            <td>http cache</td>
-          </tr>
-          <tr>
-            <td>Good at the web, faster development time <small>(dynamic queries are what we are used to User.first(:login => 'jennifer'))</small></td>
-            <td>Good at the web, slower development time <small>(because of map/reduce and you have to construct all your queries from javascript)</small></td>
-          </tr>
-          <tr>
-            <td>Update in place <small>(good for high update rates)</small></td>
-            <td>MVCC <small>(fault tolerant, but requires compacting.)</small></td>
-          </tr>
-          <tr>
-            <td>master-master <small>(auto-sharding is under development and planned. which should make things quite easy to scale. *thanks Mark)</small></td>
-            <td>replication <small>(great for peer shared apps, but will be slow for large traditional web app databases replicating across servers - it's http)</small></td>
-          </tr>
-          <tr>
-            <td>50s kid <small>(Traditional, yet rock n' roll, fast cars. Feels comfortable yet feels like the future. good for traditional web apps)</small></td>
-            <td>indy kid <small>(Untraditional, crazy cool ideas (like embedded apps and running in your browser), but uncertain. better for untraditional web apps right now)</td>
-          </tr>
-        </table>
-        <h3>Mongodb orms</h3>
-        <p>If you are a rubyist use <a href="http://github.com/jnunemaker/mongomapper">MongoMapper</a>. Hands down it's the best orm. It basically makes the driver easy to use and familiar with rails/merb.</p>
-        <h3>Using MongoMapper</h3>
-        <h4>Installation</h4>
-        <p>sudo gem install mongomapper</p>
-        <p>config.gem 'jnunemaker-mongomapper'</p>
-        <p>dependency 'jnunemaker-mongomapper'</p>
-        <h4>Model</h4>
-        <script src="http://gist.github.com/164028.js"></script>
-        <h4>Controller</h4>
-        <script src="http://gist.github.com/164033.js"></script>
-        <h4>Validations</h4>
-        <script src="http://gist.github.com/164035.js"></script>
-        <h4>Callbacks</h4>
-        <script src="http://gist.github.com/164036.js"></script>
-        <h4>Relationships</h4>
-        <script src="http://gist.github.com/164038.js"></script>
-        <h4>Embedded Documents</h4>
-        <script src="http://gist.github.com/164040.js"></script>
-        <h4>Additional info</h4>
-        <ul>
-          <li>created_at and updated_at are included automatically by MongoMapper</li>
-          <li>_id cannot currently be set with MongoMapper like it can in Couchrest</li>
-          <li>cannot currently do @doc[‘custom_field’] like in couchrest.</li>
-          <li>indexing: @doc.ensure_index :login</li>
-        </ul>
-        <h3>Conclusion</h3>
-        <p>Overall, I think mongodb with mongomapper is a smart way to go for a traditional web apps that are somewhat complicated (think facebook, basecamp, social networks) where you are providing an interface for your users to put information and then doing all kinds of things with that information.</p>
-        <p>I think couchdb is more suited to simple applications with express purposes (think blogs, a 'twitter' of your friends, apis) and where replicating that data from computer to computer and going offline is important.</p>
-        <p class='followme'>
-          <strong>
-            You should follow me on twitter
-            <a href='http://twitter.com/spitfiresky'>here</a>
-          </strong>
+        <h2>Counter Caching with MongoMapper</h2>
+        <p>MongoMapper makes column based counter caching simple. I think you'll be impressed.</p>
+        <h3>What is counter caching?</h3>
+        <p>Counter caching is a way to display the record count for a has_many assocation. Ryan Bates did a screencast on <a href="http://railscasts.com/episodes/23-counter-cache-column">it</a> and many apps today employ counter caching. <small>(aside: you should be doing things like counter caching before you just go and grab memcache)</small></p>
+        <p>For example, I am building an application that keeps track of pilots' flights. A pilot is able to log their flights, and the application returns their total flights count. At first I displayed this value using Flight.count(:user_id => id) in the view. This was ok at first, but once a pilot had 1,000 flights page load became noticeably slower so I added a counter cache column.</p>
+        <p>
+          <script src="http://gist.github.com/177422.js"></script>
         </p>
+        <p>As you can see, speed improvements were significant - just as they are if you do similarly using ActiveRecord with MySQL.</p>
+        <h3>Setting up counter caching in MongoMapper</h3>
+        <p>In my application a User has many Flights, and each flight has fields like hours, landings, night_hours, etc. I want to have methods like @user.total_hours, @user.total_landings, and @user.total_night_hours that cache themselves so my app can get the speed advantages you see in the above <a href="http://gist.github.com/177422">gist</a>.</p>
+        <p><strong>To do this, I:</strong></p>
+        <ol>
+          <li>Added @user.total_something instance methods to my User model.</li>
+          <li>Added callbacks in my Flight model to clear the cache whenever the pilot adds/updates/destroys a flight.</li>
+        </ol>
+        <h4>Adding the instance methods to User.rb</h4>
+        <script src="http://gist.github.com/177426.js"></script>
+        <h4>Adding the callbacks to Flight.rb</h4>
+        <script src="http://gist.github.com/177427.js"></script>
+        <p>That's it. You're done. You can now use @user.total_hours, @user.total_landings, etc in your views and your app will stay snappy.</p>
+        <hr />
+        <p><strong>But am I leaving something out? Shouldn't I define the column for total_hours_cache</strong> in my users collection/table, not to mention all the other columns I want to cache?</p>
+        <p><strong>Nope. MongoMapper does this for you</strong> on the fly. This is thanks not only to MongoDB's schemaless nature but thanks to how smartly written the MongoMapper gem is by John Nunemaker.</p>
+        <hr />
+        <h3>Conclusion</h3>
+        <p>Counter caching with MongoMapper is just 13 lines of code. You don't have to hassle with migrations or even list the schema. It works with floating point numbers too.</p>
       </div>
     </div>
     <script src='/javascripts/jquery.js' type='text/javascript'></script>

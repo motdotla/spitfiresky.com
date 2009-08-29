@@ -1,0 +1,60 @@
+---
+layout:     blog
+title:      Counter Caching with MongoMapper
+created_at: 2009-08-29 00:11:46.098837 -07:00
+article:    true
+filter:
+  - haml
+---
+
+%h2= @page.title
+
+%p MongoMapper makes column based counter caching simple. I think you'll be impressed.
+
+%h3 What is counter caching?
+
+%p Counter caching is a way to display the record count (or total - using the term loosely) for a has_many assocation. Ryan Bates did a screencast on <a href="http://railscasts.com/episodes/23-counter-cache-column">it</a> and many apps today employ counter caching. <small>(aside: You should be doing things like counter caching before you just go and grab memcache.)</small>
+
+%p For example, I am building an application that keeps track of pilots' flights. A pilot is able to log their flights, and the application returns their total flights count. At first I displayed this value using Flight.count(:user_id => id) in the view. This was ok at first, but once a pilot had one thousand flights, page load times were noticeably longer so I added a counter cache column.
+
+%p Counter caching works well. I received some significant speed improvements.
+
+%p
+  <script src="http://gist.github.com/177422.js"></script>
+
+%p Ok, let's get on it with it.
+
+%h3 How to setup counter caching in MongoMapper
+
+%h4 Scenario
+
+%p I want to store the sum of a column in a cache. In my application a User has many Flights, and each flight has fields like hours, landings, night_hours, etc. I want to have methods like @user.total_hours, @user.total_landings, and @user.total_night_hours that cache themselves so my app can get similar speed advantages like you saw above.
+
+%p <strong>To do this, I:</strong>
+
+%ol
+  %li Added @user.total_something instance methods to my User model. 
+  %li Added callbacks in my Flight model to clear the cache whenever the pilot adds/updates/destroys a flight.
+  
+%h4 Step #1: Add the instance methods to User.rb
+
+%p
+  <script src="http://gist.github.com/177426.js"></script>
+
+%h4 Step #2: Add the clear cache callbacks to Flight.rb
+
+%p
+  <script src="http://gist.github.com/177427.js"></script>
+
+%p That's it. You're done. You can now use @user.total_hours, @user.total_landings, etc in your views and your app will stay snappy.
+
+%hr 
+
+%p <strong>But am I leaving something out? Shouldn't I define the column for total_hours_cache</strong> in my users collection/table, not to mention all the other columns I want to cache?
+
+%p <strong>Nope. MongoMapper does this for you</strong> on the fly. This is thanks not only to MongoDB's schemaless nature but thanks to how smartly written the MongoMapper gem is by John Nunemaker. 
+
+%hr 
+
+%h3 Conclusion
+%p Counter caching with MongoMapper ended up being just 13 lines of code. You don't have to hassle with migrations or even list the schema. It works with floating point numbers too.
