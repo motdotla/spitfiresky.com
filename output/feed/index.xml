@@ -4,12 +4,32 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2009-08-29T15:21:43-07:00</updated>
+  <updated>2009-09-07T09:42:39-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
   </author>
   <id>http://spitfiresky.com/</id>
+  
+  <entry>
+    <title>Sdruby Presentation on Titanium-Mobile</title>
+    <link href="/blog/sdruby-presentation-on-titanium-mobile.html" />
+    <id>tag:spitfiresky.com,Mon Sep 07 09:37:28 -0700 2009:1252341448</id>
+    <updated>Mon Sep 07 09:37:28 -0700 2009</updated>
+    <content type="html">&lt;h2&gt;Sdruby Presentation on Titanium-Mobile&lt;/h2&gt;
+&lt;p&gt;Here are my slides from my sdruby presentation on &lt;a href=&quot;http://www.appcelerator.com/products/titanium-mobile/&quot;&gt;Titanium Mobile&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Slides&lt;/h3&gt;
+&lt;object style=&quot;margin:0px&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=titanium-mobile-090907113638-phpapp01&amp;stripped_title=titanium-mobile&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=titanium-mobile-090907113638-phpapp01&amp;stripped_title=titanium-mobile&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+&lt;h3&gt;Overview&lt;/h3&gt;
+For this presentation I covered getting started with Titanium mobile. Plus, I included example javascript code from the app I am currently building.
+&lt;p class='followme'&gt;
+  &lt;strong&gt;
+    You should follow me on twitter
+    &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
+  &lt;/strong&gt;
+&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Counter Caching with MongoMapper</title>
