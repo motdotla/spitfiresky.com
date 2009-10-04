@@ -4,12 +4,176 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2009-09-18T16:18:31-07:00</updated>
+  <updated>2009-10-04T12:37:05-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
   </author>
   <id>http://spitfiresky.com/</id>
+  
+  <entry>
+    <title>How you should be doing testing in Rails and how to get started</title>
+    <link href="/blog/how-you-should-be-doing-testing-in-rails.html" />
+    <id>tag:spitfiresky.com,Sat Oct 03 16:00:05 -0700 2009:1254610805</id>
+    <updated>Sat Oct 03 16:00:05 -0700 2009</updated>
+    <content type="html">&lt;h2&gt;How you should be doing testing in Rails and how to get started&lt;/h2&gt;
+&lt;p&gt;Here I show you a good way to do testing in Rails (especially if you are a beginner tester) plus instructions on getting started.&lt;/p&gt;
+&lt;h3&gt;Why test?&lt;/h3&gt;
+&lt;p&gt;
+  Testing is a good practice. You should be doing it. &lt;strong&gt;It will make you a better programmer&lt;/strong&gt; and save you a great deal of headache as your web app grows up. It is especially important when working alongside other programmers. Testing is not perfect though so don't try to be perfect. Just get started, and you will improve as time goes on.
+&lt;/p&gt;
+&lt;h3&gt;How should I be testing?&lt;/h3&gt;
+&lt;p&gt;
+  You should be:
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;#1 using rspec&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;#2 testing your models&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;#3 doing some integration tests&lt;/strong&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  Ignore all the other test strategies and tools out there - especially Cucumber (cuke makes me want to puke). It's awkward and arguably a significant waste of time. But it's even more a waste of time to test your controllers, helpers, and views separately. Don't.
+&lt;/p&gt;
+&lt;p&gt;
+  Let's get started.
+&lt;/p&gt;
+&lt;h3&gt;rspec&lt;/h3&gt;
+&lt;h4&gt;Installation&lt;/h4&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/200971.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  That's it, you can now run 'rake spec' in your terminal, and it will run through all your specs (which are currently at zero count).
+&lt;/p&gt;
+&lt;h3&gt;Model testing&lt;/h3&gt;
+&lt;h4&gt;
+  Setup
+&lt;/h4&gt;
+&lt;p&gt;Before we get to the rspec testing we need to delete the test/* folder that rails creates by default. (We are using rspec, not test/unit, so we won't need the test/* folders. All our tests will live under spec/*.)&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/200982.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Next let's create the models folder and the person_spec.rb model spec.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/200986.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;h4&gt;
+  Writing the model test
+&lt;/h4&gt;
+&lt;p&gt;
+  Open up person_spec.rb in textmate or your text editor of choice and let's write our first spec.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/200988.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Run 'rake spec' in terminal, and you should get back the response of &quot;1 example, 0 failures&quot;. Congratulations. :)
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;Time for some test driven development.&lt;/strong&gt; We have decided that every person should have a first_name and last_name. (No use in having a person without one). Let's write two specs to test for this. They should both fail.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/200990.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Run 'rake spec', and you should receive the response back '3 examples, 2 failures'. Open up the person.rb model and add the validates_presence_of.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/200991.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Run 'rake spec' again, and you should receive the response back '3 examples, 0 failures'. Nice work, you just did test driven development.
+&lt;/p&gt;
+&lt;p&gt;
+  Next let's refactor things slightly using our spec_helper.rb to store some reusable code. This is optional and isn't so useful with such a small suite of tests, but once your test count climbs to 50 or more it is really nice to have a setup similar to the following. It basically uses helper methods inside of spec_helper.rb (which is being required with the line 'require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')').
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;person_spec.rb&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/200999.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;spec_helper.rb&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/201000.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Good work. You've written a few model tests to test your person.rb model pretty well. Let's move on to integration testing.
+&lt;/p&gt;
+&lt;h3&gt;Integration testing&lt;/h3&gt;
+&lt;p&gt;
+  Before I demonstrate integration testing, let me say that many programmers test their views, helpers, and controllers separately. This is not smart and if you are doing that you should stop. Take Merb's testing approach as an example. Merb's testing framework encourages the developer to test the final http response rather than worry about testing your views, controllers, and helpers separately. Afterall, these three items are working together to create the final http response. It makes a lot of sense and saves a lot of time. (Yehuda Katz can tell you more about this in his &lt;a href=&quot;http://video.merbcamp.com/public/katz1.mp4&quot;&gt;video on merb testing&lt;/a&gt;).
+&lt;/p&gt;
+&lt;p&gt;
+  Rails doesn't have Merb's fancy response testing, but it does have integration testing using the powerful webrat. (Cucumber uses Webrat - which is about the only thing I like about cucumber.)
+&lt;/p&gt;
+&lt;h4&gt;
+  Setup
+&lt;/h4&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/201540.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Add config.gem 'webrat' to your config/environments/test.rb file
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/201547.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Open up spec_helper.rb and add the webrat configure block.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/201542.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Create the spec/integration folder and file
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/201543.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;h4&gt;
+  Write the integration test
+&lt;/h4&gt;
+&lt;p&gt;
+  Now you are ready to write your first integration test using webrat. We are going to test some basics from the people scaffold we created. Edit spec/integration/people_spec.rb, make it look like the following, and run 'rake spec' again. You should receive the response back '5 examples, 0 failures'.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/201548.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;h4&gt;
+  What is going on here?
+&lt;/h4&gt;
+&lt;p&gt;
+  The majority of the above code is your standard rspec (before(:each) blocks, describe blocks, it &quot;should do something&quot; blocks, etc). The webrat methods we are using are 'visit' and 'response'.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;visit&lt;/strong&gt; simulates an actual user visiting your website. You don't see it happen, but webrat is actually (sort of) visiting the site just like a normal user would in their browser. To visit other pages just do visit '/your/path'.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;After the visit command is employed, webrat returns a response&lt;/strong&gt; from the webpage. This is essentially the http response a visitor's browser would receive. Here we are checking the response.status to verify it returned a 200 OK. To inspect the available response options use 'puts response.inspect'.
+&lt;/p&gt;
+&lt;p&gt;
+  Now let's test that the response contains certain text. You can use webrat's have_selector or have_xpath methods to determine this. In fact, most of the time with webrat those are the methods you will be using in conjunction with visit and response. Let's check that the people/new page contains the correct form fields.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/201562.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Depending on how you built your scaffold all these tests will pass or you might get 2 failures back. I got two failures. Let's fix those two errors by adding the appropriate form fields to our views/people/new.html.erb file. It should look something like the following.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/201563.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Great work. You've already created 8 specs to test your application. Now just repeat the process while consulting the &lt;a href=&quot;http://rspec.rubyforge.org/rspec/1.2.8/&quot;&gt;rspec docs&lt;/a&gt; andthe &lt;a href=&quot;http://gitrdoc.com/brynary/webrat/tree/master&quot;&gt;webrat docs&lt;/a&gt;, and &lt;strong&gt;before you know it you will find testing a joy and a valuable addition to your programming knowledge&lt;/strong&gt;. Good luck, and you should follow me on twitter &lt;a href=&quot;http://twitter.com/spitfiresky&quot;&gt;here&lt;/a&gt; if you have questions.
+&lt;/p&gt;
+&lt;p&gt;
+  Also, the example app I built along with this tutorial is &lt;a href=&quot;http://github.com/scottmotte/people&quot;&gt;here on github&lt;/a&gt;.
+&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Sdruby Presentation on Titanium-Mobile</title>
