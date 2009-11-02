@@ -4,7 +4,7 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2009-10-04T12:37:05-07:00</updated>
+  <updated>2009-11-01T16:45:11-08:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
@@ -394,7 +394,7 @@ For this presentation I covered getting started with Titanium mobile. Plus, I in
     <content type="html">&lt;h2&gt;My Server Setup&lt;/h2&gt;
 &lt;p&gt;Good day. Here I detail my server setup with &lt;a href=&quot;http://www.ubuntu.com/getubuntu/download-server&quot;&gt;Ubuntu 9.04&lt;/a&gt; on &lt;a href=&quot;http://rackspacecloud.com&quot;&gt;Rackspace Cloud&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Basics&lt;/h3&gt;
-&lt;p&gt;Use the Slicehost articles &lt;a href=&quot;http://blog.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-1&quot;&gt;Step 1&lt;/a&gt; and &lt;a href=&quot;http://blog.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-2&quot;&gt;Step 2&lt;/a&gt; to get the basics of your server going. Use the Ubuntu Intrepid setup. It will work just fine with Ubuntu 9.04.&lt;/p&gt;
+&lt;p&gt;Use the Slicehost articles &lt;a href=&quot;http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-1&quot;&gt;Step 1&lt;/a&gt; and &lt;a href=&quot;http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-2&quot;&gt;Step 2&lt;/a&gt; to get the basics of your server going. Use the Ubuntu Intrepid setup. It will work just fine with Ubuntu 9.04.&lt;/p&gt;
 &lt;h3&gt;Ruby&lt;/h3&gt;
 &lt;script src=&quot;http://gist.github.com/156639.js&quot;&gt;&lt;/script&gt;
 &lt;h3&gt;Install Nginx and Passenger&lt;/h3&gt;
