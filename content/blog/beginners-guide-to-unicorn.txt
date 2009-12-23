@@ -1,0 +1,79 @@
+---
+layout:     blog
+title:      Beginner's guide to Unicorn
+created_at: 2009-11-01 17:16:33.887252 -08:00
+article:    true
+filter:
+  - haml
+---
+
+%h2= @page.title
+
+%p Ahoy. Thar' be unicorns. Here I show you how to get started using unicorn with nginx.
+
+%h3 First things first
+
+%p Unicorn is a nice replacement for mongrel and thin, and a good alternative to phusion passenger. GitHub <a href="http://github.com/blog/517-unicorn">uses unicorn</a>. I am assuming your server setup is similar to <a href="http://spitfiresky.com/blog/my-server-setup.html">my server setup</a>.
+
+%h3 Installation
+
+%p 
+  Install the unicorn gem.
+
+%p
+  <script src="http://gist.github.com/223873.js"></script>
+
+%p
+  Configure your nginx virtual host. It should look something like this. Take care to make sure the paths match correctly with where you are storing your application on the server.
+
+%p
+  <script src="http://gist.github.com/223876.js"></script>
+
+%p
+  In your merb or rails application create a config/unicorn.rb file. <small>(If you are deploying a rails app you would replace instances of RACK_ENV with RAILS_ENV.)</small>
+
+%p
+  <script src="http://gist.github.com/223863.js"></script>
+
+%p
+  Add a restart unicorn task to your deploy file.
+  
+%p
+  <script src="http://gist.github.com/223878.js"></script>
+  
+%p
+  Then deploy your app. With a little luck, you will be live.
+  
+
+
+
+
+
+
+%p Southern California. I was born here. I spent much of my early years swimming and building things with legos. That's still me today; torn between active living outside and mind numbing programming inside. 
+
+%p From elementary to high school I spent my extracurricular time in athletics. Baseball was my favorite. I wanted one day to be a professional, but it wasn't to be. I had a good brain though so I went on to Pepperdine University to study international business.
+
+%p Freshman year in college I created my first website using the free 10mb of web space granted to each student - Pepperdine's greatest gift to me. Since then I've been forced to throw out much of what that school taught me about business, finding it ineffective, but that's for another post. It's 5 years later, and I'm mostly indoors now. Building things.
+
+%h3 Spitfire Sky
+
+%p I fly, and my favorite plane is the Spitfire. Couple it with 'Sky', and it becomes unique, memorable, google-able, and says something about who I am. It rolls off the tongue nicely too. Who is Spitfire Sky? Mostly it's just me, but increasingly I'm working with <a href="http://jeromegn.com">jeromegn</a> because he does exemplary work and makes me a better programmer. 
+
+%p My hopes and plans for Spitfire Sky are to see it become recognized as a decent player in the field of other ruby developers/companies over the remainder of the year. During next year, I'd like to see Spitfire Sky recognized as a prominent player in that same field and see this blog become a source for quality information on some of the latest techniques and technologies related to web development.
+
+%h3 In Ending (but lacking a conclusion)
+
+%p What would I be doing if I was independently wealthy? 
+
+%p I'd spend my mornings building web applications and my afternoons at the local general aviation airport. 
+
+%p What is my greatest regret? 
+
+%p I never hit a home run.
+
+%p.followme
+  %strong
+    You should follow me on twitter 
+    %a{:href=> 'http://twitter.com/spitfiresky'} here
+
