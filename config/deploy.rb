@@ -1,21 +1,22 @@
-set :runner, "scottmotte"
-set :use_sudo, false
- 
 # =============================================================================
-# CUSTOM OPTIONS
+# ROLES
 # =============================================================================
-set :user, "scottmotte"
+role :app, "174.142.75.247"
+role :web, "174.142.75.247"
+role :db,  "174.142.75.247", :primary => true
+
+# =============================================================================
+# SETUP
+# =============================================================================
+set :user, 'scottmotte'
 set :application, "spitfiresky.com"
-set :domain, "spitfiresky.com"
- 
-role :web, domain
-role :app, domain
-role :db,  domain, :primary => true
  
 # =============================================================================
 # DEPLOY TO
 # =============================================================================
 set :deploy_to, "/home/scottmotte/apps/spitfiresky.com"
+set :scm_verbose, true
+set :use_sudo, false
 
 # # =============================================================================
 # # REPOSITORY
@@ -30,14 +31,11 @@ set :deploy_via, :remote_cache
 # =============================================================================
 default_run_options[:pty] = true
 ssh_options[:paranoid] = false
-ssh_options[:keys] = %w(/Users/scottmotte/.ssh/id_rsa)
-ssh_options[:port] = 1984
+ssh_options[:port] = 5000
  
 # =============================================================================
 # RAKE TASKS & OTHER SERVER TASKS
 # =============================================================================
-
-
 namespace :deploy do
   # override Rails related callbacks
   task :finalize_update do
@@ -50,17 +48,10 @@ namespace :deploy do
   task :restart do
   end
   
-  desc 'Restart nginx'
-  task :restart_nginx, :roles => :web do
-    sudo '/etc/init.d/nginx stop'
-    sudo '/etc/init.d/nginx start'
-  end
-  
   desc "Create symlink to public_html/#{domain}/public"
   task :symlinkify do
     run "rm -rf /home/scottmotte/public_html/spitfiresky.com/public; ln -s #{current_path}/output/ /home/scottmotte/public_html/spitfiresky.com/public"
   end
 end
  
-after "deploy", "deploy:cleanup"
-after "deploy:cleanup", "deploy:symlinkify"
+after "deploy", "deploy:cleanup", "deploy:symlinkify"
