@@ -86,6 +86,21 @@ filter:
 
 %p You might have to quit Titanium Mobile and iTunes at this point to finally get everything working. Re-open them and the in Titanium Mobile Install the app onto your phone by pressing "Install Now".
 
+%h4 Code
+
+%p Write the following code to alert the unique identifier id of the iphone. 
+
+<script src="http://gist.github.com/264462.js?file=gistfile1.txt"></script>
+
+%h3 Urban Airship
+
+%p Signup for an account
+
+%p Create a development environment
+
+%p Follow instructions here: http://urbanairship.com/docs/keys.html#id1
+
+%p Upload the exported p12 file to urban airship. Then you can try the test send.
 
 %p.followme
   %strong

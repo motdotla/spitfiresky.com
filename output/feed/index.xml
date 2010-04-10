@@ -4,7 +4,7 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2009-12-22T21:17:33-08:00</updated>
+  <updated>2010-04-10T16:05:59-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
@@ -58,6 +58,14 @@
 &lt;p&gt;Open up xcode with your iphone plugged into your computer and drag the provisioning profile onto the window.&lt;/p&gt;
 &lt;img src='/images/push_notifications/13.png' /&gt;
 &lt;p&gt;You might have to quit Titanium Mobile and iTunes at this point to finally get everything working. Re-open them and the in Titanium Mobile Install the app onto your phone by pressing &quot;Install Now&quot;.&lt;/p&gt;
+&lt;h4&gt;Code&lt;/h4&gt;
+&lt;p&gt;Write the following code to alert the unique identifier id of the iphone.&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/264462.js?file=gistfile1.txt&quot;&gt;&lt;/script&gt;
+&lt;h3&gt;Urban Airship&lt;/h3&gt;
+&lt;p&gt;Signup for an account&lt;/p&gt;
+&lt;p&gt;Create a development environment&lt;/p&gt;
+&lt;p&gt;Follow instructions here: http://urbanairship.com/docs/keys.html#id1&lt;/p&gt;
+&lt;p&gt;Upload the exported p12 file to urban airship. Then you can try the test send.&lt;/p&gt;
 &lt;p class='followme'&gt;
   &lt;strong&gt;
     You should follow me on twitter
