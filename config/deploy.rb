@@ -48,7 +48,7 @@ namespace :deploy do
   task :restart do
   end
   
-  desc "Create symlink to public_html/#{domain}/public"
+  desc "Create symlink to public_html/spitfiresky.com/public"
   task :symlinkify do
     run "rm -rf /home/scottmotte/public_html/spitfiresky.com/public; ln -s #{current_path}/output/ /home/scottmotte/public_html/spitfiresky.com/public"
   end
