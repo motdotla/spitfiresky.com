@@ -31,7 +31,6 @@ set :deploy_via, :remote_cache
 # =============================================================================
 default_run_options[:pty] = true
 ssh_options[:paranoid] = false
-ssh_options[:port] = 5000
  
 # =============================================================================
 # RAKE TASKS & OTHER SERVER TASKS
