@@ -4,12 +4,122 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2010-04-10T16:05:59-07:00</updated>
+  <updated>2010-05-31T19:47:49-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
   </author>
   <id>http://spitfiresky.com/</id>
+  
+  <entry>
+    <title>Getting Started with Sinatra</title>
+    <link href="/blog/getting-started-with-sinatra.html" />
+    <id>tag:spitfiresky.com,Mon May 31 18:16:33 -0700 2010:1275354993</id>
+    <updated>Mon May 31 18:16:33 -0700 2010</updated>
+    <content type="html">&lt;h2&gt;Getting Started with Sinatra&lt;/h2&gt;
+&lt;p&gt;
+  Sing me a song mister Sinatra. In this tutorial I get you started with sinatra, plus improve the folder structure of your app, and serve it up with unicorn.
+&lt;/p&gt;
+&lt;h3&gt;
+  Installation
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/420466.js?file=gistfile1.txt&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;h3&gt;
+  The Basics
+&lt;/h3&gt;
+&lt;p&gt;
+  &lt;strong&gt;
+    Type
+    sudo mate hello.rb
+  &lt;/strong&gt;
+  and in the hello.rb put the following:
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/420468.js?file=hello.rb&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Now you just need to run the app. Shotgun is great for this. It's a lot like script/server for unicorn apps.
+  &lt;small&gt;
+    (We'll use unicorn to do this later, but for now we'll keep it easy with shotgun)
+  &lt;/small&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/420470.js?file=gistfile1.txt&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;strong&gt;
+  haml
+&lt;/strong&gt;
+&lt;p&gt;
+  I like haml so let's bring it into the app now. We've already installed the haml gem so just change your hello.rb file to the following:
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/420473.js?file=hello.rb&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;h3&gt;
+  Move to folder structure
+&lt;/h3&gt;
+&lt;p&gt;
+  I like an organized application that can handle future complexity. Let's setup a folder structure to make room for that possibility.
+&lt;/p&gt;
+&lt;p&gt;
+  To begin, create a folder with the name of your app. I'm going to call my app careengine. Then, create the directory structure we'll be using.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/420483.js?file=gistfile1.txt&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  In app.rb put the following:
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/420485.js?file=app.rb&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  This tells our / route to use index.haml from our views. Let's create that file now by type sudo mate views/index.haml.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/420486.js?file=index.haml&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;h3&gt;
+  Unicorn
+&lt;/h3&gt;
+&lt;p&gt;
+  Now that the app is contained inside a folder structure (slightly similar to rails), let's set the app up to serve itself with unicorn instead of shotgun. (Unicorn is what we will be using on our production server, and It's nice to keep development and production as similar as possible.)
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;small&gt;
+    Don't forget to install unicorn:
+    &lt;strong&gt;
+      sudo gem install unicorn
+    &lt;/strong&gt;
+  &lt;/small&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Unicorn works with a config.ru file so let's create that.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;
+    Type sudo mate config.ru
+  &lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;script src=&quot;http://gist.github.com/420493.js?file=config.ru&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Now just run the command 'unicorn' in terminal and then browse to http://localhost:8080 to view your app. Alternatively you can type unicorn -p 3000 to specify the port as 3000.
+&lt;/p&gt;
+&lt;p&gt;
+  Great work, you setup a basic sinatra app, improved on the structure, and served it up with unicorn. You are well on your way to building more complex sinatra applications.
+&lt;/p&gt;
+&lt;p class='followme'&gt;
+  &lt;strong&gt;
+    You should
+    &lt;a href='http://twitter.com/spitfiresky'&gt;follow me on twitter here.&lt;/a&gt;
+  &lt;/strong&gt;
+&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>How you should be doing testing in Rails and how to get started</title>

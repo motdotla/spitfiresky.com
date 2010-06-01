@@ -1,0 +1,106 @@
+---
+layout:     blog
+title:      Getting Started with Sinatra
+created_at: 2010-05-31 17:16:33.887252 -08:00
+article:    true
+filter:
+  - haml
+---
+
+%h2= @page.title
+
+%p
+  Sing me a song mister Sinatra. In this tutorial I get you started with sinatra, plus improve the folder structure of your app, and serve it up with unicorn.
+
+%h3
+  Installation
+
+%p
+  <script src="http://gist.github.com/420466.js?file=gistfile1.txt"></script>
+
+%h3
+  The Basics
+
+%p
+  %strong 
+    Type 
+    sudo mate hello.rb 
+  and in the hello.rb put the following:
+
+%p
+  <script src="http://gist.github.com/420468.js?file=hello.rb"></script>
+
+%p
+  Now you just need to run the app. Shotgun is great for this. It's a lot like script/server for unicorn apps. 
+  %small
+    (We'll use unicorn to do this later, but for now we'll keep it easy with shotgun)
+  
+%p
+  <script src="http://gist.github.com/420470.js?file=gistfile1.txt"></script>
+ 
+%strong
+  haml
+
+%p 
+  I like haml so let's bring it into the app now. We've already installed the haml gem so just change your hello.rb file to the following:
+
+%p
+  <script src="http://gist.github.com/420473.js?file=hello.rb"></script>
+
+%h3
+  Move to folder structure
+
+%p
+  I like an organized application that can handle future complexity. Let's setup a folder structure to make room for that possibility.
+  
+%p
+  To begin, create a folder with the name of your app. I'm going to call my app careengine. Then, create the directory structure we'll be using.
+  
+%p
+  <script src="http://gist.github.com/420483.js?file=gistfile1.txt"></script>
+
+%p
+  In app.rb put the following:
+  
+%p
+  <script src="http://gist.github.com/420485.js?file=app.rb"></script>
+  
+%p
+  This tells our / route to use index.haml from our views. Let's create that file now by type sudo mate views/index.haml.
+  
+%p
+  <script src="http://gist.github.com/420486.js?file=index.haml"></script>
+  
+%h3
+  Unicorn
+  
+%p
+  Now that the app is contained inside a folder structure (slightly similar to rails), let's set the app up to serve itself with unicorn instead of shotgun. (Unicorn is what we will be using on our production server, and It's nice to keep development and production as similar as possible.)
+
+%p 
+  %small
+    Don't forget to install unicorn: 
+    %strong
+      sudo gem install unicorn
+
+%p
+  Unicorn works with a config.ru file so let's create that. 
+  
+%p
+  %strong
+    Type sudo mate config.ru
+  
+%p
+  <script src="http://gist.github.com/420493.js?file=config.ru"></script>
+  
+%p
+  Now just run the command 'unicorn' in terminal and then browse to http://localhost:8080 to view your app. Alternatively you can type unicorn -p 3000 to specify the port as 3000.
+  
+%p
+  Great work, you setup a basic sinatra app, improved on the structure, and served it up with unicorn. You are well on your way to building more complex sinatra applications.
+  
+
+%p.followme
+  %strong
+    You should
+    %a{:href=> 'http://twitter.com/spitfiresky'} follow me on twitter here.

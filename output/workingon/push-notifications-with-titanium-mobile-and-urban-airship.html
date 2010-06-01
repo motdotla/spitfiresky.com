@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Push Notifications with Titanium Mobile and Urban Airship &laquo; Spitfire Sky</title>
+    <link charset='utf-8' href='/css/blog_base.css' media='all' rel='Stylesheet' type='text/css' />
+    <link href='http://feeds.feedburner.com/spitfiresky' rel='alternate' title='Spitfire Sky RSS Feed' type='application/rss+xml' />
+  </head>
+  <body id='top'>
+    <div class='container_12' id='page'>
+      <div class='grid_4' id='header'>
+        &nbsp;
+      </div>
+      <div class='grid_8' id='header'>
+        <div id='articles'>
+          <ul>
+            <li>
+              <span>31 May 2010</span>
+              &raquo;
+              <a href="/blog/getting-started-with-sinatra.html">Getting Started with Sinatra</a>
+            </li>
+            <li>
+              <span>03 Oct 2009</span>
+              &raquo;
+              <a href="/blog/how-you-should-be-doing-testing-in-rails.html">How you should be doing testing in Rails and how to get started</a>
+            </li>
+            <li>
+              <span>07 Sep 2009</span>
+              &raquo;
+              <a href="/blog/sdruby-presentation-on-titanium-mobile.html">Sdruby Presentation on Titanium-Mobile</a>
+            </li>
+            <li>
+              <span>29 Aug 2009</span>
+              &raquo;
+              <a href="/blog/caching-with-mongomapper.html">Counter Caching with MongoMapper</a>
+            </li>
+            <li>
+              <span>07 Aug 2009</span>
+              &raquo;
+              <a href="/blog/recap-of-my-sdruby-presentation-on-mongodb.html">Recap of my sdruby presentation on mongodb</a>
+            </li>
+            <li>
+              <span>28 Jul 2009</span>
+              &raquo;
+              <a href="/blog/choice-email-setup-with-merb.html">Choice Email Setup with Merb</a>
+            </li>
+            <li>
+              <span>23 Jul 2009</span>
+              &raquo;
+              <a href="/blog/my-server-setup.html">My Server Setup</a>
+            </li>
+            <li>
+              <span>15 Jul 2009</span>
+              &raquo;
+              <a href="/blog/introduction.html">Introduction</a>
+            </li>
+          </ul>
+        </div>
+        <div id='nav'>
+          <a class='show_articles' href='#top'>Articles list</a>
+        </div>
+      </div>
+      <div class='grid_4' id='sidebar'>
+        <a href='/'>
+          <img src='/images/logo.png' />
+        </a>
+        <p>
+          <a href='/blog'>
+            <img src='/images/house.png' />
+          </a>
+          <a class='show_articles' href='#top'>
+            <img src='/images/report.png' />
+          </a>
+          <a href='http://spitfiresky.com/contact.html'>
+            <img src='/images/email.png' />
+          </a>
+          <a href='http://feeds.feedburner.com/spitfiresky'>
+            <img src='/images/rss.png' />
+          </a>
+          <!-- %a{:href => 'http://github.com/scottmotte/spitfiresky.com/tree/master'} -->
+          <!-- %img{:src => '/images/ruby.png'} -->
+        </p>
+      </div>
+      <div class='grid_7' id='content'>
+        <div id='twitter'>
+          <div class='icon'>
+            <a href='http://twitter.com/spitfiresky'>
+              <img src='/images/twitter4.png' />
+            </a>
+          </div>
+          <div class='tweets'></div>
+          <div class='clear'></div>
+        </div>
+        <h2>Push Notifications with Titanium Mobile and Urban Airship</h2>
+        <p>Hello again. Today I show you how to get push notifications working with Titanium Mobile.</p>
+        <h3>Prerequisites</h3>
+        <p>You need the following:</p>
+        <ul>
+          <li>An Apple Developer's Account</li>
+          <li>An Account on http://urbanairship.com</li>
+          <li>A Mac</li>
+        </ul>
+        <h3>Confusing shit - Certificates, Keys, Provision Profiles, AppIDs</h3>
+        <h4>Generate key</h4>
+        <p>Just follow along.</p>
+        <p>On your mac open up Keychain Access. In the toolbar click 'Keychain Access' -> 'Certificate Assistant' -> 'Request a Certificate from a Certificate Authority'.</p>
+        <img src='/images/push_notifications/1.png' />
+        <p>In the pop up window, use the email address you signed up on the Apple Developer's site with. Enter your name, and choose Save to Disk.</p>
+        <img src='/images/push_notifications/2.png' />
+        <p>Save it somewhere you can easily find it. Keep it safe.</p>
+        <img src='/images/push_notifications/3.png' />
+        <h4>App IDs</h4>
+        <p>Login into your development account, visit the iPhone Developer Program Portal, and go to the App IDs section: <a href="http://developer.apple.com/iphone/manage/bundles/index.action">http://developer.apple.com/iphone/manage/bundles/index.action</a></p>
+        <img src='/images/push_notifications/4.png' />
+        <p>Click the New App ID button, and on the next page enter a name (MissMint) and a bundle identifier (com.spitfiresky.missmint).</p>
+        <img src='/images/push_notifications/5.png' />
+        <p>After creating the AppID go to configure the id you just created. On the next page, check the box to 'Enable for Apple Push Notification service', and then click the 'Configure' button next to the Development Push SSL Certificate.</p>
+        <img src='/images/push_notifications/6.png' />
+        <p>In the configuration window, follow the steps, and upload the CerticiateSigningRequest file we created previously using KeyChain Access.</p>
+        <img src='/images/push_notifications/7.png' />
+        <p>Next download your newly generated push notification ssl certificate.</p>
+        <img src='/images/push_notifications/8.png' />
+        <p>Double click on this certificate to save it your key chain. Export this key by clicking on this newly installed certificate. The exported key is saved as Certificate.p12 file on your system. Please store it other files uploaded or downloaded from portal program. This .p12 file is used in later steps for signing your Provider server.</p>
+        <p>Next, go back to the Apple Developer website, go to provisioning profiles, and choose to a create a new provisioning profile. <a href="http://developer.apple.com/iphone/manage/provisioningprofiles/create.action?type=1">http://developer.apple.com/iphone/manage/provisioningprofiles/create.action?type=1</a></p>
+        <p>Fill in the form with the appropriate info.</p>
+        <img src='/images/push_notifications/9.png' />
+        <p>Download the newly created provisioning profile.</p>
+        <img src='/images/push_notifications/10.png' />
+        <p>Open up Titanium Mobile and open up your project. Go to Test & Package, and then the Running your app on a device section. On the 'Select Provisioning Profile' section choose to browse for the provisioning profile we just downloaded.</p>
+        <img src='/images/push_notifcations/11.png' />
+        <p>Choose the provisioning profile we just downloaded.</p>
+        <img src='/images/push_notifcations/12.png' />
+        <p>Open up xcode with your iphone plugged into your computer and drag the provisioning profile onto the window.</p>
+        <img src='/images/push_notifications/13.png' />
+        <p>You might have to quit Titanium Mobile and iTunes at this point to finally get everything working. Re-open them and the in Titanium Mobile Install the app onto your phone by pressing "Install Now".</p>
+        <h4>Code</h4>
+        <p>Write the following code to alert the unique identifier id of the iphone.</p>
+        <script src="http://gist.github.com/264462.js?file=gistfile1.txt"></script>
+        <h3>Urban Airship</h3>
+        <p>Signup for an account</p>
+        <p>Create a development environment</p>
+        <p>Follow instructions here: http://urbanairship.com/docs/keys.html#id1</p>
+        <p>Upload the exported p12 file to urban airship. Then you can try the test send.</p>
+        <p class='followme'>
+          <strong>
+            You should follow me on twitter
+            <a href='http://twitter.com/spitfiresky'>here</a>
+          </strong>
+        </p>
+      </div>
+    </div>
+    <script src='/javascripts/jquery.js' type='text/javascript'></script>
+    <script src='/javascripts/jquery.tweet.js' type='text/javascript'></script>
+    <script src='/javascripts/blog.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        try {
+        var pageTracker = _gat._getTracker("UA-10090039-1");
+        pageTracker._trackPageview();
+        } catch(err) {}
+      //]]>
+    </script>
+  </body>
+</html>
