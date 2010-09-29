@@ -4,12 +4,32 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2010-05-31T19:47:49-07:00</updated>
+  <updated>2010-09-28T21:55:47-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
   </author>
   <id>http://spitfiresky.com/</id>
+  
+  <entry>
+    <title>Riverside Ruby - Introduction to Ruby</title>
+    <link href="/blog/riverside-ruby-introduction-to-ruby.html" />
+    <id>tag:spitfiresky.com,Tue Sep 28 09:37:28 -0700 2010:1285691848</id>
+    <updated>Tue Sep 28 09:37:28 -0700 2010</updated>
+    <content type="html">&lt;h2&gt;Riverside Ruby - Introduction to Ruby&lt;/h2&gt;
+&lt;p&gt;Here are the slides from my presentation to our first Riverside Ruby Meetup.&lt;/p&gt;
+&lt;h3&gt;Slides&lt;/h3&gt;
+&lt;object id=&quot;__sse5303192&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=konnichiwaruby-100927233029-phpapp02&amp;stripped_title=kon-nichi-waruby&amp;userName=scottmotte&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;/&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;/&gt;&lt;embed name=&quot;__sse5303192&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=konnichiwaruby-100927233029-phpapp02&amp;stripped_title=kon-nichi-waruby&amp;userName=scottmotte&quot; type=&quot;application/x-shockwave-flash&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+&lt;h3&gt;Overview&lt;/h3&gt;
+For this presentation I introduced ruby and some basics about the language. Additionally, I demonstrated the power and simplicity of ruby by using Sinatra to build a hello world app.
+&lt;p class='followme'&gt;
+  &lt;strong&gt;
+    You should follow me on twitter
+    &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
+  &lt;/strong&gt;
+&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Getting Started with Sinatra</title>

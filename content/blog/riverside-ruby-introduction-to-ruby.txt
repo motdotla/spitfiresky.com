@@ -1,0 +1,26 @@
+---
+layout:     blog
+title:      Riverside Ruby - Introduction to Ruby
+created_at: 2010-09-28 09:37:28.796845 -07:00
+article:    true
+filter:
+  - haml
+---
+
+%h2= @page.title
+
+%p Here are the slides from my presentation to our first Riverside Ruby Meetup.
+
+%h3 Slides
+
+<object id="__sse5303192" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=konnichiwaruby-100927233029-phpapp02&stripped_title=kon-nichi-waruby&userName=scottmotte" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse5303192" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=konnichiwaruby-100927233029-phpapp02&stripped_title=kon-nichi-waruby&userName=scottmotte" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object>
+
+%h3 Overview
+
+For this presentation I introduced ruby and some basics about the language. Additionally, I demonstrated the power and simplicity of ruby by using Sinatra to build a hello world app.
+
+%p.followme
+  %strong
+    You should follow me on twitter 
+    %a{:href=> 'http://twitter.com/spitfiresky'} here
+

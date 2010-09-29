@@ -14,6 +14,11 @@
         <div id='articles'>
           <ul>
             <li>
+              <span>28 Sep 2010</span>
+              &raquo;
+              <a href="/blog/riverside-ruby-introduction-to-ruby.html">Riverside Ruby - Introduction to Ruby</a>
+            </li>
+            <li>
               <span>31 May 2010</span>
               &raquo;
               <a href="/blog/getting-started-with-sinatra.html">Getting Started with Sinatra</a>
@@ -90,106 +95,16 @@
           <div class='tweets'></div>
           <div class='clear'></div>
         </div>
-        <h2>Getting Started with Sinatra</h2>
-        <p>
-          Sing me a song mister Sinatra. In this tutorial I get you started with sinatra, plus improve the folder structure of your app, and serve it up with unicorn.
-        </p>
-        <h3>
-          Installation
-        </h3>
-        <p>
-          <script src="http://gist.github.com/420466.js?file=gistfile1.txt"></script>
-        </p>
-        <h3>
-          The Basics
-        </h3>
-        <p>
-          <strong>
-            Type
-            sudo mate hello.rb
-          </strong>
-          and in the hello.rb put the following:
-        </p>
-        <p>
-          <script src="http://gist.github.com/420468.js?file=hello.rb"></script>
-        </p>
-        <p>
-          Now you just need to run the app. Shotgun is great for this. It's a lot like script/server for unicorn apps.
-          <small>
-            (We'll use unicorn to do this later, but for now we'll keep it easy with shotgun)
-          </small>
-        </p>
-        <p>
-          <script src="http://gist.github.com/420470.js?file=gistfile1.txt"></script>
-        </p>
-        <strong>
-          haml
-        </strong>
-        <p>
-          I like haml so let's bring it into the app now. We've already installed the haml gem so just change your hello.rb file to the following:
-        </p>
-        <p>
-          <script src="http://gist.github.com/420473.js?file=hello.rb"></script>
-        </p>
-        <h3>
-          Move to folder structure
-        </h3>
-        <p>
-          I like an organized application that can handle future complexity. Let's setup a folder structure to make room for that possibility.
-        </p>
-        <p>
-          To begin, create a folder with the name of your app. I'm going to call my app careengine. Then, create the directory structure we'll be using.
-        </p>
-        <p>
-          <script src="http://gist.github.com/420483.js?file=gistfile1.txt"></script>
-        </p>
-        <p>
-          In app.rb put the following:
-        </p>
-        <p>
-          <script src="http://gist.github.com/420485.js?file=app.rb"></script>
-        </p>
-        <p>
-          This tells our / route to use index.haml from our views. Let's create that file now by type sudo mate views/index.haml.
-        </p>
-        <p>
-          <script src="http://gist.github.com/420486.js?file=index.haml"></script>
-        </p>
-        <h3>
-          Unicorn
-        </h3>
-        <p>
-          Now that the app is contained inside a folder structure (slightly similar to rails), let's set the app up to serve itself with unicorn instead of shotgun. (Unicorn is what we will be using on our production server, and It's nice to keep development and production as similar as possible.)
-        </p>
-        <p>
-          <small>
-            Don't forget to install unicorn:
-            <strong>
-              sudo gem install unicorn
-            </strong>
-          </small>
-        </p>
-        <p>
-          Unicorn works with a config.ru file so let's create that.
-        </p>
-        <p>
-          <strong>
-            Type sudo mate config.ru
-          </strong>
-        </p>
-        <p>
-          <script src="http://gist.github.com/420493.js?file=config.ru"></script>
-        </p>
-        <p>
-          Now just run the command 'unicorn' in terminal and then browse to http://localhost:8080 to view your app. Alternatively you can type unicorn -p 3000 to specify the port as 3000.
-        </p>
-        <p>
-          Great work, you setup a basic sinatra app, improved on the structure, and served it up with unicorn. You are well on your way to building more complex sinatra applications.
-        </p>
+        <h2>Riverside Ruby - Introduction to Ruby</h2>
+        <p>Here are the slides from my presentation to our first Riverside Ruby Meetup.</p>
+        <h3>Slides</h3>
+        <object id="__sse5303192" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=konnichiwaruby-100927233029-phpapp02&stripped_title=kon-nichi-waruby&userName=scottmotte" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse5303192" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=konnichiwaruby-100927233029-phpapp02&stripped_title=kon-nichi-waruby&userName=scottmotte" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object>
+        <h3>Overview</h3>
+        For this presentation I introduced ruby and some basics about the language. Additionally, I demonstrated the power and simplicity of ruby by using Sinatra to build a hello world app.
         <p class='followme'>
           <strong>
-            You should
-            <a href='http://twitter.com/spitfiresky'>follow me on twitter here.</a>
+            You should follow me on twitter
+            <a href='http://twitter.com/spitfiresky'>here</a>
           </strong>
         </p>
       </div>

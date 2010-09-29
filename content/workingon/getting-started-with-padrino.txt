@@ -1,0 +1,14 @@
+---
+layout:     blog
+title:      Getting Started with Padrino
+created_at: 2010-06-03 17:16:33.887252 -08:00
+article:    true
+filter:
+  - haml
+---
+
+%h2= @page.title
+
+sudo gem install padrino
+
+
