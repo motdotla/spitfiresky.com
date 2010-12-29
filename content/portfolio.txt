@@ -17,9 +17,29 @@ filter:
 <div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
+	<h2><a href="/portfolio/scottbalance.html">Scottbalance</a></h2>
+	<a href="/portfolio/scottbalance.html"><img src="/images/portfolios/scottbalance-thumb.gif" alt="Scottbalance"></a>
+	<p><a href="http://scottbalance.heroku.com">Scottbalance</a> saves a daily history of your Scottrade account balance and emails it to you - automatically.</p>
+</div>
+
+<div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/investapp.html">Investapp</a></h2>
 	<a href="/portfolio/investapp.html"><img src="/images/portfolios/investapp.com-thumb.gif" alt="Investapp logo"></a>
-	<p>Investapp organizes your investment group. Discuss stock picks as a team. Keep all your comments in one place and see who is buying at the right times.</p>
+	<p><a href="http://investapp.com">Investapp</a> organizes your investment group. Discuss stock picks as a team. Keep all your comments in one place and see who is buying at the right times.</p>
+</div>
+
+<div class="grid_4 portfolio-item">
+	<h2><a href="/portfolio/missmint.html">Miss Mint</a></h2>
+	<a href="/portfolio/missmint.html"><img src="/images/portfolios/missmint.com-thumb.gif" alt="Miss Mint logo"></a>
+	<p><a href="http://missmint.com">Miss Mint</a> helps you remember to take your daily birth control pill. It's free, discrete, and sends additional reminders if you forget to answer yes. <a href="http://missmint.com/subscribe">Give it a look.</a></p>
+</div>
+
+<div class="clear"></div>
+
+<div class="grid_4 portfolio-item">
+	<h2><a href="/portfolio/flossedtoday.html">Flossed Today</a></h2>
+	<a href="/portfolio/flossedtoday.html"><img src="/images/portfolios/flossedtoday.com-thumb.gif" alt="Flossed Today logo"></a>
+	<p><a href="http://flossedtoday.com">Flossed Today</a> helps you remember to floss. It's completely free - built and conceived in our spare time. <a href="http://flossedtoday.com/subscribe">Try it out!</a></p>
 </div>
 
 <div class="grid_4 portfolio-item">
@@ -28,19 +48,6 @@ filter:
 	<p>J.Mading is an insurance company in Orange County, CA. A one page static website with a mix of jquery was just what they needed.</p>
 </div>
 
-<div class="grid_4 portfolio-item">
-	<h2><a href="/portfolio/missmint.html">Miss Mint</a></h2>
-	<a href="/portfolio/missmint.html"><img src="/images/portfolios/missmint.com-thumb.gif" alt="Miss Mint logo"></a>
-	<p>Miss Mint helps you remember to take your daily birth control pill. It's free, discrete, and sends additional reminders if you forget to answer yes. <a href="http://missmint.com/subscribe">Give it a look.</a></p>
-</div>
-
-<div class="clear"></div>
-
-<div class="grid_4 portfolio-item">
-	<h2><a href="/portfolio/flossedtoday.html">Flossed Today</a></h2>
-	<a href="/portfolio/flossedtoday.html"><img src="/images/portfolios/flossedtoday.com-thumb.gif" alt="Flossed Today logo"></a>
-	<p>Flossed Today helps you remember to floss. It's completely free - built and conceived in our spare time. <a href="http://flossedtoday.com/subscribe">Try it out!</a></p>
-</div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/edwinmatthews.html">Edwin Matthews</a></h2>
@@ -48,13 +55,13 @@ filter:
 	<p>Ed Matthews is a flight instructor in Hemet, CA. A one page static website was perfect for his needs.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/millerjones.html">Miller Jones Mortuary</a></h2>
 	<a href="/portfolio/millerjones.html"><img src="/images/portfolios/miller-jones.com-thumb.gif" alt="Miller Jones Mortuary logo"></a>
 	<p>Miller Jones Mortuary &amp; Crematory is one of the largest mortuaries on the west coast, and we were commissioned to upgrade their previously outdated online presence. </p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/twinstang.html">Twinstang</a></h2>
@@ -68,13 +75,13 @@ filter:
 	<p>HRAssist provides affordable Human Resources services. We programmed their site while <a href="http://collectiveindustry.com">Justin Pardee</a> did the design.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/hemetflightcenter.html">Hemet Flight Center</a></h2>
 	<a href="/portfolio/hemetflightcenter.html"><img src="/images/portfolios/hemetflightcenter.com-thumb.gif" alt="Hemet Flight Center logo"></a>
 	<p>Hemet Flight Center is a mid-sized aviation school located in Hemet, CA. We created an updated design and programmed the content to be editable using <a href="http://wordpress.org">Wordpress</a>.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/jacobshouse.html">Jacobs House Temecula</a></h2>
@@ -88,13 +95,13 @@ filter:
 	<p>UEG engineers and develops large residential tracks throughout Southern California, and we developed custom business software to increase their efficiency and client relations.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/totalspectrum.html">Total Spectrum</a></h2>
 	<a href="/portfolio/totalspectrum.html"><img src="/images/portfolios/totalspectrumsga.com-thumb.gif" alt="Total Spectrum logo"></a>
 	<p>Total Spectrum is a political consulting firm that operates in Washington D.C. They chose us to update their online identity and print materials.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/southernhotel.html">Southern Hotel Museum</a></h2>
@@ -108,13 +115,13 @@ filter:
 	<p>Rob Schelling is an established attorney in Riverside County, and he came to us to develop his online identity - including a content management system.</p>
 </div>
 
+<div class="clear"></div>
+
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/charlottejones.html">Charlotte Jones</a></h2>
 	<a href="/portfolio/charlottejones.html"><img src="/images/portfolios/electcharlottejones.com-thumb.gif" alt="Elect Charlotte Jones logo"></a>
 	<p>Charlotte is a member of the Hemet Unified School Board and an involved member in her community. We built her a basic campaign website for her recent election.</p>
 </div>
-
-<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/workforcehomebuilders.html">Workforce Home Builders LLC</a></h2>
@@ -127,6 +134,8 @@ filter:
 	<a href="/portfolio/annmotte.html"><img src="/images/portfolios/annmotte.com-thumb.gif" alt="Ann Motte logo"></a>
 	<p>Ann Motte is a long-time elected trustee of Mount San Jacinto College and this is her blog.</p>
 </div>
+
+<div class="clear"></div>
 
 <div class="grid_4 portfolio-item">
 	<h2><a href="/portfolio/darylbusch.html">Daryl Busch</a></h2>
