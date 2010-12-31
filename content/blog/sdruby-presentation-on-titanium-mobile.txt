@@ -24,3 +24,4 @@ For this presentation I covered getting started with Titanium mobile. Plus, I in
     You should follow me on twitter 
     %a{:href=> 'http://twitter.com/spitfiresky'} here
 
+%br

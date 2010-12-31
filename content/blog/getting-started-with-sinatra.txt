@@ -104,3 +104,5 @@ filter:
   %strong
     You should
     %a{:href=> 'http://twitter.com/spitfiresky'} follow me on twitter here.
+    
+%br

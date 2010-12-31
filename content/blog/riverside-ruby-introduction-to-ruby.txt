@@ -24,3 +24,4 @@ For this presentation I introduced ruby and some basics about the language. Addi
     You should follow me on twitter 
     %a{:href=> 'http://twitter.com/spitfiresky'} here
 
+%br

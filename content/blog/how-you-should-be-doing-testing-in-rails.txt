@@ -169,3 +169,4 @@ filter:
 %p
   Also, the example app I built along with this tutorial is <a href="http://github.com/scottmotte/people">here on github</a>.
 
+%br

@@ -63,3 +63,5 @@ Customize things according to <a href="http://articles.slicehost.com/2009/3/5/ub
   %strong
     You should follow me on twitter 
     %a{:href=> 'http://twitter.com/spitfiresky'} here
+    
+%br

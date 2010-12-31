@@ -1,0 +1,41 @@
+---
+layout:     blog
+title:      An App - Scottbalance
+created_at: 2010-12-31 00:00:00 -07:00
+article:    true
+filter:
+  - haml
+---
+
+%h2= @page.title
+
+%p <a href="http://scottbalance.heroku.com/">Scottbalance</a> (<a href="http://spitfiresky.com/portfolio/scottbalance.html">portfolio link</a>) is a tiny app with a simple role. It saves a daily history of your Scottrade account balance and emails it to you - automatically.
+
+%h3 Why this app?
+
+%p I have an account with <a href="http://scottrade.com">Scottrade</a> where I invest in stocks. Scottrade does not include a feature to view your historical balances. It only shows your current day's balance. Scottrade does not provide an API to gather said historical balances either. I needed to be able to get a hold of my historical balances, so I built <a href="http://scottbalance.heroku.com">Scottbalance.com</a>.
+
+%p
+  <img src="/images/portfolios/scottbalance-1.jpg" width="545">
+  
+%h3 How does it work?
+
+%p Using your Scottrade login information, the app screen scrapes your latest current balance and saves that information to your balance history. (Your login information is securely encrypted). After saving it, it emails you to let you know your latest balance for that day. Then by logging in you can see a list of your historical balances. 
+
+%p Additionally, the app is smart enough to navigate through Scottrade's new security questions. And the app is designed to look good on your iphone so you can check your balances on the go.
+
+%h3 Libraries and Tools Used
+
+%p The app is hosted on <a href="http://heroku.com">heroku</a>. It is built on <a href="http://www.padrinorb.com/">Padrino</a>. It uses <a href="http://rubygems.org/gems/bcrypt-ruby">bcrypt</a> to encrypt all Scottrade access information.  It uses <a href="http://rubygems.org/gems/warden">warden</a> to handle user authentication. For the automatic logging into Scottrade and for the screenscraping of the balances it uses <a href="http://rubygems.org/gems/mechanize">mechanize</a>.
+
+%h3 Conclusion
+
+%p This was a personal project so it's certainly not polished but it does its job well. So I decided to make it available to everyone. If you also have a Scottrade account, then <a href="http://scottbalance.heroku.com/users/new">try it out</a> and see what you think. It's free to use.
+
+
+%p.followme
+  %strong
+    To follow me on twitter click 
+    %a{:href=> 'http://twitter.com/spitfiresky'} here
+    
+%br

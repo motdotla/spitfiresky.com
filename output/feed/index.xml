@@ -4,12 +4,41 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2010-12-29T11:18:17-08:00</updated>
+  <updated>2010-12-31T15:05:22-08:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
   </author>
   <id>http://spitfiresky.com/</id>
+  
+  <entry>
+    <title>An App - Scottbalance</title>
+    <link href="/blog/an-app-scottbalance.html" />
+    <id>tag:spitfiresky.com,Thu Dec 30 23:00:00 -0800 2010:1293778800</id>
+    <updated>Thu Dec 30 23:00:00 -0800 2010</updated>
+    <content type="html">&lt;h2&gt;An App - Scottbalance&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://scottbalance.heroku.com/&quot;&gt;Scottbalance&lt;/a&gt; (&lt;a href=&quot;http://spitfiresky.com/portfolio/scottbalance.html&quot;&gt;portfolio link&lt;/a&gt;) is a tiny app with a simple role. It saves a daily history of your Scottrade account balance and emails it to you - automatically.&lt;/p&gt;
+&lt;h3&gt;Why this app?&lt;/h3&gt;
+&lt;p&gt;I have an account with &lt;a href=&quot;http://scottrade.com&quot;&gt;Scottrade&lt;/a&gt; where I invest in stocks. Scottrade does not include a feature to view your historical balances. It only shows your current day's balance. Scottrade does not provide an API to gather said historical balances either. I needed to be able to get a hold of my historical balances, so I built &lt;a href=&quot;http://scottbalance.heroku.com&quot;&gt;Scottbalance.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+  &lt;img src=&quot;/images/portfolios/scottbalance-1.jpg&quot; width=&quot;545&quot;&gt;
+&lt;/p&gt;
+&lt;h3&gt;How does it work?&lt;/h3&gt;
+&lt;p&gt;Using your Scottrade login information, the app screen scrapes your latest current balance and saves that information to your balance history. (Your login information is securely encrypted). After saving it, it emails you to let you know your latest balance for that day. Then by logging in you can see a list of your historical balances.&lt;/p&gt;
+&lt;p&gt;Additionally, the app is smart enough to navigate through Scottrade's new security questions. And the app is designed to look good on your iphone so you can check your balances on the go.&lt;/p&gt;
+&lt;h3&gt;Libraries and Tools Used&lt;/h3&gt;
+&lt;p&gt;The app is hosted on &lt;a href=&quot;http://heroku.com&quot;&gt;heroku&lt;/a&gt;. It is built on &lt;a href=&quot;http://www.padrinorb.com/&quot;&gt;Padrino&lt;/a&gt;. It uses &lt;a href=&quot;http://rubygems.org/gems/bcrypt-ruby&quot;&gt;bcrypt&lt;/a&gt; to encrypt all Scottrade access information.  It uses &lt;a href=&quot;http://rubygems.org/gems/warden&quot;&gt;warden&lt;/a&gt; to handle user authentication. For the automatic logging into Scottrade and for the screenscraping of the balances it uses &lt;a href=&quot;http://rubygems.org/gems/mechanize&quot;&gt;mechanize&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;This was a personal project so it's certainly not polished but it does its job well. So I decided to make it available to everyone. If you also have a Scottrade account, then &lt;a href=&quot;http://scottbalance.heroku.com/users/new&quot;&gt;try it out&lt;/a&gt; and see what you think. It's free to use.&lt;/p&gt;
+&lt;p class='followme'&gt;
+  &lt;strong&gt;
+    To follow me on twitter click
+    &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
+  &lt;/strong&gt;
+&lt;/p&gt;
+&lt;br /&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Riverside Ruby - Introduction to Ruby</title>
@@ -28,6 +57,7 @@ For this presentation I introduced ruby and some basics about the language. Addi
     &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
   &lt;/strong&gt;
 &lt;/p&gt;
+&lt;br /&gt;
 </content>
   </entry>
   
@@ -138,6 +168,7 @@ For this presentation I introduced ruby and some basics about the language. Addi
     &lt;a href='http://twitter.com/spitfiresky'&gt;follow me on twitter here.&lt;/a&gt;
   &lt;/strong&gt;
 &lt;/p&gt;
+&lt;br /&gt;
 </content>
   </entry>
   
@@ -302,6 +333,7 @@ For this presentation I introduced ruby and some basics about the language. Addi
 &lt;p&gt;
   Also, the example app I built along with this tutorial is &lt;a href=&quot;http://github.com/scottmotte/people&quot;&gt;here on github&lt;/a&gt;.
 &lt;/p&gt;
+&lt;br /&gt;
 </content>
   </entry>
   
@@ -322,6 +354,7 @@ For this presentation I covered getting started with Titanium mobile. Plus, I in
     &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
   &lt;/strong&gt;
 &lt;/p&gt;
+&lt;br /&gt;
 </content>
   </entry>
   
@@ -365,6 +398,7 @@ For this presentation I covered getting started with Titanium mobile. Plus, I in
     &lt;a href='http://twitter.com/spitfiresky'&gt;twitter.com/spitfiresky&lt;/a&gt;
   &lt;/strong&gt;
 &lt;/p&gt;
+&lt;br /&gt;
 </content>
   </entry>
   
@@ -472,6 +506,7 @@ For this presentation I covered getting started with Titanium mobile. Plus, I in
     &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
   &lt;/strong&gt;
 &lt;/p&gt;
+&lt;br /&gt;
 </content>
   </entry>
   
@@ -513,6 +548,7 @@ For this presentation I covered getting started with Titanium mobile. Plus, I in
     &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
   &lt;/strong&gt;
 &lt;/p&gt;
+&lt;br /&gt;
 </content>
   </entry>
   
@@ -552,6 +588,7 @@ Customize things according to &lt;a href=&quot;http://articles.slicehost.com/200
     &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
   &lt;/strong&gt;
 &lt;/p&gt;
+&lt;br /&gt;
 </content>
   </entry>
   
@@ -577,6 +614,7 @@ Customize things according to &lt;a href=&quot;http://articles.slicehost.com/200
     &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
   &lt;/strong&gt;
 &lt;/p&gt;
+&lt;br /&gt;
 </content>
   </entry>
   

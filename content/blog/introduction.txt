@@ -33,3 +33,5 @@ filter:
   %strong
     You should follow me on twitter 
     %a{:href=> 'http://twitter.com/spitfiresky'} here
+
+%br
