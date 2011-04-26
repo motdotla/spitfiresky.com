@@ -20,7 +20,7 @@ filter:
   %li A Mac
   %li An iPhone, iPad, or iPod
   
-%h3 Confusing shit - Certificates, Keys, Provision Profiles, AppIDs
+%h3 Certificates, Keys, Provision Profiles, AppIDs
 
 %h4 Generate key
 

@@ -4,7 +4,7 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2011-04-25T18:45:34-07:00</updated>
+  <updated>2011-04-25T18:47:11-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
@@ -25,7 +25,7 @@
   &lt;li&gt;A Mac&lt;/li&gt;
   &lt;li&gt;An iPhone, iPad, or iPod&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Confusing shit - Certificates, Keys, Provision Profiles, AppIDs&lt;/h3&gt;
+&lt;h3&gt;Certificates, Keys, Provision Profiles, AppIDs&lt;/h3&gt;
 &lt;h4&gt;Generate key&lt;/h4&gt;
 &lt;p&gt;Just follow along.&lt;/p&gt;
 &lt;p&gt;On your mac open up Keychain Access. In the toolbar click 'Keychain Access' -&gt; 'Certificate Assistant' -&gt; 'Request a Certificate from a Certificate Authority'.&lt;/p&gt;
