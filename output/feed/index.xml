@@ -4,7 +4,7 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2011-04-25T18:24:47-07:00</updated>
+  <updated>2011-04-25T18:45:34-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
@@ -57,7 +57,7 @@
 &lt;img src='/images/push_notifications/12.png' /&gt;
 &lt;p&gt;Open up xcode with your iphone plugged into your computer and drag the provisioning profile onto the window.&lt;/p&gt;
 &lt;img src='/images/push_notifications/13.png' /&gt;
-&lt;p&gt;You might have to quit Titanium Mobile and iTunes at this point to finally get everything working. Re-open them and the in Titanium Mobile Install the app onto your phone by pressing &quot;Install Now&quot;.&lt;/p&gt;
+&lt;p&gt;You might have to quit Titanium Mobile and iTunes at this point to finally get everything working. Re-open them and then in Titanium Mobile install the app onto your phone by pressing &quot;Install Now&quot;.&lt;/p&gt;
 &lt;p class='followme'&gt;
   &lt;strong&gt;
     You should follow me on twitter

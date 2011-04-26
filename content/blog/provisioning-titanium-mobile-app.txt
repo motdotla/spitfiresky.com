@@ -84,7 +84,7 @@ filter:
 
 %img{:src => '/images/push_notifications/13.png'}
 
-%p You might have to quit Titanium Mobile and iTunes at this point to finally get everything working. Re-open them and the in Titanium Mobile Install the app onto your phone by pressing "Install Now".
+%p You might have to quit Titanium Mobile and iTunes at this point to finally get everything working. Re-open them and then in Titanium Mobile install the app onto your phone by pressing "Install Now".
 
 %p.followme
   %strong
