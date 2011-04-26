@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
-    <title>OAuth with Sinatra &laquo; Spitfire Sky</title>
+    <title>Provisioning a Titanium Mobile App &laquo; Spitfire Sky</title>
     <link charset='utf-8' href='/css/blog_base.css' media='all' rel='Stylesheet' type='text/css' />
     <link href='http://feeds.feedburner.com/spitfiresky' rel='alternate' title='Spitfire Sky RSS Feed' type='application/rss+xml' />
   </head>
@@ -105,12 +105,54 @@
           <div class='tweets'></div>
           <div class='clear'></div>
         </div>
-        <h2>OAuth with Sinatra</h2>
-        <p>
-          sudo gem install oauth
-          sudo gem install sinatra
+        <h2>Provisioning a Titanium Mobile App</h2>
+        <p>Keys, Certificates, Provisioning Profiles, and AppIDS can be a configuration nightmare. In this article, I step through setting these up with a Titanium Mobile app.</p>
+        <h3>Prerequisites</h3>
+        <p>You need the following:</p>
+        <ul>
+          <li>An Apple Developer's Account</li>
+          <li>A Mac</li>
+          <li>An iPhone, iPad, or iPod</li>
+        </ul>
+        <h3>Confusing shit - Certificates, Keys, Provision Profiles, AppIDs</h3>
+        <h4>Generate key</h4>
+        <p>Just follow along.</p>
+        <p>On your mac open up Keychain Access. In the toolbar click 'Keychain Access' -> 'Certificate Assistant' -> 'Request a Certificate from a Certificate Authority'.</p>
+        <img src='/images/push_notifications/1.png' />
+        <p>In the pop up window, use the email address you signed up on the Apple Developer's site with. Enter your name, and choose Save to Disk.</p>
+        <img src='/images/push_notifications/2.png' />
+        <p>Save it somewhere you can easily find it. Keep it safe.</p>
+        <img src='/images/push_notifications/3.png' />
+        <h4>App IDs</h4>
+        <p>Login into your development account, visit the iPhone Developer Program Portal, and go to the App IDs section: <a href="http://developer.apple.com/iphone/manage/bundles/index.action">http://developer.apple.com/iphone/manage/bundles/index.action</a></p>
+        <img src='/images/push_notifications/4.png' />
+        <p>Click the New App ID button, and on the next page enter a name (MissMint) and a bundle identifier (com.spitfiresky.missmint).</p>
+        <img src='/images/push_notifications/5.png' />
+        <p>After creating the AppID go to configure the id you just created. On the next page, check the box to 'Enable for Apple Push Notification service', and then click the 'Configure' button next to the Development Push SSL Certificate.</p>
+        <img src='/images/push_notifications/6.png' />
+        <p>In the configuration window, follow the steps, and upload the CerticiateSigningRequest file we created previously using KeyChain Access.</p>
+        <img src='/images/push_notifications/7.png' />
+        <p>Next download your newly generated push notification ssl certificate.</p>
+        <img src='/images/push_notifications/8.png' />
+        <p>Double click on this certificate to save it your key chain. Export this key by clicking on this newly installed certificate.</p>
+        <p>Next, go back to the Apple Developer website, go to provisioning profiles, and choose to a create a new provisioning profile. <a href="http://developer.apple.com/iphone/manage/provisioningprofiles/create.action?type=1">http://developer.apple.com/iphone/manage/provisioningprofiles/create.action?type=1</a></p>
+        <p>Fill in the form with the appropriate info.</p>
+        <img src='/images/push_notifications/9.png' />
+        <p>Download the newly created provisioning profile.</p>
+        <img src='/images/push_notifications/10.png' />
+        <p>Open up Titanium Mobile and open up your project. Go to Test & Package, and then the Running your app on a device section. On the 'Select Provisioning Profile' section choose to browse for the provisioning profile we just downloaded.</p>
+        <img src='/images/push_notifications/11.png' />
+        <p>Choose the provisioning profile we just downloaded.</p>
+        <img src='/images/push_notifications/12.png' />
+        <p>Open up xcode with your iphone plugged into your computer and drag the provisioning profile onto the window.</p>
+        <img src='/images/push_notifications/13.png' />
+        <p>You might have to quit Titanium Mobile and iTunes at this point to finally get everything working. Re-open them and the in Titanium Mobile Install the app onto your phone by pressing "Install Now".</p>
+        <p class='followme'>
+          <strong>
+            You should follow me on twitter
+            <a href='http://twitter.com/spitfiresky'>here</a>
+          </strong>
         </p>
-        <p></p>
       </div>
     </div>
     <script src='/javascripts/jquery.js' type='text/javascript'></script>

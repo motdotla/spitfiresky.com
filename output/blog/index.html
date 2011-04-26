@@ -14,6 +14,11 @@
         <div id='articles'>
           <ul>
             <li>
+              <span>25 Apr 2011</span>
+              &raquo;
+              <a href="/blog/provisioning-titanium-mobile-app.html">Provisioning a Titanium Mobile App</a>
+            </li>
+            <li>
               <span>30 Dec 2010</span>
               &raquo;
               <a href="/blog/an-app-scottbalance.html">An App - Scottbalance</a>
@@ -100,27 +105,54 @@
           <div class='tweets'></div>
           <div class='clear'></div>
         </div>
-        <h2>An App - Scottbalance</h2>
-        <p><a href="http://scottbalance.heroku.com/">Scottbalance</a> (<a href="http://spitfiresky.com/portfolio/scottbalance.html">portfolio link</a>) is a tiny app with a simple role. It saves a daily history of your Scottrade account balance and emails it to you - automatically.</p>
-        <h3>Why this app?</h3>
-        <p>I have an account with <a href="http://scottrade.com">Scottrade</a> where I invest in stocks. Scottrade does not include a feature to view your historical balances. It only shows your current day's balance. Scottrade does not provide an API to gather said historical balances either. I needed to be able to get a hold of my historical balances, so I built <a href="http://scottbalance.heroku.com">Scottbalance.com</a>.</p>
-        <p>
-          <img src="/images/portfolios/scottbalance-1.jpg" width="545">
-        </p>
-        <h3>How does it work?</h3>
-        <p>Using your Scottrade login information, the app screen scrapes your latest current balance and saves that information to your balance history. (Your login information is securely encrypted). After saving it, it emails you to let you know your latest balance for that day. Then by logging in you can see a list of your historical balances.</p>
-        <p>Additionally, the app is smart enough to navigate through Scottrade's new security questions. And the app is designed to look good on your iphone so you can check your balances on the go.</p>
-        <h3>Libraries and Tools Used</h3>
-        <p>The app is hosted on <a href="http://heroku.com">heroku</a>. It is built on <a href="http://www.padrinorb.com/">Padrino</a>. It uses <a href="http://rubygems.org/gems/bcrypt-ruby">bcrypt</a> to encrypt all Scottrade access information.  It uses <a href="http://rubygems.org/gems/warden">warden</a> to handle user authentication. For the automatic logging into Scottrade and for the screenscraping of the balances it uses <a href="http://rubygems.org/gems/mechanize">mechanize</a>.</p>
-        <h3>Conclusion</h3>
-        <p>This was a personal project so it's certainly not polished but it does its job well. So I decided to make it available to everyone. If you also have a Scottrade account, then <a href="http://scottbalance.heroku.com/users/new">try it out</a> and see what you think. It's free to use.</p>
+        <h2>Provisioning a Titanium Mobile App</h2>
+        <p>Keys, Certificates, Provisioning Profiles, and AppIDS can be a configuration nightmare. In this article, I step through setting these up with a Titanium Mobile app.</p>
+        <h3>Prerequisites</h3>
+        <p>You need the following:</p>
+        <ul>
+          <li>An Apple Developer's Account</li>
+          <li>A Mac</li>
+          <li>An iPhone, iPad, or iPod</li>
+        </ul>
+        <h3>Confusing shit - Certificates, Keys, Provision Profiles, AppIDs</h3>
+        <h4>Generate key</h4>
+        <p>Just follow along.</p>
+        <p>On your mac open up Keychain Access. In the toolbar click 'Keychain Access' -> 'Certificate Assistant' -> 'Request a Certificate from a Certificate Authority'.</p>
+        <img src='/images/push_notifications/1.png' />
+        <p>In the pop up window, use the email address you signed up on the Apple Developer's site with. Enter your name, and choose Save to Disk.</p>
+        <img src='/images/push_notifications/2.png' />
+        <p>Save it somewhere you can easily find it. Keep it safe.</p>
+        <img src='/images/push_notifications/3.png' />
+        <h4>App IDs</h4>
+        <p>Login into your development account, visit the iPhone Developer Program Portal, and go to the App IDs section: <a href="http://developer.apple.com/iphone/manage/bundles/index.action">http://developer.apple.com/iphone/manage/bundles/index.action</a></p>
+        <img src='/images/push_notifications/4.png' />
+        <p>Click the New App ID button, and on the next page enter a name (MissMint) and a bundle identifier (com.spitfiresky.missmint).</p>
+        <img src='/images/push_notifications/5.png' />
+        <p>After creating the AppID go to configure the id you just created. On the next page, check the box to 'Enable for Apple Push Notification service', and then click the 'Configure' button next to the Development Push SSL Certificate.</p>
+        <img src='/images/push_notifications/6.png' />
+        <p>In the configuration window, follow the steps, and upload the CerticiateSigningRequest file we created previously using KeyChain Access.</p>
+        <img src='/images/push_notifications/7.png' />
+        <p>Next download your newly generated push notification ssl certificate.</p>
+        <img src='/images/push_notifications/8.png' />
+        <p>Double click on this certificate to save it your key chain. Export this key by clicking on this newly installed certificate.</p>
+        <p>Next, go back to the Apple Developer website, go to provisioning profiles, and choose to a create a new provisioning profile. <a href="http://developer.apple.com/iphone/manage/provisioningprofiles/create.action?type=1">http://developer.apple.com/iphone/manage/provisioningprofiles/create.action?type=1</a></p>
+        <p>Fill in the form with the appropriate info.</p>
+        <img src='/images/push_notifications/9.png' />
+        <p>Download the newly created provisioning profile.</p>
+        <img src='/images/push_notifications/10.png' />
+        <p>Open up Titanium Mobile and open up your project. Go to Test & Package, and then the Running your app on a device section. On the 'Select Provisioning Profile' section choose to browse for the provisioning profile we just downloaded.</p>
+        <img src='/images/push_notifications/11.png' />
+        <p>Choose the provisioning profile we just downloaded.</p>
+        <img src='/images/push_notifications/12.png' />
+        <p>Open up xcode with your iphone plugged into your computer and drag the provisioning profile onto the window.</p>
+        <img src='/images/push_notifications/13.png' />
+        <p>You might have to quit Titanium Mobile and iTunes at this point to finally get everything working. Re-open them and the in Titanium Mobile Install the app onto your phone by pressing "Install Now".</p>
         <p class='followme'>
           <strong>
-            To follow me on twitter click
+            You should follow me on twitter
             <a href='http://twitter.com/spitfiresky'>here</a>
           </strong>
         </p>
-        <br />
       </div>
     </div>
     <script src='/javascripts/jquery.js' type='text/javascript'></script>

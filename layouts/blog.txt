@@ -1,6 +1,6 @@
 ---
 extension: html
-filter:    haml
+filter: haml
 ---
 !!!
 %html
@@ -59,8 +59,3 @@ filter:    haml
       var pageTracker = _gat._getTracker("UA-10090039-1");
       pageTracker._trackPageview();
       } catch(err) {}
-        
-
-      
-          
-      
