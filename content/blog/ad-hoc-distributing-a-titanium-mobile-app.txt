@@ -1,0 +1,62 @@
+---
+layout:     blog
+title:      Ad Hoc Distributing a Titanium Mobile App
+created_at: 2011-04-25 19:54:43.132812 -08:00
+article:    true
+filter:
+  - haml
+---
+
+%h2= @page.title
+
+%p Ad Hoc Distribution allows you to test your app on your iPhone and other friend's iPhones.
+  
+%h3 1: Create an Ad Hoc Distribution Provisioning Profile
+
+%p Navigate to the <a href='http://developer.apple.com/ios/manage/provisioningprofiles/viewDistributionProfiles.action'>Distribution Provisioning Profiles</a> section of the iOS Provisioning Portal. Then click on 'New Profile'.
+
+%p In the <a href='http://developer.apple.com/ios/manage/provisioningprofiles/create.action?type=2'>'Create iOS Distribution Provisioning Profile' screen</a>, choose the Ad Hoc distribution method, give it a name like 'Your App Ad Hoc Distribution Profile', select the App ID which you created earlier, and then select the Device(s) you want it to work on. Note: you will have to add your friends' devices here in order for the app to work on their iPhone. You can gather this device information using <a href='http://testflightapp.com'>testflightapp.com</a>.
+
+%p{:align => "center"}
+  %img{:src => '/images/ad_hoc_distribution/0.png', :width => "500"}
+
+%p After saving that download it to your computer. Double click on it and it will ask you to add it to 'Add to Library'. Please do.
+
+%h3 2: Set Titanium Mobile's Distribute section to use the Provisioning Profile
+
+%p Open up Titanium Mobile and navigate to Your Project > Test &amp; Package > Distribute. Choose 'Desktop' for your distribution location and select the distribution provisioning profile you just downloaded to your computer in the steps above. (if it asks you to 'Add to Library' again go ahead and do so and replace the existing ad hoc distribution profile)
+
+%p{:align => "center"}
+  %img{:src => '/images/ad_hoc_distribution/1.png', :width => "500"}
+  
+%h3 3: Distribute Your App
+
+%h4 Titanium
+
+%p Quit Titanium and the re-open it.
+
+%p Navigate to the Distribution section under Test &amp; Package and click 'Package' (make sure XCode is open in the background before clicking 'Package')
+
+%h4 Generate the .ipa file
+
+%p After Titanium is done packaging your app it should open up 'Organizer' on your mac. Click on the Archives tab in Organizer. You should see your app listed in the Archives. 
+
+%p Click on the name of your app and then click the 'Share' button. This will pop up a window. In that window choose iOS App Store Package (.ipa) and for Identity choose the option right underneath the Ad Hoc Distribution Profile we created earlier. It should probably say iPhone Distribution: Your Name.
+
+%p Click 'Next' and then save the app to your Desktop. It is a good idea to name the app without any spaces - ie YourAppname
+
+%h4 Use TestFlight to upload your app
+
+%p Go to <a href="http://testflightapp.com">testflightapp.com</a> and create a developer account.
+
+%p Choose Builds > Upload a Build and upload your YourAppname.ipa file you saved to your desktop. Once the upload is complete, choose your testers and they will receive an email with a link to download your app to their iPhone.
+
+%p That is it. Best of luck.
+
+%p.followme
+  %strong
+    You should follow me on twitter 
+    %a{:href=> 'http://twitter.com/spitfiresky'} here
+    
+%p &nbsp;
+

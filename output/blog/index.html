@@ -16,6 +16,11 @@
             <li>
               <span>25 Apr 2011</span>
               &raquo;
+              <a href="/blog/ad-hoc-distributing-a-titanium-mobile-app.html">Ad Hoc Distributing a Titanium Mobile App</a>
+            </li>
+            <li>
+              <span>25 Apr 2011</span>
+              &raquo;
               <a href="/blog/provisioning-titanium-mobile-app.html">Provisioning a Titanium Mobile App</a>
             </li>
             <li>
@@ -105,54 +110,39 @@
           <div class='tweets'></div>
           <div class='clear'></div>
         </div>
-        <h2>Provisioning a Titanium Mobile App</h2>
-        <p>Keys, Certificates, Provisioning Profiles, and AppIDS can be a configuration nightmare. In this article, I step through setting these up with a Titanium Mobile app.</p>
-        <h3>Prerequisites</h3>
-        <p>You need the following:</p>
-        <ul>
-          <li>An Apple Developer's Account</li>
-          <li>A Mac</li>
-          <li>An iPhone, iPad, or iPod</li>
-        </ul>
-        <h3>Certificates, Keys, Provision Profiles, AppIDs</h3>
-        <h4>Generate key</h4>
-        <p>Just follow along.</p>
-        <p>On your mac open up Keychain Access. In the toolbar click 'Keychain Access' -> 'Certificate Assistant' -> 'Request a Certificate from a Certificate Authority'.</p>
-        <img src='/images/push_notifications/1.png' />
-        <p>In the pop up window, use the email address you signed up on the Apple Developer's site with. Enter your name, and choose Save to Disk.</p>
-        <img src='/images/push_notifications/2.png' />
-        <p>Save it somewhere you can easily find it. Keep it safe.</p>
-        <img src='/images/push_notifications/3.png' />
-        <h4>App IDs</h4>
-        <p>Login into your development account, visit the iPhone Developer Program Portal, and go to the App IDs section: <a href="http://developer.apple.com/iphone/manage/bundles/index.action">http://developer.apple.com/iphone/manage/bundles/index.action</a></p>
-        <img src='/images/push_notifications/4.png' />
-        <p>Click the New App ID button, and on the next page enter a name (MissMint) and a bundle identifier (com.spitfiresky.missmint).</p>
-        <img src='/images/push_notifications/5.png' />
-        <p>After creating the AppID go to configure the id you just created. On the next page, check the box to 'Enable for Apple Push Notification service', and then click the 'Configure' button next to the Development Push SSL Certificate.</p>
-        <img src='/images/push_notifications/6.png' />
-        <p>In the configuration window, follow the steps, and upload the CerticiateSigningRequest file we created previously using KeyChain Access.</p>
-        <img src='/images/push_notifications/7.png' />
-        <p>Next download your newly generated push notification ssl certificate.</p>
-        <img src='/images/push_notifications/8.png' />
-        <p>Double click on this certificate to save it your key chain. Export this key by clicking on this newly installed certificate.</p>
-        <p>Next, go back to the Apple Developer website, go to provisioning profiles, and choose to a create a new provisioning profile. <a href="http://developer.apple.com/iphone/manage/provisioningprofiles/create.action?type=1">http://developer.apple.com/iphone/manage/provisioningprofiles/create.action?type=1</a></p>
-        <p>Fill in the form with the appropriate info.</p>
-        <img src='/images/push_notifications/9.png' />
-        <p>Download the newly created provisioning profile.</p>
-        <img src='/images/push_notifications/10.png' />
-        <p>Open up Titanium Mobile and open up your project. Go to Test & Package, and then the Running your app on a device section. On the 'Select Provisioning Profile' section choose to browse for the provisioning profile we just downloaded.</p>
-        <img src='/images/push_notifications/11.png' />
-        <p>Choose the provisioning profile we just downloaded.</p>
-        <img src='/images/push_notifications/12.png' />
-        <p>Open up xcode with your iphone plugged into your computer and drag the provisioning profile onto the window.</p>
-        <img src='/images/push_notifications/13.png' />
-        <p>You might have to quit Titanium Mobile and iTunes at this point to finally get everything working. Re-open them and then in Titanium Mobile install the app onto your phone by pressing "Install Now".</p>
+        <h2>Ad Hoc Distributing a Titanium Mobile App</h2>
+        <p>Ad Hoc Distribution allows you to test your app on your iPhone and other friend's iPhones.</p>
+        <h3>1: Create an Ad Hoc Distribution Provisioning Profile</h3>
+        <p>Navigate to the <a href='http://developer.apple.com/ios/manage/provisioningprofiles/viewDistributionProfiles.action'>Distribution Provisioning Profiles</a> section of the iOS Provisioning Portal. Then click on 'New Profile'.</p>
+        <p>In the <a href='http://developer.apple.com/ios/manage/provisioningprofiles/create.action?type=2'>'Create iOS Distribution Provisioning Profile' screen</a>, choose the Ad Hoc distribution method, give it a name like 'Your App Ad Hoc Distribution Profile', select the App ID which you created earlier, and then select the Device(s) you want it to work on. Note: you will have to add your friends' devices here in order for the app to work on their iPhone. You can gather this device information using <a href='http://testflightapp.com'>testflightapp.com</a>.</p>
+        <p align='center'>
+          <img src='/images/ad_hoc_distribution/0.png' width='500' />
+        </p>
+        <p>After saving that download it to your computer. Double click on it and it will ask you to add it to 'Add to Library'. Please do.</p>
+        <h3>2: Set Titanium Mobile's Distribute section to use the Provisioning Profile</h3>
+        <p>Open up Titanium Mobile and navigate to Your Project > Test &amp; Package > Distribute. Choose 'Desktop' for your distribution location and select the distribution provisioning profile you just downloaded to your computer in the steps above. (if it asks you to 'Add to Library' again go ahead and do so and replace the existing ad hoc distribution profile)</p>
+        <p align='center'>
+          <img src='/images/ad_hoc_distribution/1.png' width='500' />
+        </p>
+        <h3>3: Distribute Your App</h3>
+        <h4>Titanium</h4>
+        <p>Quit Titanium and the re-open it.</p>
+        <p>Navigate to the Distribution section under Test &amp; Package and click 'Package' (make sure XCode is open in the background before clicking 'Package')</p>
+        <h4>Generate the .ipa file</h4>
+        <p>After Titanium is done packaging your app it should open up 'Organizer' on your mac. Click on the Archives tab in Organizer. You should see your app listed in the Archives.</p>
+        <p>Click on the name of your app and then click the 'Share' button. This will pop up a window. In that window choose iOS App Store Package (.ipa) and for Identity choose the option right underneath the Ad Hoc Distribution Profile we created earlier. It should probably say iPhone Distribution: Your Name.</p>
+        <p>Click 'Next' and then save the app to your Desktop. It is a good idea to name the app without any spaces - ie YourAppname</p>
+        <h4>Use TestFlight to upload your app</h4>
+        <p>Go to <a href="http://testflightapp.com">testflightapp.com</a> and create a developer account.</p>
+        <p>Choose Builds > Upload a Build and upload your YourAppname.ipa file you saved to your desktop. Once the upload is complete, choose your testers and they will receive an email with a link to download your app to their iPhone.</p>
+        <p>That is it. Best of luck.</p>
         <p class='followme'>
           <strong>
             You should follow me on twitter
             <a href='http://twitter.com/spitfiresky'>here</a>
           </strong>
         </p>
+        <p>&nbsp;</p>
       </div>
     </div>
     <script src='/javascripts/jquery.js' type='text/javascript'></script>

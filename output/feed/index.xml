@@ -4,12 +4,53 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2011-04-25T18:47:11-07:00</updated>
+  <updated>2011-05-18T08:11:39-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
   </author>
   <id>http://spitfiresky.com/</id>
+  
+  <entry>
+    <title>Ad Hoc Distributing a Titanium Mobile App</title>
+    <link href="/blog/ad-hoc-distributing-a-titanium-mobile-app.html" />
+    <id>tag:spitfiresky.com,Mon Apr 25 20:54:43 -0700 2011:1303790083</id>
+    <updated>Mon Apr 25 20:54:43 -0700 2011</updated>
+    <content type="html">&lt;h2&gt;Ad Hoc Distributing a Titanium Mobile App&lt;/h2&gt;
+&lt;p&gt;Ad Hoc Distribution allows you to test your app on your iPhone and other friend's iPhones.&lt;/p&gt;
+&lt;h3&gt;1: Create an Ad Hoc Distribution Provisioning Profile&lt;/h3&gt;
+&lt;p&gt;Navigate to the &lt;a href='http://developer.apple.com/ios/manage/provisioningprofiles/viewDistributionProfiles.action'&gt;Distribution Provisioning Profiles&lt;/a&gt; section of the iOS Provisioning Portal. Then click on 'New Profile'.&lt;/p&gt;
+&lt;p&gt;In the &lt;a href='http://developer.apple.com/ios/manage/provisioningprofiles/create.action?type=2'&gt;'Create iOS Distribution Provisioning Profile' screen&lt;/a&gt;, choose the Ad Hoc distribution method, give it a name like 'Your App Ad Hoc Distribution Profile', select the App ID which you created earlier, and then select the Device(s) you want it to work on. Note: you will have to add your friends' devices here in order for the app to work on their iPhone. You can gather this device information using &lt;a href='http://testflightapp.com'&gt;testflightapp.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p align='center'&gt;
+  &lt;img src='/images/ad_hoc_distribution/0.png' width='500' /&gt;
+&lt;/p&gt;
+&lt;p&gt;After saving that download it to your computer. Double click on it and it will ask you to add it to 'Add to Library'. Please do.&lt;/p&gt;
+&lt;h3&gt;2: Set Titanium Mobile's Distribute section to use the Provisioning Profile&lt;/h3&gt;
+&lt;p&gt;Open up Titanium Mobile and navigate to Your Project &gt; Test &amp;amp; Package &gt; Distribute. Choose 'Desktop' for your distribution location and select the distribution provisioning profile you just downloaded to your computer in the steps above. (if it asks you to 'Add to Library' again go ahead and do so and replace the existing ad hoc distribution profile)&lt;/p&gt;
+&lt;p align='center'&gt;
+  &lt;img src='/images/ad_hoc_distribution/1.png' width='500' /&gt;
+&lt;/p&gt;
+&lt;h3&gt;3: Distribute Your App&lt;/h3&gt;
+&lt;h4&gt;Titanium&lt;/h4&gt;
+&lt;p&gt;Quit Titanium and the re-open it.&lt;/p&gt;
+&lt;p&gt;Navigate to the Distribution section under Test &amp;amp; Package and click 'Package' (make sure XCode is open in the background before clicking 'Package')&lt;/p&gt;
+&lt;h4&gt;Generate the .ipa file&lt;/h4&gt;
+&lt;p&gt;After Titanium is done packaging your app it should open up 'Organizer' on your mac. Click on the Archives tab in Organizer. You should see your app listed in the Archives.&lt;/p&gt;
+&lt;p&gt;Click on the name of your app and then click the 'Share' button. This will pop up a window. In that window choose iOS App Store Package (.ipa) and for Identity choose the option right underneath the Ad Hoc Distribution Profile we created earlier. It should probably say iPhone Distribution: Your Name.&lt;/p&gt;
+&lt;p&gt;Click 'Next' and then save the app to your Desktop. It is a good idea to name the app without any spaces - ie YourAppname&lt;/p&gt;
+&lt;h4&gt;Use TestFlight to upload your app&lt;/h4&gt;
+&lt;p&gt;Go to &lt;a href=&quot;http://testflightapp.com&quot;&gt;testflightapp.com&lt;/a&gt; and create a developer account.&lt;/p&gt;
+&lt;p&gt;Choose Builds &gt; Upload a Build and upload your YourAppname.ipa file you saved to your desktop. Once the upload is complete, choose your testers and they will receive an email with a link to download your app to their iPhone.&lt;/p&gt;
+&lt;p&gt;That is it. Best of luck.&lt;/p&gt;
+&lt;p class='followme'&gt;
+  &lt;strong&gt;
+    You should follow me on twitter
+    &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
+  &lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Provisioning a Titanium Mobile App</title>
@@ -598,46 +639,6 @@ For this presentation I covered getting started with Titanium mobile. Plus, I in
 &lt;script src=&quot;http://gist.github.com/157824.js&quot;&gt;&lt;/script&gt;
 &lt;h3&gt;Conclusion&lt;/h3&gt;
 &lt;p&gt;Linux's sendmail can be great, but when it comes to features and ease of configuration Google Apps can't be beat. Couple it with Merb's run_later method, and you can create really nice email functionality within your app. Plus, it is more scaleable since all the configuration is in the app, and connects remotely to Google Apps.&lt;/p&gt;
-&lt;p class='followme'&gt;
-  &lt;strong&gt;
-    You should follow me on twitter
-    &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
-  &lt;/strong&gt;
-&lt;/p&gt;
-&lt;br /&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>My Server Setup</title>
-    <link href="/blog/my-server-setup.html" />
-    <id>tag:spitfiresky.com,Thu Jul 23 13:37:08 -0700 2009:1248381428</id>
-    <updated>Thu Jul 23 13:37:08 -0700 2009</updated>
-    <content type="html">&lt;h2&gt;My Server Setup&lt;/h2&gt;
-&lt;p&gt;Good day. Here I detail my server setup with &lt;a href=&quot;http://www.ubuntu.com/getubuntu/download-server&quot;&gt;Ubuntu 9.04&lt;/a&gt; on &lt;a href=&quot;http://rackspacecloud.com&quot;&gt;Rackspace Cloud&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Basics&lt;/h3&gt;
-&lt;p&gt;Use the Slicehost articles &lt;a href=&quot;http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-1&quot;&gt;Step 1&lt;/a&gt; and &lt;a href=&quot;http://articles.slicehost.com/2008/11/28/ubuntu-intrepid-setup-page-2&quot;&gt;Step 2&lt;/a&gt; to get the basics of your server going. Use the Ubuntu Intrepid setup. It will work just fine with Ubuntu 9.04.&lt;/p&gt;
-&lt;h3&gt;Ruby&lt;/h3&gt;
-&lt;script src=&quot;http://gist.github.com/156639.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Install Nginx and Passenger&lt;/h3&gt;
-&lt;script src=&quot;http://gist.github.com/156642.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Customize nginx&lt;/h3&gt;
-Customize things according to &lt;a href=&quot;http://articles.slicehost.com/2009/3/5/ubuntu-intrepid-nginx-configuration&quot;&gt;here&lt;/a&gt;.
-&lt;script src=&quot;http://gist.github.com/156644.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Virtual Hosts&lt;/h3&gt;
-&lt;script src=&quot;http://gist.github.com/156649.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Install mysql&lt;/h3&gt;
-&lt;script src=&quot;http://gist.github.com/156650.js&quot;&gt;-&lt;/script&gt;
-&lt;h3&gt;Install couchdb&lt;/h3&gt;
-&lt;script src=&quot;http://gist.github.com/156653.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Install mongodb&lt;/h3&gt;
-&lt;script src=&quot;http://gist.github.com/157744.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Install email support with Postfix&lt;/h3&gt;
-&lt;script src=&quot;http://gist.github.com/157765.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Install ImageMagick&lt;/h3&gt;
-&lt;script src=&quot;http://gist.github.com/157844.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Ending&lt;/h3&gt;
-&lt;p&gt;If you found this article useful &lt;a href=&quot;https://www.rackspacecloud.com/signup&quot;&gt;sign up with Rackspace Cloud&lt;/a&gt; using referral code REF-SPITFIRESKY.&lt;/p&gt;
 &lt;p class='followme'&gt;
   &lt;strong&gt;
     You should follow me on twitter
