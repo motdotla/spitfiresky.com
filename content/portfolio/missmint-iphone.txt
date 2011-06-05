@@ -1,0 +1,28 @@
+---
+title:      MissMint iPhone/Android app
+site_url:   http://missmint.com
+page_id:    portfolio
+created_at: 2011-06-01 23:01:07.414676 -08:00
+filter:
+  - erb
+---
+<div class="portfolio-single grid_8">
+	
+	<div class="grid_5 alpha"><h1><%= h(@page.title) %></h1></div>
+	
+	<div class="grid_3 omega"><p class="url"><a href="<%= h(@page.site_url) %>"><%= h(@page.site_url) %></a></p></div>
+	
+	<div class="clear"></div>
+	
+	<ul id="screenshots">
+		<li><img src="/images/portfolios/missmint-iphone-1.jpg"></li>
+		<li><img src="/images/portfolios/missmint-iphone-2.jpg"></li>
+		<li><img src="/images/portfolios/missmint-iphone-3.jpg"></li>
+	</ul>
+	
+	<p>MissMint reminds you to take your daily birth control pill.</p>
+	<p>The app was built using <a href="http://www.appcelerator.com/products/titanium-mobile-application-development/">Titanium Mobile</a>. It uses iPhone 4's local notifications to send the reminders on the iPhone and Android's notification system to send on the android.</p> 
+
+</div>
+
+<%= render(:partial => "/portfolio-sidebar") %>
