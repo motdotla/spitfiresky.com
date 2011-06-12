@@ -1,0 +1,63 @@
+---
+layout:     blog
+title:      Add Gaming Elements to your Apps
+created_at: 2011-06-12 13:37:08.861667 -07:00
+article:    true
+filter:
+  - haml
+---
+
+%h2= @page.title
+
+%p Gaming is big now - especially mobile gaming. Let's strive to add gaming elements to our 'boring' applications.
+
+%h3 Gaming and Real Life
+
+%p Jane McGonigal did a TED Talk on how gaming can make a better world. It was an exuberant and inspiring presentation. Here's the <a href='http://www.ted.com/talks/jane_mcgonigal_gaming_can_make_a_better_world.html'>link to the video</a>.
+
+%p I liked her ideas about leveling up and +1 strength. Those concepts which are a part of the virtual world but not a part of the real world can make virtual life more rewarding than real life - at least more immediately rewarding. 
+
+%p This is why there is an exodus of people to these virtual worlds like World of Warcraft. 3 billion hours a week is spent playing online games.
+
+%p Jane sees opportunity in this and I do too. In fact, she says we should be playing even more games. We just need to make games applicable to real life. 
+
+%p I think we as web developers can do this by bringing more gaming elements to the applications we can create.
+
+%h3 EpicWin
+
+%p
+  %img{:src => "/images/gaming_elements/epicwin.png", :width => 500}
+  
+%p The iPhone application <a href="http://www.rexbox.co.uk/epicwin/">EpicWin</a> does a nice job of this as a todo task I think. I've used EpicWin for a few months now and like it much better than even <a href="http://culturedcode.com/things/">Things</a>. This <a href="http://www.youtube.com/watch?v=AmKwF_Si734&feature=player_embedded">1 minute trailer for EpicWin</a> sums it up better than I can in words.
+
+%p I get more done with EpicWin. Its gaming mechanism of earning experience points and leveling up has motivated me to get much more done - exercise consistently to build strength, self-educate myself on a daily basis to increase intellect, and even take more time out with friends to increase my social score.
+
+%h3 My Attempt at Adding Gaming Elements
+
+%p I've only just begun adding gaming elements to my application designs. My first attempt is <a href="http://motopermit.heroku.com/">MotoPermit</a>. 
+
+%p It is a study application for the motorcycle permit test. I launched it by making it "look" like a game. This was a cop-out for the real thing. Apps that integrate gaming elements do not need to 'look' like a game, they need to function more like one.
+
+%p So after launching the app I set to work on version 1.1 - which would add gaming elements. I've since added a basic experience point and profile mechanism. Each correctly answered question is worth 50 experience points. After you accumulate 1500 experience points, you level up. Reach level 5 and you are ready to take your motorcycle permit test. 
+
+%p
+  %table.no_border.align_center
+    %tr
+      %td
+        %img{:src => "/images/gaming_elements/motopermit1.png", :width => 200}
+      %td
+        %img{:src => "/images/gaming_elements/motopermit2.png", :width => 200}
+  
+
+%p I've found myself using the app much more in order to more quickly reach level 5. And I am confident that once I do reach level 5 I will be ready to take the permit test and pass it my first time. It's done it's purpose to help me study better and I think it will do the same for others.
+
+%p So try to start adding gaming elements to your applications. You will find them more effective. <strong>And over time maybe we truly can step towards making the world better through gaming.</strong>
+
+%p &nbsp;
+
+%p.followme
+  %strong
+    Follow me on twitter 
+    %a{:href=> 'http://twitter.com/spitfiresky'} here
+    
+%br

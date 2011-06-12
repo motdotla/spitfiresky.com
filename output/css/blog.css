@@ -63,6 +63,9 @@ small {
     padding: 5px;
     border: 1px solid #ccc;
   }
+  #content table.no_border td {
+    border: none;
+  }
   #twitter {
     border-bottom: 1px solid #ccc;
   }

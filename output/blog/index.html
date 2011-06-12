@@ -14,14 +14,19 @@
         <div id='articles'>
           <ul>
             <li>
-              <span>25 Apr 2011</span>
+              <span>12 Jun 2011</span>
               &raquo;
-              <a href="/blog/ad-hoc-distributing-a-titanium-mobile-app.html">Ad Hoc Distributing a Titanium Mobile App</a>
+              <a href="/blog/add-gaming-elements-to-your-apps.html">Add Gaming Elements to your Apps</a>
             </li>
             <li>
               <span>25 Apr 2011</span>
               &raquo;
               <a href="/blog/provisioning-titanium-mobile-app.html">Provisioning a Titanium Mobile App</a>
+            </li>
+            <li>
+              <span>25 Apr 2011</span>
+              &raquo;
+              <a href="/blog/ad-hoc-distributing-a-titanium-mobile-app.html">Ad Hoc Distributing a Titanium Mobile App</a>
             </li>
             <li>
               <span>30 Dec 2010</span>
@@ -110,39 +115,36 @@
           <div class='tweets'></div>
           <div class='clear'></div>
         </div>
-        <h2>Ad Hoc Distributing a Titanium Mobile App</h2>
-        <p>Ad Hoc Distribution allows you to test your app on your iPhone and other friend's iPhones.</p>
-        <h3>1: Create an Ad Hoc Distribution Provisioning Profile</h3>
-        <p>Navigate to the <a href='http://developer.apple.com/ios/manage/provisioningprofiles/viewDistributionProfiles.action'>Distribution Provisioning Profiles</a> section of the iOS Provisioning Portal. Then click on 'New Profile'.</p>
-        <p>In the <a href='http://developer.apple.com/ios/manage/provisioningprofiles/create.action?type=2'>'Create iOS Distribution Provisioning Profile' screen</a>, choose the Ad Hoc distribution method, give it a name like 'Your App Ad Hoc Distribution Profile', select the App ID which you created earlier, and then select the Device(s) you want it to work on. Note: you will have to add your friends' devices here in order for the app to work on their iPhone. You can gather this device information using <a href='http://testflightapp.com'>testflightapp.com</a>.</p>
-        <p align='center'>
-          <img src='/images/ad_hoc_distribution/0.png' width='500' />
+        <h2>Add Gaming Elements to your Apps</h2>
+        <p>Gaming is big now - especially mobile gaming. Let's strive to add gaming elements to our 'boring' applications.</p>
+        <h3>Gaming and Real Life</h3>
+        <p>Jane McGonigal did a TED Talk on how gaming can make a better world. It was an exuberant and inspiring presentation. Here's the <a href='http://www.ted.com/talks/jane_mcgonigal_gaming_can_make_a_better_world.html'>link to the video</a>.</p>
+        <p>I liked her ideas about leveling up and +1 strength. Those concepts which are a part of the virtual world but not a part of the real world can make virtual life more rewarding than real life - at least more immediately rewarding.</p>
+        <p>This is why there is an exodus of people to these virtual worlds like World of Warcraft. 3 billion hours a week is spent playing online games.</p>
+        <p>Jane sees opportunity in this and I do too. In fact, she says we should be playing even more games. We just need to make games applicable to real life.</p>
+        <p>I think we as web developers can do this by bringing more gaming elements to the applications we can create.</p>
+        <p>The iPhone application <a href="http://www.rexbox.co.uk/epicwin/">EpicWin</a> does a nice job of this as a todo task I think. I've used EpicWin for a few months now and like it much better than even <a href="http://culturedcode.com/things/">Things</a>. This <a href="http://www.youtube.com/watch?v=AmKwF_Si734&feature=player_embedded">1 minute trailer for EpicWin</a> sums it up better than I can in words.</p>
+        <p>I get more done with EpicWin. Its gaming mechanism of earning experience points and leveling up has motivated me to get much more done - exercise consistently to build strength, self-educate myself on a daily basis to increase intellect, and even take more time out with friends to increase my social score.</p>
+        <h3>My Attempt at Adding Gaming Elements</h3>
+        <p>I've only just begun adding gaming elements to my application designs. My first attempt is <a href="http://motopermit.heroku.com/">MotoPermit</a>.</p>
+        <p>It is a study application for the motorcycle permit test. I launched it by making it "look" like a game. This was a cop-out for the real thing. Apps that integrate gaming elements do not need to 'look' like a game, they need to function more like one.</p>
+        <p>So after launching the app I set to work on version 1.1 - which would add gaming elements. I've since added a basic experience point and profile mechanism. Each correctly answered question is worth 50 experience points. After you accumulate 1500 experience points, you level up. Reach level 5 and you are ready to take your motorcycle permit test.</p>
+        <p>
+          <img src='images/gaming_elements/motopermit1.png' />
         </p>
-        <p>After saving that download it to your computer. Double click on it and it will ask you to add it to 'Add to Library'. Please do.</p>
-        <h3>2: Set Titanium Mobile's Distribute section to use the Provisioning Profile</h3>
-        <p>Open up Titanium Mobile and navigate to Your Project > Test &amp; Package > Distribute. Choose 'Desktop' for your distribution location and select the distribution provisioning profile you just downloaded to your computer in the steps above. (if it asks you to 'Add to Library' again go ahead and do so and replace the existing ad hoc distribution profile)</p>
-        <p align='center'>
-          <img src='/images/ad_hoc_distribution/1.png' width='500' />
+        <p>
+          <img src='images/gaming_elements/motopermit2.png' />
         </p>
-        <h3>3: Distribute Your App</h3>
-        <h4>Titanium</h4>
-        <p>Quit Titanium and the re-open it.</p>
-        <p>Navigate to the Distribution section under Test &amp; Package and click 'Package' (make sure XCode is open in the background before clicking 'Package')</p>
-        <h4>Generate the .ipa file</h4>
-        <p>After Titanium is done packaging your app it should open up 'Organizer' on your mac. Click on the Archives tab in Organizer. You should see your app listed in the Archives.</p>
-        <p>Click on the name of your app and then click the 'Share' button. This will pop up a window. In that window choose iOS App Store Package (.ipa) and for Identity choose the option right underneath the Ad Hoc Distribution Profile we created earlier. It should probably say iPhone Distribution: Your Name.</p>
-        <p>Click 'Next' and then save the app to your Desktop. It is a good idea to name the app without any spaces - ie YourAppname</p>
-        <h4>Use TestFlight to upload your app</h4>
-        <p>Go to <a href="http://testflightapp.com">testflightapp.com</a> and create a developer account.</p>
-        <p>Choose Builds > Upload a Build and upload your YourAppname.ipa file you saved to your desktop. Once the upload is complete, choose your testers and they will receive an email with a link to download your app to their iPhone.</p>
-        <p>That is it. Best of luck.</p>
+        <p>I've found myself using the app much more in order to more quickly reach level 5. And I am confident that once I do reach level 5 I will be ready to take the permit test and pass it my first time. It's done it's purpose to help me study better and I think it will do the same for others.</p>
+        <p>So try to start adding gaming elements to your applications. You will find them more effective. <strong>And over time maybe we truly can step towards making the world better through gaming.</strong></p>
+        <p>&nbsp;</p>
         <p class='followme'>
           <strong>
-            You should follow me on twitter
+            Follow me on twitter
             <a href='http://twitter.com/spitfiresky'>here</a>
           </strong>
         </p>
-        <p>&nbsp;</p>
+        <br />
       </div>
     </div>
     <script src='/javascripts/jquery.js' type='text/javascript'></script>

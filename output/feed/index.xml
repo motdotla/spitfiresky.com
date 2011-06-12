@@ -4,7 +4,7 @@
   <subtitle>web development blog</subtitle>
   <link href="http://spitfiresky.com//" rel="self" />
   <link href="http://spitfiresky.com/" />
-  <updated>2011-06-05T06:13:34-07:00</updated>
+  <updated>2011-06-12T16:13:54-07:00</updated>
   <author>
     <name>scottmotte</name>
     <email>scott@spitfiresky.com</email>
@@ -12,43 +12,50 @@
   <id>http://spitfiresky.com/</id>
   
   <entry>
-    <title>Ad Hoc Distributing a Titanium Mobile App</title>
-    <link href="/blog/ad-hoc-distributing-a-titanium-mobile-app.html" />
-    <id>tag:spitfiresky.com,Mon Apr 25 20:54:43 -0700 2011:1303790083</id>
-    <updated>Mon Apr 25 20:54:43 -0700 2011</updated>
-    <content type="html">&lt;h2&gt;Ad Hoc Distributing a Titanium Mobile App&lt;/h2&gt;
-&lt;p&gt;Ad Hoc Distribution allows you to test your app on your iPhone and other friend's iPhones.&lt;/p&gt;
-&lt;h3&gt;1: Create an Ad Hoc Distribution Provisioning Profile&lt;/h3&gt;
-&lt;p&gt;Navigate to the &lt;a href='http://developer.apple.com/ios/manage/provisioningprofiles/viewDistributionProfiles.action'&gt;Distribution Provisioning Profiles&lt;/a&gt; section of the iOS Provisioning Portal. Then click on 'New Profile'.&lt;/p&gt;
-&lt;p&gt;In the &lt;a href='http://developer.apple.com/ios/manage/provisioningprofiles/create.action?type=2'&gt;'Create iOS Distribution Provisioning Profile' screen&lt;/a&gt;, choose the Ad Hoc distribution method, give it a name like 'Your App Ad Hoc Distribution Profile', select the App ID which you created earlier, and then select the Device(s) you want it to work on. Note: you will have to add your friends' devices here in order for the app to work on their iPhone. You can gather this device information using &lt;a href='http://testflightapp.com'&gt;testflightapp.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p align='center'&gt;
-  &lt;img src='/images/ad_hoc_distribution/0.png' width='500' /&gt;
+    <title>Add Gaming Elements to your Apps</title>
+    <link href="/blog/add-gaming-elements-to-your-apps.html" />
+    <id>tag:spitfiresky.com,Sun Jun 12 13:37:08 -0700 2011:1307911028</id>
+    <updated>Sun Jun 12 13:37:08 -0700 2011</updated>
+    <content type="html">&lt;h2&gt;Add Gaming Elements to your Apps&lt;/h2&gt;
+&lt;p&gt;Gaming is big now - especially mobile gaming. Let's strive to add gaming elements to our 'boring' applications.&lt;/p&gt;
+&lt;h3&gt;Gaming and Real Life&lt;/h3&gt;
+&lt;p&gt;Jane McGonigal did a TED Talk on how gaming can make a better world. It was an exuberant and inspiring presentation. Here's the &lt;a href='http://www.ted.com/talks/jane_mcgonigal_gaming_can_make_a_better_world.html'&gt;link to the video&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I liked her ideas about leveling up and +1 strength. Those concepts which are a part of the virtual world but not a part of the real world can make virtual life more rewarding than real life - at least more immediately rewarding.&lt;/p&gt;
+&lt;p&gt;This is why there is an exodus of people to these virtual worlds like World of Warcraft. 3 billion hours a week is spent playing online games.&lt;/p&gt;
+&lt;p&gt;Jane sees opportunity in this and I do too. In fact, she says we should be playing even more games. We just need to make games applicable to real life.&lt;/p&gt;
+&lt;p&gt;I think we as web developers can do this by bringing more gaming elements to the applications we can create.&lt;/p&gt;
+&lt;h3&gt;EpicWin&lt;/h3&gt;
+&lt;p&gt;
+  &lt;img src='/images/gaming_elements/epicwin.png' width='500' /&gt;
 &lt;/p&gt;
-&lt;p&gt;After saving that download it to your computer. Double click on it and it will ask you to add it to 'Add to Library'. Please do.&lt;/p&gt;
-&lt;h3&gt;2: Set Titanium Mobile's Distribute section to use the Provisioning Profile&lt;/h3&gt;
-&lt;p&gt;Open up Titanium Mobile and navigate to Your Project &gt; Test &amp;amp; Package &gt; Distribute. Choose 'Desktop' for your distribution location and select the distribution provisioning profile you just downloaded to your computer in the steps above. (if it asks you to 'Add to Library' again go ahead and do so and replace the existing ad hoc distribution profile)&lt;/p&gt;
-&lt;p align='center'&gt;
-  &lt;img src='/images/ad_hoc_distribution/1.png' width='500' /&gt;
+&lt;p&gt;The iPhone application &lt;a href=&quot;http://www.rexbox.co.uk/epicwin/&quot;&gt;EpicWin&lt;/a&gt; does a nice job of this as a todo task I think. I've used EpicWin for a few months now and like it much better than even &lt;a href=&quot;http://culturedcode.com/things/&quot;&gt;Things&lt;/a&gt;. This &lt;a href=&quot;http://www.youtube.com/watch?v=AmKwF_Si734&amp;feature=player_embedded&quot;&gt;1 minute trailer for EpicWin&lt;/a&gt; sums it up better than I can in words.&lt;/p&gt;
+&lt;p&gt;I get more done with EpicWin. Its gaming mechanism of earning experience points and leveling up has motivated me to get much more done - exercise consistently to build strength, self-educate myself on a daily basis to increase intellect, and even take more time out with friends to increase my social score.&lt;/p&gt;
+&lt;h3&gt;My Attempt at Adding Gaming Elements&lt;/h3&gt;
+&lt;p&gt;I've only just begun adding gaming elements to my application designs. My first attempt is &lt;a href=&quot;http://motopermit.heroku.com/&quot;&gt;MotoPermit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It is a study application for the motorcycle permit test. I launched it by making it &quot;look&quot; like a game. This was a cop-out for the real thing. Apps that integrate gaming elements do not need to 'look' like a game, they need to function more like one.&lt;/p&gt;
+&lt;p&gt;So after launching the app I set to work on version 1.1 - which would add gaming elements. I've since added a basic experience point and profile mechanism. Each correctly answered question is worth 50 experience points. After you accumulate 1500 experience points, you level up. Reach level 5 and you are ready to take your motorcycle permit test.&lt;/p&gt;
+&lt;p&gt;
+  &lt;table class='no_border align_center'&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;img src='/images/gaming_elements/motopermit1.png' width='200' /&gt;
+      &lt;/td&gt;
+      &lt;td&gt;
+        &lt;img src='/images/gaming_elements/motopermit2.png' width='200' /&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
 &lt;/p&gt;
-&lt;h3&gt;3: Distribute Your App&lt;/h3&gt;
-&lt;h4&gt;Titanium&lt;/h4&gt;
-&lt;p&gt;Quit Titanium and the re-open it.&lt;/p&gt;
-&lt;p&gt;Navigate to the Distribution section under Test &amp;amp; Package and click 'Package' (make sure XCode is open in the background before clicking 'Package')&lt;/p&gt;
-&lt;h4&gt;Generate the .ipa file&lt;/h4&gt;
-&lt;p&gt;After Titanium is done packaging your app it should open up 'Organizer' on your mac. Click on the Archives tab in Organizer. You should see your app listed in the Archives.&lt;/p&gt;
-&lt;p&gt;Click on the name of your app and then click the 'Share' button. This will pop up a window. In that window choose iOS App Store Package (.ipa) and for Identity choose the option right underneath the Ad Hoc Distribution Profile we created earlier. It should probably say iPhone Distribution: Your Name.&lt;/p&gt;
-&lt;p&gt;Click 'Next' and then save the app to your Desktop. It is a good idea to name the app without any spaces - ie YourAppname&lt;/p&gt;
-&lt;h4&gt;Use TestFlight to upload your app&lt;/h4&gt;
-&lt;p&gt;Go to &lt;a href=&quot;http://testflightapp.com&quot;&gt;testflightapp.com&lt;/a&gt; and create a developer account.&lt;/p&gt;
-&lt;p&gt;Choose Builds &gt; Upload a Build and upload your YourAppname.ipa file you saved to your desktop. Once the upload is complete, choose your testers and they will receive an email with a link to download your app to their iPhone.&lt;/p&gt;
-&lt;p&gt;That is it. Best of luck.&lt;/p&gt;
+&lt;p&gt;I've found myself using the app much more in order to more quickly reach level 5. And I am confident that once I do reach level 5 I will be ready to take the permit test and pass it my first time. It's done it's purpose to help me study better and I think it will do the same for others.&lt;/p&gt;
+&lt;p&gt;So try to start adding gaming elements to your applications. You will find them more effective. &lt;strong&gt;And over time maybe we truly can step towards making the world better through gaming.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p class='followme'&gt;
   &lt;strong&gt;
-    You should follow me on twitter
+    Follow me on twitter
     &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
   &lt;/strong&gt;
 &lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;br /&gt;
 </content>
   </entry>
   
@@ -105,6 +112,47 @@
     &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
   &lt;/strong&gt;
 &lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Ad Hoc Distributing a Titanium Mobile App</title>
+    <link href="/blog/ad-hoc-distributing-a-titanium-mobile-app.html" />
+    <id>tag:spitfiresky.com,Mon Apr 25 20:54:43 -0700 2011:1303790083</id>
+    <updated>Mon Apr 25 20:54:43 -0700 2011</updated>
+    <content type="html">&lt;h2&gt;Ad Hoc Distributing a Titanium Mobile App&lt;/h2&gt;
+&lt;p&gt;Ad Hoc Distribution allows you to test your app on your iPhone and other friend's iPhones.&lt;/p&gt;
+&lt;h3&gt;1: Create an Ad Hoc Distribution Provisioning Profile&lt;/h3&gt;
+&lt;p&gt;Navigate to the &lt;a href='http://developer.apple.com/ios/manage/provisioningprofiles/viewDistributionProfiles.action'&gt;Distribution Provisioning Profiles&lt;/a&gt; section of the iOS Provisioning Portal. Then click on 'New Profile'.&lt;/p&gt;
+&lt;p&gt;In the &lt;a href='http://developer.apple.com/ios/manage/provisioningprofiles/create.action?type=2'&gt;'Create iOS Distribution Provisioning Profile' screen&lt;/a&gt;, choose the Ad Hoc distribution method, give it a name like 'Your App Ad Hoc Distribution Profile', select the App ID which you created earlier, and then select the Device(s) you want it to work on. Note: you will have to add your friends' devices here in order for the app to work on their iPhone. You can gather this device information using &lt;a href='http://testflightapp.com'&gt;testflightapp.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p align='center'&gt;
+  &lt;img src='/images/ad_hoc_distribution/0.png' width='500' /&gt;
+&lt;/p&gt;
+&lt;p&gt;After saving that download it to your computer. Double click on it and it will ask you to add it to 'Add to Library'. Please do.&lt;/p&gt;
+&lt;h3&gt;2: Set Titanium Mobile's Distribute section to use the Provisioning Profile&lt;/h3&gt;
+&lt;p&gt;Open up Titanium Mobile and navigate to Your Project &gt; Test &amp;amp; Package &gt; Distribute. Choose 'Desktop' for your distribution location and select the distribution provisioning profile you just downloaded to your computer in the steps above. (if it asks you to 'Add to Library' again go ahead and do so and replace the existing ad hoc distribution profile)&lt;/p&gt;
+&lt;p align='center'&gt;
+  &lt;img src='/images/ad_hoc_distribution/1.png' width='500' /&gt;
+&lt;/p&gt;
+&lt;h3&gt;3: Distribute Your App&lt;/h3&gt;
+&lt;h4&gt;Titanium&lt;/h4&gt;
+&lt;p&gt;Quit Titanium and the re-open it.&lt;/p&gt;
+&lt;p&gt;Navigate to the Distribution section under Test &amp;amp; Package and click 'Package' (make sure XCode is open in the background before clicking 'Package')&lt;/p&gt;
+&lt;h4&gt;Generate the .ipa file&lt;/h4&gt;
+&lt;p&gt;After Titanium is done packaging your app it should open up 'Organizer' on your mac. Click on the Archives tab in Organizer. You should see your app listed in the Archives.&lt;/p&gt;
+&lt;p&gt;Click on the name of your app and then click the 'Share' button. This will pop up a window. In that window choose iOS App Store Package (.ipa) and for Identity choose the option right underneath the Ad Hoc Distribution Profile we created earlier. It should probably say iPhone Distribution: Your Name.&lt;/p&gt;
+&lt;p&gt;Click 'Next' and then save the app to your Desktop. It is a good idea to name the app without any spaces - ie YourAppname&lt;/p&gt;
+&lt;h4&gt;Use TestFlight to upload your app&lt;/h4&gt;
+&lt;p&gt;Go to &lt;a href=&quot;http://testflightapp.com&quot;&gt;testflightapp.com&lt;/a&gt; and create a developer account.&lt;/p&gt;
+&lt;p&gt;Choose Builds &gt; Upload a Build and upload your YourAppname.ipa file you saved to your desktop. Once the upload is complete, choose your testers and they will receive an email with a link to download your app to their iPhone.&lt;/p&gt;
+&lt;p&gt;That is it. Best of luck.&lt;/p&gt;
+&lt;p class='followme'&gt;
+  &lt;strong&gt;
+    You should follow me on twitter
+    &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
+  &lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 </content>
   </entry>
   
@@ -597,48 +645,6 @@ For this presentation I covered getting started with Titanium mobile. Plus, I in
 &lt;h3&gt;Conclusion&lt;/h3&gt;
 &lt;p&gt;Overall, I think mongodb with mongomapper is a smart way to go for a traditional web apps that are somewhat complicated (think facebook, basecamp, social networks) where you are providing an interface for your users to put information and then doing all kinds of things with that information.&lt;/p&gt;
 &lt;p&gt;I think couchdb is more suited to simple applications with express purposes (think blogs, a 'twitter' of your friends, apis) and where replicating that data from computer to computer and going offline is important.&lt;/p&gt;
-&lt;p class='followme'&gt;
-  &lt;strong&gt;
-    You should follow me on twitter
-    &lt;a href='http://twitter.com/spitfiresky'&gt;here&lt;/a&gt;
-  &lt;/strong&gt;
-&lt;/p&gt;
-&lt;br /&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>Choice Email Setup with Merb</title>
-    <link href="/blog/choice-email-setup-with-merb.html" />
-    <id>tag:spitfiresky.com,Tue Jul 28 17:51:28 -0700 2009:1248828688</id>
-    <updated>Tue Jul 28 17:51:28 -0700 2009</updated>
-    <content type="html">&lt;h2&gt;Choice Email Setup with Merb&lt;/h2&gt;
-&lt;p&gt;Good day. Here I describe a choice email setup with Merb. You should be using this setup too.&lt;/p&gt;
-&lt;h3&gt;SMTP or Sendmail?&lt;/h3&gt;
-&lt;p&gt;Use Google Apps SMTP to send your mail from your merb application. Sendmail has three serious limitations.&lt;/p&gt;
-&lt;p&gt;#1: Sendmail is specific to your server. When you move servers, you will have to reinstall sendmail. Your app should be as mobile and self-contained as possible. Merb does a great job of this with its bundling of gems, and you should continue that trend.&lt;/p&gt;
-&lt;p&gt;#2: Emails sent via sendmail on your server are sent with extra hidden data that you don't need. This isn't a problem when you are sending regular emails, but is is a problem when you start sending text messages via email and want your web application to receive the user's text reply back. I was using sendmail with &lt;a href=&quot;http://flossedtoday.com&quot;&gt;Flossed Today&lt;/a&gt; to send out text messages, but subscribers using AT&amp;T (and I imagine other cell providers as well), were unable to reply back to the message. The reply was deemed too large for a text message by AT&amp;T's sms protocols. I determined this was because it was sending all the hidden sendmail data along with the text message. When I switched to Google Apps SMTP I no longer experienced this issue.&lt;/p&gt;
-&lt;p&gt;#3: Google Apps keeps a nice sent mail history. Sendmail's logs are just not the same as being able to search in Google Apps.&lt;/p&gt;
-&lt;h3&gt;Won't SMTP's connection time lock up my app's response/request cycle?&lt;/h3&gt;
-&lt;p&gt;No, it doesn't have to. Use Merb's run_later method and you are golden.&lt;/p&gt;
-&lt;p&gt;Many argue that using SMTP is a bad idea because sendmail makes your web app appear to run faster. They are right. With sendmail your application passes the email request to your local sendmail command. It doesn't have far to go so it is fast. With Google Apps SMTP your app has to connect to the remote SMTP server. It has a further distance to travel, and the connection time typically lasts 2-5 seconds. During this time your web app appears to be thinking to your visitor and they are left waiting an extra 2-5 seconds on top of whatever load time speeds your site already does.&lt;/p&gt;
-&lt;p&gt;Thankfully, Merb has a run_later method that allows you to pass this email connection time off to a separate thread. Your application then loads speedily, and your user doesn't have to wait an extra 2-5 seconds. Now you can have the speed of sendmail and the advantages of Google Apps.&lt;/p&gt;
-&lt;h3&gt;Setup&lt;/h3&gt;
-&lt;p&gt;Signup for a Google Apps account - &lt;a href=&quot;http://www.google.com/apps/intl/en/group/index.html&quot;&gt;here&lt;/a&gt;, and finish the process verifying that you can send/receive emails from your new Google Apps account.&lt;/p&gt;
-&lt;p&gt;Next setup your app to handle SMTP.&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/157807.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Sending emails&lt;/h3&gt;
-&lt;p&gt;In your application use the run_later method in conjunction&lt;/p&gt;
-&lt;h4&gt;run_later&lt;/h4&gt;
-&lt;p&gt;Merb's run_later method works out of the box with thin and mongrel, but has a bug with passenger and Merb 1.0.x. Create the the file '/merb/hacks/run_later.rb' in your application with the following code to fix it.&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/157821.js&quot;&gt;&lt;/script&gt;
-&lt;p&gt;Then add the following to your init.rb file&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/157822.js&quot;&gt;&lt;/script&gt;
-&lt;h4&gt;send_mail&lt;/h4&gt;
-&lt;p&gt;Setup your mailers in merb like usual and use in your controller surrounded by run_later. Here is an example sending a confirmation email after a user signs up.&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/157824.js&quot;&gt;&lt;/script&gt;
-&lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;Linux's sendmail can be great, but when it comes to features and ease of configuration Google Apps can't be beat. Couple it with Merb's run_later method, and you can create really nice email functionality within your app. Plus, it is more scaleable since all the configuration is in the app, and connects remotely to Google Apps.&lt;/p&gt;
 &lt;p class='followme'&gt;
   &lt;strong&gt;
     You should follow me on twitter
