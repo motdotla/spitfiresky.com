@@ -2,7 +2,20 @@
 #   :urls => ["/blog", "/css", "/feed", "/images", "/javascripts", "/portfolio", "/about", "/contact"],
 #   :root => "public"
 
-# map "/blog"
+map "/blog" {
+
+  [
+    200, 
+    {
+      'Content-Type'  => 'text/html', 
+      'Cache-Control' => 'public, max-age=86400' 
+    },
+    StringIO.new("You made it to the blog!")
+    
+    # File.open('public/index.html', File::RDONLY)
+  ]
+}
+
 run lambda { |env|
   # Extract the requested path from the request
   path = Rack::Utils.unescape(env['PATH_INFO'])
