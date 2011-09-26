@@ -13,7 +13,7 @@ map "/blog" do
         'Content-Type'  => 'text/html', 
         'Cache-Control' => 'public, max-age=86400' 
       },
-      StringIO.new(path)
+      StringIO.new("Hi there!")
 
       # File.open('public/index.html', File::RDONLY)
     ]
