@@ -1,6 +1,6 @@
-# use Rack::Static, 
-#   :urls => ["/blog", "/css", "/feed", "/images", "/javascripts", "/portfolio", "/about", "/contact"],
-#   :root => "public"
+use Rack::Static, 
+  :urls => ["/blog", "/css", "/feed", "/images", "/javascripts", "/portfolio", "/about", "/contact"],
+  :root => "public"
 
 map "/blog" do
   run lambda { |env|
@@ -14,8 +14,6 @@ map "/blog" do
         'Cache-Control' => 'public, max-age=86400' 
       },
       StringIO.new("Hi there!")
-
-      # File.open('public/index.html', File::RDONLY)
     ]
   }
 end
