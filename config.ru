@@ -3,7 +3,7 @@
 #   :root => "public"
 
 map "/blog" do
-  [200, {'Content-Type'=>'text/plain'}, StringIO.new("Hello World!\n")] }
+  [200, {'Content-Type'=>'text/plain'}, StringIO.new("Hello World!\n")]
 end
 
 run lambda { |env|
