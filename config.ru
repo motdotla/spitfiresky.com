@@ -1,15 +1,12 @@
 map "/blog" do
   run lambda { |env|
-    # Extract the requested path from the request
-    path = Rack::Utils.unescape(env['PATH_INFO'])
-
     [
       200, 
       {
         'Content-Type'  => 'text/html', 
         'Cache-Control' => 'public, max-age=86400' 
       },
-      StringIO.new("Hi there!")
+      File.open('public/blog/index.html', File::RDONLY)
     ]
   }
 end
@@ -29,9 +26,8 @@ map "/" do
         'Content-Type'  => 'text/html', 
         'Cache-Control' => 'public, max-age=86400' 
       },
-      StringIO.new(path)
-      
-      # File.open('public/index.html', File::RDONLY)
+      # StringIO.new(path)
+      File.open('public/index.html', File::RDONLY)
     ]
   }
 end
