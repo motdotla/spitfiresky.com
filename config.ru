@@ -2,19 +2,9 @@
 #   :urls => ["/blog", "/css", "/feed", "/images", "/javascripts", "/portfolio", "/about", "/contact"],
 #   :root => "public"
 
-map "/blog" {
-
-  [
-    200, 
-    {
-      'Content-Type'  => 'text/html', 
-      'Cache-Control' => 'public, max-age=86400' 
-    },
-    StringIO.new("You made it to the blog!")
-    
-    # File.open('public/index.html', File::RDONLY)
-  ]
-}
+map "/blog" do
+  run lambda { |env| [200, {'Content-Type'=>'text/plain'}, StringIO.new("Hello World!\n")] }
+end
 
 run lambda { |env|
   # Extract the requested path from the request
