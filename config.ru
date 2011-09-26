@@ -1,4 +1,8 @@
 map "/blog" do
+  use Rack::Static, 
+    :urls => ["/blog", "/css", "/feed", "/images", "/javascripts", "/portfolio", "/about", "/contact"],
+    :root => "public"
+    
   run lambda { |env|
     [
       200, 
@@ -12,9 +16,9 @@ map "/blog" do
 end
 
 map "/" do
-  # use Rack::Static, 
-  #   :urls => ["/blog", "/css", "/feed", "/images", "/javascripts", "/portfolio", "/about", "/contact"],
-  #   :root => "public"
+  use Rack::Static, 
+    :urls => ["/blog", "/css", "/feed", "/images", "/javascripts", "/portfolio", "/about", "/contact"],
+    :root => "public"
     
   run lambda { |env|
     # Extract the requested path from the request
