@@ -1,7 +1,8 @@
-use Rack::Static, 
-  :urls => ["/blog", "/css", "/feed", "/images", "/javascripts", "/portfolio", "/about", "/contact"],
-  :root => "public"
+# use Rack::Static, 
+#   :urls => ["/blog", "/css", "/feed", "/images", "/javascripts", "/portfolio", "/about", "/contact"],
+#   :root => "public"
 
+# map "/blog"
 run lambda { |env|
   # Extract the requested path from the request
   path = Rack::Utils.unescape(env['PATH_INFO'])
