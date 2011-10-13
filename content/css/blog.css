@@ -3,10 +3,10 @@ body {
   border-top: 5px solid #86d1f1;
   border-top: 3px solid #356083;
   background: #E6F5FB;
-/*  background: #E6F5FB url(/images/wing.png) no-repeat bottom right;*/  
+/*  background: #E6F5FB url(/images/wing.png) no-repeat bottom right;*/
 /*  background: #E6F5FB url(/images/chroma.jpg) no-repeat top right;*/
-	color: #143347;
-	font-size: 14px;
+  color: #143347;
+  font-size: 14px;
 }
 a:visited {
   color: #356083;
@@ -106,6 +106,7 @@ small {
     border-right: 90px solid #86d1f1;
     border-right: 90px solid #ef4a4a;
     padding: 50px 0 20px 0;
+    display: none;
   }
     #articles ul {
       margin: 0;
